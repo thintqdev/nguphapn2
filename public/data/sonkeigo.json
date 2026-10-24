@@ -1,0 +1,330 @@
+{
+    "categories": [
+        {
+            "id": "sonkeigo",
+            "name": "尊敬語",
+            "nameVn": "Tôn kính ngữ",
+            "description": "Dùng để NÂNG CAO hành động, trạng thái của đối phương (Khách hàng, cấp trên, đối tác). KHÔNG bao giờ dùng cho hành động của bản thân.",
+            "target": "Cấp trên, Khách hàng, Đối tác, Người xa lạ"
+        },
+        {
+            "id": "kenjougo-1",
+            "name": "謙譲語Ⅰ",
+            "nameVn": "Khiêm nhường ngữ I (Hướng tới đối tượng)",
+            "description": "Dùng để HẠ THẤP hành động của bản thân/người phía mình. Đặc điểm: Hành động đó có liên quan hoặc HƯỚNG TỚI đối phương (gặp đối phương, nghe đối phương nói, đến thăm đối phương).",
+            "target": "Bản thân / Người phía mình (Uchi)"
+        },
+        {
+            "id": "kenjougo-2",
+            "name": "謙譲語Ⅱ（丁重語）",
+            "nameVn": "Khiêm nhường ngữ II (Đinh trọng ngữ)",
+            "description": "Dùng để HẠ THẤP hành động của bản thân khi nói chuyện lịch sự. Đặc điểm: Hành động KHÔNG hướng tới đối phương (ví dụ: tôi tên là..., tôi đến từ...).",
+            "target": "Bản thân / Người phía mình (Uchi)"
+        },
+        {
+            "id": "teineigo",
+            "name": "丁寧語",
+            "nameVn": "Lịch sự ngữ",
+            "description": "Dùng thể Desu/Masu ở cuối câu để thể hiện thái độ trang nhã chung.",
+            "target": "Mọi đối tượng"
+        },
+        {
+            "id": "bikago",
+            "name": "美化語",
+            "nameVn": "Từ mỹ hoá",
+            "description": "Thêm tiền tố お hoặc ご vào trước danh từ để lời nói trở nên thanh lịch, trau chuốt.",
+            "target": "Danh từ"
+        }
+    ],
+    "specialVerbs": [
+        {
+            "id": "ikiku",
+            "plain": "行く／来る",
+            "meaningVn": "Đi / Đến",
+            "sonkeigo": "いらっしゃる／おいでになる／お越しになる",
+            "kenjougo1": "伺う（うかがう）",
+            "kenjougo2": "参る（まいる）",
+            "teineigo": "行きます／来ます"
+        },
+        {
+            "id": "iru",
+            "plain": "いる",
+            "meaningVn": "Ở, có mặt",
+            "sonkeigo": "いらっしゃる／おいでになる",
+            "kenjougo1": "ー",
+            "kenjougo2": "おる",
+            "teineigo": "います"
+        },
+        {
+            "id": "taberu_nomu",
+            "plain": "食べる／飲む",
+            "meaningVn": "Ăn / Uống",
+            "sonkeigo": "召し上がる（めしあがる）",
+            "kenjougo1": "ー",
+            "kenjougo2": "いただく／頂戴する（ちょうだいする）",
+            "teineigo": "食べます／飲みます"
+        },
+        {
+            "id": "iu",
+            "plain": "言う",
+            "meaningVn": "Nói",
+            "sonkeigo": "おっしゃる",
+            "kenjougo1": "申し上げる（もうしあげる）",
+            "kenjougo2": "申す（もうす）",
+            "teineigo": "言います"
+        },
+        {
+            "id": "suru",
+            "plain": "する",
+            "meaningVn": "Làm",
+            "sonkeigo": "なさる",
+            "kenjougo1": "ー",
+            "kenjougo2": "いたす",
+            "teineigo": "します"
+        },
+        {
+            "id": "miru",
+            "plain": "見る",
+            "meaningVn": "Nhìn, xem",
+            "sonkeigo": "ご覧になる（ごらんになる）",
+            "kenjougo1": "拝見する（はいけんする）",
+            "kenjougo2": "ー",
+            "teineigo": "見ます"
+        },
+        {
+            "id": "kiku",
+            "plain": "聞く",
+            "meaningVn": "Nghe / Hỏi / Đến thăm",
+            "sonkeigo": "お聞きになる",
+            "kenjougo1": "伺う（うかがう）／拝聴する（はいちょうする）",
+            "kenjougo2": "ー",
+            "teineigo": "聞きます"
+        },
+        {
+            "id": "shiru",
+            "plain": "知る",
+            "meaningVn": "Biết",
+            "sonkeigo": "ご存じだ／ご存じである",
+            "kenjougo1": "存じ上げる（ぞんじあげる）",
+            "kenjougo2": "存じる（ぞんじる）",
+            "teineigo": "知っています"
+        },
+        {
+            "id": "aou",
+            "plain": "会う",
+            "meaningVn": "Gặp",
+            "sonkeigo": "お会いになる",
+            "kenjougo1": "お目にかかる（おめにかかる）",
+            "kenjougo2": "ー",
+            "teineigo": "会います"
+        },
+        {
+            "id": "morau",
+            "plain": "もらう",
+            "meaningVn": "Nhận",
+            "sonkeigo": "ー",
+            "kenjougo1": "いただく／頂戴する（ちょうだいする）",
+            "kenjougo2": "ー",
+            "teineigo": "もらいます"
+        },
+        {
+            "id": "ageru",
+            "plain": "あげる",
+            "meaningVn": "Cho, tặng",
+            "sonkeigo": "ー",
+            "kenjougo1": "差し上げる（さしあげる）",
+            "kenjougo2": "ー",
+            "teineigo": "あげます"
+        },
+        {
+            "id": "kureru",
+            "plain": "くれる",
+            "meaningVn": "Cho (mình)",
+            "sonkeigo": "くださる",
+            "kenjougo1": "ー",
+            "kenjougo2": "ー",
+            "teineigo": "くれます"
+        },
+        {
+            "id": "kangaeru",
+            "plain": "考える",
+            "meaningVn": "Suy nghĩ",
+            "sonkeigo": "ご高察なさる／お考えになる",
+            "kenjougo1": "ー",
+            "kenjougo2": "検討いたします／案じる",
+            "teineigo": "考えます"
+        },
+        {
+            "id": "kiru",
+            "plain": "着る",
+            "meaningVn": "Mặc",
+            "sonkeigo": "お召しになる（おめしになる）",
+            "kenjougo1": "ー",
+            "kenjougo2": "ー",
+            "teineigo": "着ます"
+        },
+        {
+            "id": "wakaru",
+            "plain": "分かった／知った",
+            "meaningVn": "Hiểu, tiếp nhận thông tin",
+            "sonkeigo": "ご理解なさる",
+            "kenjougo1": "かしこまりました／承知いたしました",
+            "kenjougo2": "ー",
+            "teineigo": "分かりました"
+        },
+        {
+            "id": "miseru",
+            "plain": "見せる",
+            "meaningVn": "Cho xem",
+            "sonkeigo": "お見せになる",
+            "kenjougo1": "お目にかける（おめにかける）／ご覧に供する",
+            "kenjougo2": "ー",
+            "teineigo": "見せます"
+        },
+        {
+            "id": "kureur_te",
+            "plain": "～てくれる",
+            "meaningVn": "Làm gì đó cho mình",
+            "sonkeigo": "～てくださる",
+            "kenjougo1": "ー",
+            "kenjougo2": "ー",
+            "teineigo": "～てくれます"
+        },
+        {
+            "id": "morau_te",
+            "plain": "～てもらう",
+            "meaningVn": "Nhận được hành động từ ai",
+            "sonkeigo": "ー",
+            "kenjougo1": "～ていただく",
+            "kenjougo2": "ー",
+            "teineigo": "～てもらいます"
+        },
+        {
+            "id": "ageru_te",
+            "plain": "～てあげる",
+            "meaningVn": "Làm gì đó cho ai",
+            "sonkeigo": "ー",
+            "kenjougo1": "～て差し上げる",
+            "kenjougo2": "ー",
+            "teineigo": "～てあげます"
+        }
+    ],
+    "conjugationRules": {
+        "sonkeigo": [
+            {
+                "pattern": "お + V（ます形 bỏ ます） + になる",
+                "exampleJp": "社長はもうお帰りになりました。",
+                "exampleVn": "Giám đốc đã về rồi ạ.",
+                "note": "Công thức phổ biến nhất cho Động từ Nhóm 1 & 2. KHÔNG áp dụng cho động từ 1 âm tiết (như 見る, 居る)."
+            },
+            {
+                "pattern": "ご + Danh từ Hán tự (Nhóm 3) + なさる／される",
+                "exampleJp": "社長がご案内なさいます／ご案内されます。",
+                "exampleVn": "Giám đốc sẽ hướng dẫn ạ.",
+                "note": "Áp dụng cho Động từ Nhóm 3 dạng [Danh từ Hán tự + する]."
+            },
+            {
+                "pattern": "Thụ động cách: V（れる／られる）",
+                "exampleJp": "先生は明日、来られますか。",
+                "exampleVn": "Thầy giáo ngày mai có đến không ạ?",
+                "note": "Mức độ kính trọng nhẹ hơn cấu trúc お～になる, thường dùng trong giao tiếp hằng ngày."
+            },
+            {
+                "pattern": "お + V（ます形 bỏ ます） + ください",
+                "exampleJp": "少々お待ちください。",
+                "exampleVn": "Xin vui lòng đợi một chút."
+            },
+            {
+                "pattern": "ご + Danh từ Hán tự + ください",
+                "exampleJp": "詳細をご確認ください。",
+                "exampleVn": "Xin vui lòng xác nhận chi tiết."
+            }
+        ],
+        "kenjougo": [
+            {
+                "pattern": "お + V（ます形 bỏ ます） + する／いたします",
+                "exampleJp": "後ほどお電話いたします。",
+                "exampleVn": "Tôi xin phép sẽ gọi điện lại sau ạ.",
+                "note": "Áp dụng cho Động từ Nhóm 1 & 2 khi hành động của mình hướng đến đối phương."
+            },
+            {
+                "pattern": "ご + Danh từ Hán tự (Nhóm 3) + する／いたします",
+                "exampleJp": "本日、スケジュールをご報告いたします。",
+                "exampleVn": "Hôm nay tôi xin phép báo cáo lịch trình ạ.",
+                "note": "Áp dụng cho Động từ Nhóm 3."
+            },
+            {
+                "pattern": "V（させる） + いただく／いただきます",
+                "exampleJp": "本日休ませていただきます。",
+                "exampleVn": "Cho phép tôi xin phép nghỉ ngày hôm nay ạ.",
+                "note": "Xin phép đối phương cho mình thực hiện hành động."
+            }
+        ]
+    },
+    "businessPhrases": [
+        {
+            "id": "greeting_external",
+            "category": "Chào hỏi đối tác",
+            "phraseJp": "いつもお世話になっております。",
+            "meaningVn": "Cảm ơn anh/chị lúc nào cũng hỗ trợ chúng tôi."
+        },
+        {
+            "id": "greeting_internal",
+            "category": "Chào hỏi nội bộ",
+            "phraseJp": "お疲れ様です。",
+            "meaningVn": "Anh/chị đã làm việc vất vả rồi ạ. (Dùng trong công ty)"
+        },
+        {
+            "id": "confirm",
+            "category": "Xác nhận / Tiếp nhận",
+            "phraseJp": "かしこまりました。／承知いたしました。",
+            "meaningVn": "Tôi đã hiểu rõ / Tôi xin tuân lệnh ạ."
+        },
+        {
+            "id": "apology",
+            "category": "Xin lỗi",
+            "phraseJp": "大変申し訳ございません。／深謝申し上げます。",
+            "meaningVn": "Tôi thành thật xin lỗi ạ."
+        },
+        {
+            "id": "request",
+            "category": "Nhờ vả lịch sự",
+            "phraseJp": "恐れ入りますが、ご検討のほどよろしくお願いいたします。",
+            "meaningVn": "Xin lỗi vì làm phiền, nhưng kính mong anh/chị xem xét giúp ạ."
+        },
+        {
+            "id": "permission",
+            "category": "Xin phép hành động",
+            "phraseJp": "～してもよろしいでしょうか。／～させていただきます。",
+            "meaningVn": "Tôi xin phép làm... có được không ạ?"
+        },
+        {
+            "id": "absent_boss",
+            "category": "Báo sếp vắng mặt với khách",
+            "phraseJp": "あいにく田中はただいま席を外しております。",
+            "meaningVn": "Rất tiếc là anh Tanaka hiện tại đang không có tại bàn làm việc ạ."
+        }
+    ],
+    "jlptTrapsAndRules": [
+        {
+            "ruleName": "Quy tắc Uchi / Soto (Trong / Ngoài)",
+            "explanationVn": "Khi nói chuyện với KHÁCH HÀNG (Soto), dù nhắc đến SẾP MÌNH (Uchi), vẫn phải dùng KHIÊM NHƯỜNG NGỮ và BỎ CHỨC VU/HỌ SÊN (Ví dụ: Nói 'Nội dung này Tanaka sẽ báo cáo' -> 用件は田中から申し上げます, KHÔNG gọi Tanaka-shachou).",
+            "examExampleJp": "（Khách gọi điện hỏi sếp Tanaka）-> ✕「田中社長は外出されました」 ○「田中は外出しております」"
+        },
+        {
+            "ruleName": "Lỗi Kính ngữ kép (二重敬語 - Nijuu Keigo)",
+            "explanationVn": "KHÔNG kết hợp 2 dạng kính ngữ cùng lúc cho một động từ.",
+            "examExampleJp": "✕「お召し上がりになられますか」 -> ○「召し上がりますか」／「お召し上がりになりますか」"
+        },
+        {
+            "ruleName": "Phân biệt させていただく (Xin phép) và お～する (Tự nguyện)",
+            "explanationVn": "使わせていただきます dùng khi cần xin sự cho phép của đối phương. Nếu là hành động tự nhiên của mình không cần xin phép thì dùng お～する.",
+            "examExampleJp": "✕「自己紹介させていただきます」（Trừ khi MC cho phép mới dùng） -> ○「自己紹介いたします」"
+        },
+        {
+            "ruleName": "Kính ngữ với Khái niệm / Danh từ (Bikago & Koushou)",
+            "explanationVn": "Thêm お cho từ thuần Nhật (和語) và ご cho từ Hán tự (漢語). Chuyển danh từ sang dạng kính ngữ trong văn bản.",
+            "examExampleJp": "Anh/Chị (Anata) -> ◯〇様; Công ty anh (Anata no kaisha) -> 貴社（khi viết）/ 御社（khi nói）; Công ty tôi -> 弊社 / 当社"
+        }
+    ]
+}
