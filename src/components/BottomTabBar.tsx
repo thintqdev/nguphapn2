@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, Sparkles, Heart, BarChart3, Settings } from "lucide-react";
+import { BookOpen, Sparkles, CheckSquare, Heart, Settings } from "lucide-react";
 import { useFavorites } from "./FavoritesContext";
 
 export default function BottomTabBar() {
@@ -12,13 +12,13 @@ export default function BottomTabBar() {
   const tabs = [
     { label: "文法", href: "/", icon: BookOpen, badge: null },
     { label: "敬語", href: "/keigo", icon: Sparkles, badge: null },
+    { label: "練習", href: "/exercise", icon: CheckSquare, badge: null },
     {
       label: "お気に入り",
       href: "/favorites",
       icon: Heart,
       badge: totalFavorites > 0 ? totalFavorites : null,
     },
-    { label: "学習記録", href: "/history", icon: BarChart3, badge: null },
     { label: "設定", href: "/settings", icon: Settings, badge: null },
   ];
 
@@ -30,7 +30,7 @@ export default function BottomTabBar() {
           const isActive =
             tab.href === "/"
               ? pathname === "/" || pathname.startsWith("/grammar")
-              : pathname === tab.href;
+              : pathname === tab.href || pathname.startsWith(tab.href + "/");
 
           return (
             <Link

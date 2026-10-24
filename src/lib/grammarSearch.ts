@@ -116,7 +116,30 @@ export function searchAllGrammar(query: string, maxResults = 8): SearchResultIte
     }
   }
 
-  // 2. Check if query matches Keigo keywords or Keigo verbs
+  // 2. Check if query matches Exercise keywords
+  const isExerciseQuery =
+    nq.includes("bai tap") ||
+    nq.includes("de thi") ||
+    nq.includes("luyen tap") ||
+    nq.includes("exercise") ||
+    nq.includes("kiem tra") ||
+    nq.includes("renshuu") ||
+    nq.includes("50 cau");
+
+  if (isExerciseQuery && results.length < maxResults) {
+    results.unshift({
+      type: "grammar",
+      id: "exercise-1",
+      href: "/exercise/1",
+      title: "Bài kiểm tra ngữ pháp tiếng Nhật (50 câu đầy đủ)",
+      reading: "れんしゅうもんだい (練習問題)",
+      meaning: "Đề thi thử 50 câu trắc nghiệm & sắp xếp câu dấu sao có lời giải chi tiết",
+      categoryName: "Bài tập",
+      badge: "Đề thi #1",
+    });
+  }
+
+  // 3. Check if query matches Keigo keywords or Keigo verbs
   const isKeigoQuery =
     nq.includes("keigo") ||
     nq.includes("kinh ngu") ||

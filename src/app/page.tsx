@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
+import Link from "next/link";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
 import HomeHeroBanner from "@/components/HomeHeroBanner";
@@ -10,7 +11,7 @@ import KeigoView from "@/components/keigo/KeigoView";
 import grammarDataRaw from "../../public/data/grammar.json";
 import { keigoData } from "@/lib/keigo";
 import type { GrammarData } from "@/lib/types";
-import { BookOpen, Sparkles, ArrowRight } from "lucide-react";
+import { BookOpen, Sparkles, ArrowRight, CheckSquare } from "lucide-react";
 
 const data = grammarDataRaw as GrammarData;
 
@@ -129,34 +130,67 @@ export default function HomePage() {
           {/* Conditional Rendering: Grammar list OR Keigo view */}
           {mainMode === "grammar" ? (
             <div>
-              {/* Quick Prompt Banner to Keigo */}
-              <div
-                onClick={() => setMainMode("keigo")}
-                className="mb-5 p-3.5 sm:p-4 rounded-[18px] bg-gradient-to-r from-[#df6e53]/10 via-[#df6e53]/5 to-transparent dark:from-[#df6e53]/20 dark:via-[#df6e53]/10 border border-[#df6e53]/20 dark:border-[#df6e53]/30 flex items-center justify-between gap-3 cursor-pointer hover:border-[#df6e53]/40 transition-all group"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-[12px] bg-[#df6e53] text-white flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 transition-transform">
-                    <Sparkles size={18} />
+              {/* Quick Prompt Banners: Keigo & Exercises */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
+                {/* Keigo Banner */}
+                <div
+                  onClick={() => setMainMode("keigo")}
+                  className="p-3.5 sm:p-4 rounded-[18px] bg-gradient-to-r from-[#df6e53]/10 via-[#df6e53]/5 to-transparent dark:from-[#df6e53]/20 dark:via-[#df6e53]/10 border border-[#df6e53]/20 dark:border-[#df6e53]/30 flex items-center justify-between gap-3 cursor-pointer hover:border-[#df6e53]/40 transition-all group"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-[12px] bg-[#df6e53] text-white flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+                      <Sparkles size={18} />
+                    </div>
+                    <div>
+                      <h4 className="font-serif font-bold text-[13px] text-[#1f1a16] dark:text-[#f5f0eb] flex items-center gap-1.5">
+                        <span>Kính ngữ N2 (敬語)</span>
+                        <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-[#df6e53]/15 text-[#df6e53] dark:text-[#f39882] font-sans font-bold">
+                          19 Động từ
+                        </span>
+                      </h4>
+                      <p className="text-[11px] text-[#70665a] dark:text-[#a09486] line-clamp-1">
+                        Bảng tra cứu Tôn kính, Khiêm nhường ngữ & bẫy thi.
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-serif font-bold text-[13.5px] text-[#1f1a16] dark:text-[#f5f0eb] flex items-center gap-1.5">
-                      <span>Chuyên đề Kính ngữ N2 (敬語・謙譲語)</span>
-                      <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-[#df6e53]/15 text-[#df6e53] dark:text-[#f39882] font-sans font-bold">
-                        19 Động từ
-                      </span>
-                    </h4>
-                    <p className="text-[11px] text-[#70665a] dark:text-[#a09486] line-clamp-1">
-                      Bảng tra cứu Tôn kính ngữ, Khiêm nhường ngữ Ⅰ & Ⅱ, công thức biến đổi và bẫy đề thi.
-                    </p>
+                  <div className="flex items-center gap-1 text-xs font-semibold text-[#df6e53] dark:text-[#f39882] shrink-0">
+                    <span className="hidden sm:inline">Học ngay</span>
+                    <ArrowRight
+                      size={14}
+                      className="group-hover:translate-x-0.5 transition-transform"
+                    />
                   </div>
                 </div>
-                <div className="flex items-center gap-1 text-xs font-semibold text-[#df6e53] dark:text-[#f39882] shrink-0">
-                  <span className="hidden sm:inline">Học ngay</span>
-                  <ArrowRight
-                    size={14}
-                    className="group-hover:translate-x-0.5 transition-transform"
-                  />
-                </div>
+
+                {/* Exercises Banner */}
+                <Link
+                  href="/exercise"
+                  className="p-3.5 sm:p-4 rounded-[18px] bg-gradient-to-r from-[#2e7d58]/10 via-[#2e7d58]/5 to-transparent dark:from-[#2e7d58]/20 dark:via-[#2e7d58]/10 border border-[#2e7d58]/20 dark:border-[#2e7d58]/30 flex items-center justify-between gap-3 cursor-pointer hover:border-[#2e7d58]/40 transition-all group"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-[12px] bg-[#2e7d58] text-white flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+                      <CheckSquare size={18} />
+                    </div>
+                    <div>
+                      <h4 className="font-serif font-bold text-[13px] text-[#1f1a16] dark:text-[#f5f0eb] flex items-center gap-1.5">
+                        <span>Luyện đề thi thử (練習)</span>
+                        <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-[#2e7d58]/15 text-[#2e7d58] dark:text-[#52c28d] font-sans font-bold">
+                          50 Câu
+                        </span>
+                      </h4>
+                      <p className="text-[11px] text-[#70665a] dark:text-[#a09486] line-clamp-1">
+                        Trắc nghiệm & sắp xếp câu sao ★ có giải thích.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-1 text-xs font-semibold text-[#2e7d58] dark:text-[#52c28d] shrink-0">
+                    <span className="hidden sm:inline">Làm đề</span>
+                    <ArrowRight
+                      size={14}
+                      className="group-hover:translate-x-0.5 transition-transform"
+                    />
+                  </div>
+                </Link>
               </div>
 
               {/* iOS Segmented Control Category Tabs */}

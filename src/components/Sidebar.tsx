@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, Sparkles, Heart, BarChart3, Settings } from "lucide-react";
+import { BookOpen, Sparkles, CheckSquare, Heart, BarChart3, Settings } from "lucide-react";
 import { useFavorites } from "./FavoritesContext";
 
 export default function Sidebar() {
@@ -12,6 +12,7 @@ export default function Sidebar() {
   const navItems = [
     { label: "文法一覧", href: "/", icon: BookOpen, badge: null },
     { label: "敬語・謙譲語", href: "/keigo", icon: Sparkles, badge: "N2" },
+    { label: "練習問題", href: "/exercise", icon: CheckSquare, badge: "50問" },
     {
       label: "お気に入り",
       href: "/favorites",
@@ -51,7 +52,7 @@ export default function Sidebar() {
             const isActive =
               item.href === "/"
                 ? pathname === "/" || pathname.startsWith("/grammar")
-                : pathname === item.href;
+                : pathname === item.href || pathname.startsWith(item.href + "/");
 
             return (
               <Link

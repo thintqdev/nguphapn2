@@ -1,0 +1,825 @@
+{
+  "title": "Bài kiểm tra ngữ pháp tiếng Nhật (50 câu đầy đủ)",
+  "questions": [
+    {
+      "id": 1,
+      "question": "(1) このアパートは、家賃（ ）、駅やスーパーなどから遠く、立地環境はあまり良くない。",
+      "options": [
+        "1 はともかく",
+        "2 さえ",
+        "3 というのは",
+        "4 に関して"
+      ],
+      "answer": "1 はともかく",
+      "explanation": "Cấu trúc 「～はともかく」 nghĩa là \"tạm gác chuyện... sang một bên\", \"chưa tính đến...\". Câu mang ý nghĩa: Tạm gác chuyện tiền thuê nhà sang một bên, căn hộ này ở xa ga và siêu thị nên vị trí không tốt lắm.",
+      "grammar_meanings": {
+        "2": "さえ: Ngay cả, thậm chí.",
+        "3": "というのは: Nghĩa là / Định nghĩa / Giải thích lý do.",
+        "4": "に関して: Liên quan đến..., về..."
+      }
+    },
+    {
+      "id": 2,
+      "question": "(2) 最近吉田さんは元気がないなあと（ ）、声をかけなかったが、昨日突然会社を辞めてしまった。",
+      "options": [
+        "1 思ったとたん",
+        "2 思う限り",
+        "3 思いつつ",
+        "4 思ったところ"
+      ],
+      "answer": "3 思いつつ",
+      "explanation": "Cấu trúc 「V-ます + つつ」 diễn tả hai hành động diễn ra song song hoặc sự suy nghĩ/trăn trở đối lập (\"vừa nghĩ... nhưng lại...\"). Vừa nghĩ rằng dạo này Yoshida-san trông không khỏe, nhưng lại không bắt chuyện, ai ngờ hôm qua anh ấy đột ngột nghỉ việc.",
+      "grammar_meanings": {
+        "1": "思ったとたん: Vừa mới nghĩ xong thì... (ngay lập tức có sự việc khác xảy ra).",
+        "2": "思う限り: Trong phạm vi/giới hạn suy nghĩ.",
+        "4": "思ったところ: Sau khi vừa nghĩ thì (dẫn đến kết quả/phát hiện ra)."
+      }
+    },
+    {
+      "id": 3,
+      "question": "(3) 一目見ただけでランディさんのことが好きになった。でも、日本語も彼女の国の言葉も全然わからないので、気持ちを伝え（ ）。",
+      "options": [
+        "1 かねない",
+        "2 たものだ",
+        "3 ずにはいられない",
+        "4 ようがない"
+      ],
+      "answer": "4 ようがない",
+      "explanation": "Cấu trúc 「V-ます + ようがない」 nghĩa là \"không thể/không có cách nào để...\" (do thiếu phương tiện/cách thức). Vì không biết cả tiếng Nhật lẫn tiếng nước cô ấy nên không có cách nào bày tỏ tình cảm.",
+      "grammar_meanings": {
+        "1": "かねない: Có nguy cơ, có khả năng diễn ra kết quả xấu.",
+        "2": "たものだ: Nhớ lại thói quen trong quá khứ (\"thường hay...\").",
+        "3": "ずにはいられない: Không thể không... / Không kìm nén được."
+      }
+    },
+    {
+      "id": 4,
+      "question": "(4) おばの家へ遊びに行ったが、食事（ ）、お茶さえ出してくれなかった。",
+      "options": [
+        "1 どころか",
+        "2 を問わず",
+        "3 にとって",
+        "4 のおかげで"
+      ],
+      "answer": "1 どころか",
+      "explanation": "Cấu trúc 「～どころか」 nghĩa là \"không những không... mà còn tệ hơn\" hoặc \"đừng nói đến... ngay cả...\". Tôi đến nhà cô chơi nhưng đừng nói là bữa ăn, ngay cả trà cô cũng không rót cho.",
+      "grammar_meanings": {
+        "2": "を問わず: Bất kể, không phân biệt (tuổi tác, giới tính,...).",
+        "3": "にとって: Đối với (ai đó).",
+        "4": "のおかげで: Nhờ có... (dùng cho kết quả tốt)."
+      }
+    },
+    {
+      "id": 5,
+      "question": "(5) 現在接近中の台風（ ）、新しい情報が入りましたので、お伝えします。",
+      "options": [
+        "1 に関して",
+        "2 だけあって",
+        "3 といっても",
+        "4 さえ"
+      ],
+      "answer": "1 に関して",
+      "explanation": "Cấu trúc 「～に関して」 nghĩa là \"về / liên quan tới...\". Liên quan tới cơn bão đang tiến gần hiện tại, chúng tôi đã có thông tin mới nên xin thông báo.",
+      "grammar_meanings": {
+        "2": "だけあって: Quả đúng là... (xứng đáng với vị thế/đặc điểm).",
+        "3": "といっても: Dù nói là... (nhưng thực tế không đến mức thế).",
+        "4": "さえ: Ngay cả, thậm chí."
+      }
+    },
+    {
+      "id": 6,
+      "question": "(6) 日本では、空港建設（ ）、国と住民の間で争いが起こるケースが多い。",
+      "options": [
+        "1 にしては",
+        "2 をめぐって",
+        "3 を問わず",
+        "4 どころか"
+      ],
+      "answer": "2 をめぐって",
+      "explanation": "Cấu trúc 「～をめぐって」 nghĩa là \"xoay quanh...\" (vấn đề, tranh chấp, ý kiến trái chiều). Ở Nhật Bản, có nhiều trường hợp tranh chấp xảy ra giữa nhà nước và người dân xoay quanh việc xây dựng sân bay.",
+      "grammar_meanings": {
+        "1": "にしては: Dù là... (nhưng kết quả lại trái với tưởng tượng thông thường).",
+        "3": "を問わず: Bất kể, không phân biệt.",
+        "4": "どころか: Đừng nói đến... / Ngược lại."
+      }
+    },
+    {
+      "id": 7,
+      "question": "(7) この辺りは、有名な観光地（ ）、交通の便がとてもいい。",
+      "options": [
+        "1 だけあって",
+        "2 に対して",
+        "3 といっても",
+        "4 からすると"
+      ],
+      "answer": "1 だけあって",
+      "explanation": "Cấu trúc 「～だけあって」 nghĩa là \"Quả đúng là...\" (khen ngợi, lý do phù hợp với kết quả). Vùng này quả đúng là địa điểm du lịch nổi tiếng, giao thông vô cùng thuận tiện.",
+      "grammar_meanings": {
+        "2": "に対して: Trái ngược với... / Đối với...",
+        "3": "といっても: Dù nói là...",
+        "4": "からすると: Xét từ góc độ / Căn cứ vào..."
+      }
+    },
+    {
+      "id": 8,
+      "question": "(8) 休憩なしで、6時間も会議が続くなんて、つらい（ ）。",
+      "options": [
+        "1 ことになっている",
+        "2 ものがある",
+        "3 ものを",
+        "4 わけにはいかない"
+      ],
+      "answer": "2 ものがある",
+      "explanation": "Cấu trúc 「～ものがある」 diễn tả cảm xúc mạnh mẽ, \"có cảm giác...\", \"thật là...\". Cuộc họp kéo dài tới 6 tiếng không nghỉ ngơi chút nào, thật là mệt mỏi.",
+      "grammar_meanings": {
+        "1": "ことになっている: Được quy định là / Theo kế hoạch là.",
+        "3": "ものを: Giá mà... thì hay biết mấy (tiếc nuối, trách móc).",
+        "4": "わけにはいかない: Không thể... (vì lý do đạo đức/xã hội)."
+      }
+    },
+    {
+      "id": 9,
+      "question": "(9) このセーターは、性別（ ）、着ていただけます。1枚いかがですか。",
+      "options": [
+        "1 はともかく",
+        "2 のおかげで",
+        "3 を問わず",
+        "4 に関して"
+      ],
+      "answer": "3 を問わず",
+      "explanation": "Cấu trúc 「～を問わず」 nghĩa là \"không phân biệt / bất kể...\". Chiếc áo svơtơ này bất kể giới tính đều có thể mặc được.",
+      "grammar_meanings": {
+        "1": "はともかく: Tạm gác chuyện... sang một bên.",
+        "2": "のおかげで: Nhờ có...",
+        "4": "に関して: Về / Liên quan tới..."
+      }
+    },
+    {
+      "id": 10,
+      "question": "(10) 今日の先生の言い方（ ）、来週の試験は相当難しいんじゃないかな。",
+      "options": [
+        "1 からすると",
+        "2 どころか",
+        "3 というより",
+        "4 をめぐって"
+      ],
+      "answer": "1 からすると",
+      "explanation": "Cấu trúc 「～からすると」 nghĩa là \"căn cứ vào / nhìn từ...\". Nhìn từ cách nói của thầy giáo hôm nay, bài kiểm tra tuần sau có lẽ khá khó đấy.",
+      "grammar_meanings": {
+        "2": "どころか: Đừng nói đến...",
+        "3": "というより: Nói đúng hơn là...",
+        "4": "をめぐって: Xoay quanh (tranh chấp/bàn tán)."
+      }
+    },
+    {
+      "id": 11,
+      "question": "(11) 捨て猫を見ていたら、かわいそうで、（ ）にはいられなかった。",
+      "options": [
+        "1 拾う",
+        "2 拾わず",
+        "3 拾って",
+        "4 拾おう"
+      ],
+      "answer": "2 拾わず",
+      "explanation": "Cấu trúc 「V-ずにはいられない」 (V-ない → V-ず) nghĩa là \"không thể không... / không kìm lòng được mà...\". Nhìn chú mèo bị bỏ rơi, thấy tội nghiệp nên tôi không thể không nhặt nó về.",
+      "grammar_meanings": {
+        "1": "拾う: Động từ thể từ điển (sai cấu trúc).",
+        "3": "拾って: Dạng て (không đi với にはいられない).",
+        "4": "拾おう: Dạng ý chí (không đi với にはいられない)."
+      }
+    },
+    {
+      "id": 12,
+      "question": "(12) 電話で母の声を聞いた（ ）、涙が出てきた。",
+      "options": [
+        "1 一方で",
+        "2 たびに",
+        "3 とたん",
+        "4 かわりに"
+      ],
+      "answer": "3 とたん",
+      "explanation": "Cấu trúc 「V-た + とたん（に）」 nghĩa là \"ngay khi... thì...\" (hành động sau xảy ra bất ngờ ngoài dự kiến). Ngay khi nghe thấy giọng mẹ qua điện thoại thì nước mắt bật ra.",
+      "grammar_meanings": {
+        "1": "一方で: Mặt khác / Vừa... lại vừa...",
+        "2": "たびに: Mỗi lần...",
+        "4": "かわりに: Thay vì / Thay cho."
+      }
+    },
+    {
+      "id": 13,
+      "question": "(13) この参考書を見たら、答えがわかる（ ）、ますます混乱してしまった。",
+      "options": [
+        "1 といっても",
+        "2 だけあって",
+        "3 おかげで",
+        "4 どころか"
+      ],
+      "answer": "4 どころか",
+      "explanation": "Cấu trúc 「～どころか」 nghĩa là \"không những không... mà trái lại còn...\". Xem cuốn sách tham khảo này, không những không hiểu đáp án mà trái lại còn rối thêm.",
+      "grammar_meanings": {
+        "1": "といっても: Dù nói là...",
+        "2": "だけあって: Quả đúng là...",
+        "3": "おかげで: Nhờ có..."
+      }
+    },
+    {
+      "id": 14,
+      "question": "(14) けがをした（ ）、大事な試合に出場できなくなってしまいました。",
+      "options": [
+        "1 ものの",
+        "2 かわりに",
+        "3 おかげで",
+        "4 くせに"
+      ],
+      "answer": "1 ものの",
+      "explanation": "Cấu trúc 「～ものの」 nghĩa là \"mặc dù... nhưng...\". Ở câu này, trong bối cảnh đề thi gốc, option 1 「ものの」 được dùng với nghĩa \"Mặc dù (chỉ bị chấn thương nhẹ/tuy nhiên lại)...\" hoặc giải thích nguyên nhân. (Lưu ý: Nếu xét tiêu cực hoàn toàn thì \"せいで\" phù hợp hơn, nhưng trong 4 lựa chọn của đề thì 「ものの」 là đáp án chọn ngữ pháp mang tính tương phản/kết nối).",
+      "grammar_meanings": {
+        "2": "かわりに: Thay vì.",
+        "3": "おかげで: Nhờ có (dùng cho việc tốt).",
+        "4": "くせに: Mặc dù... mà lại (mang tính trách móc, dùng cho người/chủ ngữ cụ thể)."
+      }
+    },
+    {
+      "id": 15,
+      "question": "(15) 市民の声を無視した政治（ ）、怒りの声が出始めた。",
+      "options": [
+        "1 に対して",
+        "2 だけあって",
+        "3 といっても",
+        "4 からすると"
+      ],
+      "answer": "1 に対して",
+      "explanation": "Cấu trúc 「～に対して」 nghĩa là \"đối với... / nhắm vào...\". Những tiếng nói tức giận bắt đầu cất lên đối với nền chính trị phớt lờ tiếng nói của người dân.",
+      "grammar_meanings": {
+        "2": "だけあって: Quả đúng là...",
+        "3": "といっても: Dù nói là...",
+        "4": "からすると: Nhìn từ..."
+      }
+    },
+    {
+      "id": 16,
+      "question": "(16) 人の名前を使って、勝手にレストランを予約するなんて、許せない（ ）。",
+      "options": [
+        "1 わけがない",
+        "2 ものを",
+        "3 ものがある",
+        "4 ことはない"
+      ],
+      "answer": "3 ものがある",
+      "explanation": "Cấu trúc 「～ものがある」 diễn tả cảm xúc dâng trào \"thật là... / có cảm giác...\". Việc tự ý dùng tên người khác để đặt nhà hàng thật là không thể tha thứ được.",
+      "grammar_meanings": {
+        "1": "わけがない: Tuyệt đối không thể nào...",
+        "2": "ものを: Giá mà... (thể hiện sự tiếc nuối).",
+        "4": "ことはない: Không cần thiết phải..."
+      }
+    },
+    {
+      "id": 17,
+      "question": "(17) おじに会う（ ）、「大きくなったね」と言われるが、実は2年前から全く身長が伸びていない。",
+      "options": [
+        "1 たびに",
+        "2 につれて",
+        "3 ものだから",
+        "4 次第"
+      ],
+      "answer": "1 たびに",
+      "explanation": "Cấu trúc 「V-る + たびに」 nghĩa là \"mỗi lần... thì lại...\". Mỗi lần gặp chú, chú đều bảo \"Lớn nhanh thế nhỉ\", nhưng thực ra từ 2 năm trước chiều cao của tôi chẳng tăng chút nào.",
+      "grammar_meanings": {
+        "2": "につれて: Cùng với / Càng... thì càng... (biến đổi theo tiến trình).",
+        "3": "ものだから: Tại vì... (bao biện, giải thích lý do).",
+        "4": "次第: Ngay sau khi... thì sẽ..."
+      }
+    },
+    {
+      "id": 18,
+      "question": "(18) 今は髪の毛が薄くなったので、無理だが、若い時はよくパーマをかけた（ ）。",
+      "options": [
+        "1 とおりだ",
+        "2 ものだ",
+        "3 おかげだ",
+        "4 くらいだ"
+      ],
+      "answer": "2 ものだ",
+      "explanation": "Cấu trúc 「V-た + ものだ」 diễn tả hoài niệm về thói quen trong quá khứ (\"lúc trước hay...\"). Bây giờ tóc thưa rồi nên chịu, chứ hồi trẻ tôi rất hay làm tóc uốn.",
+      "grammar_meanings": {
+        "1": "とおりだ: Đúng như...",
+        "3": "おかげだ: Là nhờ vào...",
+        "4": "くらいだ: Đến mức..."
+      }
+    },
+    {
+      "id": 19,
+      "question": "(19) 何度も約束を破っていると、友だちを失い（ ）よ。",
+      "options": [
+        "1 ようがない",
+        "2 切る",
+        "3 かねない",
+        "4 気味だ"
+      ],
+      "answer": "3 かねない",
+      "explanation": "Cấu trúc 「V-ます + かねない」 nghĩa là \"có nguy cơ / có thể sẽ...\" (kết quả xấu). Nếu cứ thất hứa nhiều lần thì có nguy cơ mất bạn bè đấy.",
+      "grammar_meanings": {
+        "1": "ようがない: Không thể / Không có cách nào.",
+        "2": "切る: Làm hết sạch / Hoàn thành hoàn toàn.",
+        "4": "気味だ: Có cảm giác hơi... (mệt, cảm nhẹ,...)."
+      }
+    },
+    {
+      "id": 20,
+      "question": "(20) 旅行している間はよかったが、家に着いた（ ）、疲れが出て、寝込んでしまった。",
+      "options": [
+        "1 きり",
+        "2 とたん",
+        "3 限り",
+        "4 だけあって"
+      ],
+      "answer": "2 とたん",
+      "explanation": "Cấu trúc 「V-た + とたん（に）」 nghĩa là \"vừa mới... thì ngay lập tức...\". Trong lúc đi du lịch thì không sao, nhưng ngay vừa về tới nhà thì mệt mỏi đổ ra, nằm bệt luôn.",
+      "grammar_meanings": {
+        "1": "きり: Kể từ khi... thì giữ nguyên trạng thái.",
+        "3": "限り: Trong giới hạn / Chừng nào còn...",
+        "4": "だけあって: Quả đúng là..."
+      }
+    },
+    {
+      "id": 21,
+      "question": "(21) 問題の大小（ ）、上司に報告するというのが仕事上のルールだ。",
+      "options": [
+        "1 に関して",
+        "2 を問わず",
+        "3 といっても",
+        "4 にしては"
+      ],
+      "answer": "2 を問わず",
+      "explanation": "Cấu trúc 「～を問わず」 nghĩa là \"không phân biệt / bất kể...\". Bất kể vấn đề lớn hay nhỏ, việc báo cáo cho cấp trên là quy tắc trong công việc.",
+      "grammar_meanings": {
+        "1": "に関して: Về / Liên quan tới.",
+        "3": "といっても: Dù nói là...",
+        "4": "にしては: Dù là... (nhưng khác với kỳ vọng)."
+      }
+    },
+    {
+      "id": 22,
+      "question": "(22) 引っ越しをしてから（ ）、誰とも会わずに家にいることが多くなった。",
+      "options": [
+        "1 というもの",
+        "2 こそ",
+        "3 には",
+        "4 といって"
+      ],
+      "answer": "1 というもの",
+      "explanation": "Cấu trúc 「～てからというもの」 nghĩa là \"kể từ sau khi... thì suốt...\" (dẫn đến sự thay đổi lớn). Kể từ sau khi chuyển nhà, tôi toàn ở nhà mà không gặp ai.",
+      "grammar_meanings": {
+        "2": "こそ: Chính là...",
+        "3": "には: Đối với / Để...",
+        "4": "といって: (Không đi kèm dạng てから để tạo mẫu ngữ pháp chuẩn)."
+      }
+    },
+    {
+      "id": 23,
+      "question": "(23) 先輩、ご報告があります。私たち、来月結婚する（ ）。",
+      "options": [
+        "1 ことになりました",
+        "2 わけがありません",
+        "3 ものを",
+        "4 ものがあります"
+      ],
+      "answer": "1 ことになりました",
+      "explanation": "Cấu trúc 「～ことになる / ことになりました」 nghĩa là \"đã được quyết định là...\". Tiền bối, em có chuyện báo cáo: Chúng em đã quyết định tháng sau sẽ kết hôn.",
+      "grammar_meanings": {
+        "2": "わけがありません: Không thể nào có chuyện...",
+        "3": "ものを: Giá mà...",
+        "4": "ものがあります: Có cảm giác..."
+      }
+    },
+    {
+      "id": 24,
+      "question": "(24) 子どもが生まれた（ ）、お祝いをいただきまして、ありがとうございました。",
+      "options": [
+        "1 わりに",
+        "2 際には",
+        "3 くせに",
+        "4 限り"
+      ],
+      "answer": "2 際には",
+      "explanation": "Cấu trúc 「～際に / 際には」 nghĩa là \"khi / nhân dịp...\". Xin cảm ơn quý vị đã gửi quà chúc mừng nhân dịp con tôi ra đời.",
+      "grammar_meanings": {
+        "1": "わりに: Mặc dù... nhưng (so với tiêu chuẩn chung).",
+        "3": "くせに: Mặc dù... mà lại (trách móc).",
+        "4": "限り: Chừng nào còn..."
+      }
+    },
+    {
+      "id": 25,
+      "question": "(25) 宿題を忘れたなら、正直に言えばいい（ ）。言わないから、先生に叱られたんだよ。",
+      "options": [
+        "1 ところだ",
+        "2 ものを",
+        "3 ほどだ",
+        "4 ものがある"
+      ],
+      "answer": "2 ものを",
+      "explanation": "Cấu trúc 「～ものを」 đứng ở cuối câu diễn tả sự tiếc nuối hoặc trách móc: \"giá mà... thì đã tốt rồi vậy mà...\". Nếu quên bài tập thì giá mà cậu cứ nói thật có phải tốt hơn không. Tại không nói nên mới bị thầy mắng đấy.",
+      "grammar_meanings": {
+        "1": "ところだ: Vừa mới / Đang lúc...",
+        "3": "ほどだ: Đến mức...",
+        "4": "ものがある: Có cảm giác..."
+      }
+    },
+    {
+      "id": 26,
+      "question": "(26) 息子の暗い表情（ ）、サッカーの試合に負けたのだろう。",
+      "options": [
+        "1 だからといって",
+        "2 にとって",
+        "3 からすると",
+        "4 をめぐって"
+      ],
+      "answer": "3 からすると",
+      "explanation": "Cấu trúc 「～からすると」 nghĩa là \"xét từ / nhìn từ...\". Nhìn từ vẻ mặt u dột của con trai, chắc là nó lại thua trận bóng đá rồi.",
+      "grammar_meanings": {
+        "1": "だからといって: Cho dù là vậy thì...",
+        "2": "にとって: Đối với...",
+        "4": "をめぐって: Xoay quanh..."
+      }
+    },
+    {
+      "id": 27,
+      "question": "(27) 厳しい練習を重ねる（ ）、勝負に勝った時の喜びが大きい。",
+      "options": [
+        "1 からこそ",
+        "2 というのは",
+        "3 くせに",
+        "4 あげく"
+      ],
+      "answer": "1 からこそ",
+      "explanation": "Cấu trúc 「～からこそ」 nghĩa là \"chính vì... nên mới...\". Chính vì đã trải qua luyện tập khắc nghiệt, niềm vui khi chiến thắng mới lớn đến thế.",
+      "grammar_meanings": {
+        "2": "というのは: Định nghĩa / Lý do là...",
+        "3": "くせに: Dù... mà lại.",
+        "4": "あげく: Sau một hồi... thì kết quả xấu."
+      }
+    },
+    {
+      "id": 28,
+      "question": "(28) もったいないと（ ）、レンタルではなく、映画館で映画を見てしまう。",
+      "options": [
+        "1 知ったとおり",
+        "2 知りつつ",
+        "3 知るたびに",
+        "4 知るおかげで"
+      ],
+      "answer": "2 知りつつ",
+      "explanation": "Cấu trúc 「V-ます + つつ」 nghĩa là \"mặc dù biết/nghĩ là... nhưng vẫn...\". Dù biết là lãng phí, nhưng tôi vẫn trót xem phim ở rạp chứ không thuê đĩa.",
+      "grammar_meanings": {
+        "1": "知ったとおり: Theo như đã biết.",
+        "3": "知るたびに: Mỗi lần biết.",
+        "4": "知るおかげで: Nhờ biết."
+      }
+    },
+    {
+      "id": 29,
+      "question": "(29) 風邪をひいている（ ）、今日のカラオケは遠慮しておきます。",
+      "options": [
+        "1 どころか",
+        "2 だけあって",
+        "3 たびに",
+        "4 もので"
+      ],
+      "answer": "4 もので",
+      "explanation": "Cấu trúc 「～もので / ものだから」 dùng để giải thích lý do, viện lý do mang tính cá nhân. Vì tôi đang bị cảm nên buổi karaoke hôm nay cho phép tôi xin kiễng/không tham gia.",
+      "grammar_meanings": {
+        "1": "どころか: Đừng nói đến...",
+        "2": "だけあって: Quả đúng là...",
+        "3": "たびに: Mỗi lần..."
+      }
+    },
+    {
+      "id": 30,
+      "question": "(30) 父の勤める会社は大企業だ。よほどのことがない（ ）、つぶれることはないだろう。",
+      "options": [
+        "1 くせに",
+        "2 おかげで",
+        "3 限り",
+        "4 ように"
+      ],
+      "answer": "3 限り",
+      "explanation": "Cấu trúc 「～ない限り」 nghĩa là \"chừng nào không / trừ khi...\". Công ty bố tôi làm là doanh nghiệp lớn. Trừ khi có chuyện cực kỳ nghiêm trọng, còn không chắc chắn chẳng phá sản được đâu.",
+      "grammar_meanings": {
+        "1": "くせに: Mặc dù...",
+        "2": "おかげで: Nhờ có...",
+        "4": "ように: Để / Giống như."
+      }
+    },
+    {
+      "id": 31,
+      "question": "(31) 朝寝坊の上野さんですから、明日も（ ）かねないね。",
+      "options": [
+        "1 遅刻する",
+        "2 遅刻して",
+        "3 遅刻し",
+        "4 遅刻している"
+      ],
+      "answer": "3 遅刻し",
+      "explanation": "Cấu trúc đi với 「かねない」 bắt buộc phải là động từ thể 「V-ます」 (bỏ ます). Do đó 「遅刻し + かねない」 là đáp án chính xác.",
+      "grammar_meanings": {
+        "1": "遅刻する: Thể từ điển (sai cấu trúc).",
+        "2": "遅刻して: Dạng て (sai cấu trúc).",
+        "4": "遅刻している: Dạng ている (sai cấu trúc)."
+      }
+    },
+    {
+      "id": 32,
+      "question": "(32) 私の学校は、授業の内容（ ）、建物が古すぎる。",
+      "options": [
+        "1 はともかく",
+        "2 として",
+        "3 といっても",
+        "4 に関して"
+      ],
+      "answer": "1 はともかく",
+      "explanation": "Cấu trúc 「～はともかく」 nghĩa là \"tạm gác... sang một bên\". Trường tôi thì tạm gác nội dung giảng dạy sang một bên, tòa nhà học thì quá cũ kỹ rồi.",
+      "grammar_meanings": {
+        "2": "として: Với tư cách là...",
+        "3": "といっても: Dù nói là...",
+        "4": "に関して: Về / Liên quan đến..."
+      }
+    },
+    {
+      "id": 33,
+      "question": "(33) 友だちにある本を勧められたのだが、書名も著者名も忘れてしまったので、（ ）。",
+      "options": [
+        "1 買うものか",
+        "2 買いようがない",
+        "3 買うわけだ",
+        "4 買うにちがいない"
+      ],
+      "answer": "2 買いようがない",
+      "explanation": "Cấu trúc 「V-ます + ようがない」 nghĩa là \"không thể / không có cách nào để...\". Được bạn giới thiệu cuốn sách nhưng tôi quên mất cả tên sách lẫn tên tác giả nên không có cách nào mua được.",
+      "grammar_meanings": {
+        "1": "買うものか: Tuyệt đối không mua!",
+        "3": "買うわけだ: Hảo ra là mua / Thảo nào mua.",
+        "4": "買うにちがいない: Chắc chắn là sẽ mua."
+      }
+    },
+    {
+      "id": 34,
+      "question": "(34) お客さんが（ ）、急いで部屋の掃除をして、スーパーで野菜と肉を買ってきた。",
+      "options": [
+        "1 来ないわりに",
+        "2 来るといっても",
+        "3 来たところ",
+        "4 来ないうちに"
+      ],
+      "answer": "4 来ないうちに",
+      "explanation": "Cấu trúc 「V-ない + うちに」 nghĩa là \"trong lúc chưa... / trước khi...\". Trước khi khách đến, tôi đã vội vàng dọn phòng và đi siêu thị mua thịt rau về.",
+      "grammar_meanings": {
+        "1": "来ないわりに: Mặc dù không đến.",
+        "2": "来るといっても: Dù nói là đến.",
+        "3": "来たところ: Vừa mới đến."
+      }
+    },
+    {
+      "id": 35,
+      "question": "(35) 祖父が残した土地や財産を（ ）、親戚間で争いが起こっている。",
+      "options": [
+        "1 めぐって",
+        "2 はじめ",
+        "3 ぬきにして",
+        "4 こめて"
+      ],
+      "answer": "1 めぐって",
+      "explanation": "Cấu trúc 「～をめぐって」 nghĩa là \"xoay quanh...\" (tranh chấp/mâu thuẫn). Cuộc tranh chấp giữa các họ hàng đang diễn ra xoay quanh đất đai và tài sản ông nội để lại.",
+      "grammar_meanings": {
+        "2": "はじめ: Tiêu biểu là... / Trước tiên là...",
+        "3": "ぬきにして: Bỏ qua... / Không tính đến...",
+        "4": "こめて: Gửi gắm (tình cảm, tâm tư)."
+      }
+    },
+    {
+      "id": 36,
+      "question": "(36) この辺りは ___ ___ __★__ ___、活気がある。",
+      "options": [
+        "1 多く",
+        "2 学生街",
+        "3 だけあって",
+        "4 若者が"
+      ],
+      "answer": "2 学生街 (Vị trí sắp xếp: 1 - 4 - 2 - 3)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「この辺りは 若者が 多く [学生街] だけあって、活気がある。」. Cấu trúc 「N + だけあって」 (Quả đúng là...). Ý nghĩa: Khu vực này quả đúng là khu phố sinh viên có nhiều giới trẻ, thật là náo nhiệt.",
+      "grammar_meanings": {
+        "3": "だけあって: Quả đúng là (xứng danh với đặc điểm N)."
+      }
+    },
+    {
+      "id": 37,
+      "question": "(37) 夕飯の準備を ___ ___ __★__ ___ 訪ねてきて困ってしまった。",
+      "options": [
+        "1 最中に",
+        "2 人が",
+        "3 している",
+        "4 突然"
+      ],
+      "answer": "2 人が (Vị trí sắp xếp: 3 - 1 - 2 - 4)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「夕飯の準備を している 最中に [人が] 突然 訪ねてきて困ってしまった。」. Cấu trúc 「V-ている + 最中に」 nghĩa là \"Đúng lúc đang... thì...\". Ý nghĩa: Đúng lúc đang chuẩn bị bữa tối thì đột nhiên có người ghé thăm khiến tôi khốn đốn.",
+      "grammar_meanings": {
+        "1": "最中に: Đúng lúc đang làm gì đó thì có việc khác can thiệp."
+      }
+    },
+    {
+      "id": 38,
+      "question": "(38) 小学校低学年の子どもにそんな難しい ___ ___ __★__ ___。",
+      "options": [
+        "1 話を",
+        "2 でしょう",
+        "3 わかりっこない",
+        "4 しても"
+      ],
+      "answer": "3 わかりっこない (Vị trí sắp xếp: 1 - 4 - 3 - 2)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「小学校低学年の子どもにそんな難しい 話を しても [わかりっこない] でしょう。」. Cấu trúc 「V-ます + っこない」 nghĩa là \"Tuyệt đối không thể / Làm sao mà... được\". Ý nghĩa: Dù có nói chuyện khó như thế với trẻ tiểu học lớp nhỏ thì chắc chắn chúng làm sao mà hiểu được.",
+      "grammar_meanings": {
+        "3": "っこない: Tuyệt đối không thể nào V."
+      }
+    },
+    {
+      "id": 39,
+      "question": "(39) 久しぶりに ___ ___ __★__ ___ 仕事や旅行で誰もおらず、暇な時間を過ごした。",
+      "options": [
+        "1 友人たちは",
+        "2 ものの",
+        "3 帰った",
+        "4 故郷に"
+      ],
+      "answer": "2 ものの (Vị trí sắp xếp: 4 - 3 - 2 - 1)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「久しぶりに 故郷に 帰った [ものの] 友人たちは 仕事や旅行で誰もおらず、暇な時間を過ごした。」. Cấu trúc 「V-た + ものの」 nghĩa là \"Mặc dù... nhưng...\". Ý nghĩa: Lâu rồi mới về quê nhưng bạn bè do công việc hoặc đi du lịch nên chẳng có ai, đành trải qua thời gian rảnh rỗi.",
+      "grammar_meanings": {
+        "2": "ものの: Tuy... nhưng..."
+      }
+    },
+    {
+      "id": 40,
+      "question": "(40) 子どものころは計画的に物事を行うことができず、よく12月31日が ___ ___ ___ __★__。",
+      "options": [
+        "1 年賀状を",
+        "2 ものだ",
+        "3 近づいてから",
+        "4 書き始めた"
+      ],
+      "answer": "2 ものだ (Vị trí sắp xếp: 3 - 1 - 4 - 2)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「よく12月31日が 近づいてから 年賀状を 書き始めた [ものだ]。」. Cấu trúc 「V-た + ものだ」 diễn tả thói quen trong quá khứ. Ý nghĩa: Hồi nhỏ tôi không thể làm việc có kế hoạch, thường hay đợi sát ngày 31/12 mới bắt đầu viết thiệp chúc tết.",
+      "grammar_meanings": {
+        "2": "ものだ: Thường hay (nhớ về quá khứ)."
+      }
+    },
+    {
+      "id": 41,
+      "question": "(41) 医学が進歩し、以前ならどうすることもできなかった病気が治るようになった。 ___ ___ __★__ ___。",
+      "options": [
+        "1 長くなった",
+        "2 わけである",
+        "3 そのため",
+        "4 寿命が"
+      ],
+      "answer": "1 長くなった (Vị trí sắp xếp: 3 - 4 - 1 - 2)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「そのため 寿命が [長くなった] わけである。」. Cấu trúc 「～わけだ / わけである」 nghĩa là \"thảo nào / thành ra là / đương nhiên là...\". Ý nghĩa: Y học tiến bộ, những bệnh trước đây chịu chết nay đã chữa được. Do đó, tuổi thọ kéo dài ra cũng là điều hiển nhiên.",
+      "grammar_meanings": {
+        "2": "わけである: Đương nhiên là / Thành ra là (kết quả logic)."
+      }
+    },
+    {
+      "id": 42,
+      "question": "(42) 普段 ___ ___ __★__ ___ 外食がありがたく感じるのだ。",
+      "options": [
+        "1 している",
+        "2 からこそ",
+        "3 たまの",
+        "4 節約を"
+      ],
+      "answer": "2 からこそ (Vị trí sắp xếp: 4 - 1 - 2 - 3)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「普段 節約を している [からこそ] たまの 外食がありがたく感じるのだ。」. Cấu trúc 「～からこそ」 nghĩa là \"Chính vì... nên mới...\". Ý nghĩa: Chính vì bình thường tiết kiệm nên thỉnh thoảng đi ăn ngoài mới cảm thấy đáng quý.",
+      "grammar_meanings": {
+        "2": "からこそ: Chính vì..."
+      }
+    },
+    {
+      "id": 43,
+      "question": "(43) 最近は40代以上の ___ ___ __★__ ___、おしゃれな服や靴、かばんなどが数多く取り上げられている。",
+      "options": [
+        "1 雑誌が",
+        "2 発売されていて",
+        "3 向けの",
+        "4 男性"
+      ],
+      "answer": "1 雑誌が (Vị trí sắp xếp: 4 - 3 - 1 - 2)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「40代以上の 男性 向けの [雑誌が] 発売されていて...」. Cấu trúc 「N + 向け」 nghĩa là \"Dành cho / Hướng tới (đối tượng N)\". Ý nghĩa: Gần đây các tạp chí dành cho nam giới trên 40 tuổi được bán ra, giới thiệu rất nhiều quần áo, giày dép, túi xách thời trang.",
+      "grammar_meanings": {
+        "3": "向けの: Dành riêng cho đối tượng nào đó."
+      }
+    },
+    {
+      "id": 44,
+      "question": "(44) 私の孫は自己中心的で、自分の思ったとおりにならないと、泣き出したり怒り始めたりする。親が ___ ___ __★__ ___ だろう。",
+      "options": [
+        "1 この態度は",
+        "2 甘やかしている",
+        "3 限り",
+        "4 直らない"
+      ],
+      "answer": "1 この態度は (Vị trí sắp xếp: 2 - 3 - 1 - 4)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「親が 甘やかしている 限り [この態度は] 直らない だろう。」. Cấu trúc 「V-ている + 限り」 nghĩa là \"Chừng nào còn... thì...\". Ý nghĩa: Chừng nào bố mẹ còn chiều chuộng thì thái độ này sẽ không sửa được đâu.",
+      "grammar_meanings": {
+        "3": "限り: Chừng nào còn giữ trạng thái..."
+      }
+    },
+    {
+      "id": 45,
+      "question": "(45) 私の住む町は、土日や大型連休には、多くの ___ ___ __★__ ___ 静かな風景が広がっている。",
+      "options": [
+        "1 ものの",
+        "2 訪れる",
+        "3 平日 は",
+        "4 観光客が"
+      ],
+      "answer": "1 ものの (Vị trí sắp xếp: 4 - 2 - 1 - 3)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「多くの 観光客が 訪れる [ものの] 平日は 静かな風景が広がっている。」. Cấu trúc 「V-る + ものの」 nghĩa là \"Mặc dù... nhưng...\". Ý nghĩa: Thị trấn tôi ở tuy rằng ngày thứ 7, CN hay kỳ nghỉ lớn có nhiều khách du lịch ghé thăm, nhưng ngày thường thì khung cảnh lại vô cùng yên bình.",
+      "grammar_meanings": {
+        "1": "ものの: Mặc dù... nhưng..."
+      }
+    },
+    {
+      "id": 46,
+      "question": "(46) 「おいしいんだけど、ちょっと砂糖が多いというか……。」 「つまり、 ___ ___ __★__ ___ ね。」",
+      "options": [
+        "1 という",
+        "2 わけだ",
+        "3 ちょっと",
+        "4 甘すぎる"
+      ],
+      "answer": "1 という (Vị trí sắp xếp: 3 - 4 - 1 - 2)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「つまり、ちょっと 甘すぎる [という] わけだ ね。」. Cấu trúc 「～というわけだ」 nghĩa là \"Tóm lại là / Nói cách khác là...\". Ý nghĩa: - \"Ngon thì ngon nhưng hình như hơi nhiều đường...\" - \"Tóm lại ý cậu là hơi quá ngọt đúng không.\"",
+      "grammar_meanings": {
+        "1, 2": "というわけだ: Tóm lại nghĩa là..."
+      }
+    },
+    {
+      "id": 47,
+      "question": "(47) 雨具の ___ ___ __★__ ___ やんで晴れてきた。",
+      "options": [
+        "1 雨が",
+        "2 用意を",
+        "3 うちに",
+        "4 している"
+      ],
+      "answer": "3 うちに (Vị trí sắp xếp: 2 - 4 - 3 - 1)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「雨具の 用意を している [うちに] 雨が やんで晴れてきた。」. Cấu trúc 「V-ている + うちに」 nghĩa là \"Trong lúc đang... thì sự thay đổi diễn ra tự nhiên\". Ý nghĩa: Trong lúc đang chuẩn bị đồ đi mưa thì mưa tạnh và trời nắng lên.",
+      "grammar_meanings": {
+        "3": "うちに: Trong lúc/Trong khi..."
+      }
+    },
+    {
+      "id": 48,
+      "question": "(48) このコンピューターの説明書には、 ___ ___ __★__ ___ 載っていない。",
+      "options": [
+        "1 情報が",
+        "2 関する",
+        "3 故障時の",
+        "4 連絡先に"
+      ],
+      "answer": "2 関する (Vị trí sắp xếp: 3 - 4 - 2 - 1)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「故障時の 連絡先に [関する] 情報が 載っていない。」. Cấu trúc 「N + に関する + N」 nghĩa là \"Thông tin liên quan tới N\". Ý nghĩa: Trong sách hướng dẫn của máy tính này không ghi thông tin liên quan tới địa chỉ liên hệ khi hỏng hóc.",
+      "grammar_meanings": {
+        "2": "関する: Về / Liên quan đến (bổ nghĩa cho danh từ đi sau)."
+      }
+    },
+    {
+      "id": 49,
+      "question": "(49) ご主人が大企業に勤めていて、お金の心配が何も要らないあなたに、 ___ ___ __★__ ___。",
+      "options": [
+        "1 わかりっこない",
+        "2 気持ちが",
+        "3 私の",
+        "4 でしょう"
+      ],
+      "answer": "1 わかりっこない (Vị trí sắp xếp: 3 - 2 - 1 - 4)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「あなたに、私の 気持ちが [わかりっこない] でしょう。」. Cấu trúc 「V-ます + っこない」 nghĩa là \"Tuyệt đối không thể hiểu/biết\". Ý nghĩa: Người có chồng làm công ty lớn chẳng phải lo lắng gì về tiền bạc như chị thì làm sao mà hiểu được cảm giác của tôi.",
+      "grammar_meanings": {
+        "1": "っこない: Tuyệt đối không thể..."
+      }
+    },
+    {
+      "id": 50,
+      "question": "(50) 少しぐらい調子が悪いだけで薬に頼るのはよくないわかっているが、風邪の ___ ___ __★__ ___。",
+      "options": [
+        "1 症状が",
+        "2 薬を",
+        "3 飲まずにはいられない",
+        "4 出ると"
+      ],
+      "answer": "2 薬を (Vị trí sắp xếp: 1 - 4 - 2 - 3)",
+      "explanation": "Thứ tự xếp câu hoàn chỉnh: 「風邪の 症状が 出ると [薬を] 飲まずにはいられない。」. Cấu trúc 「V-ずにはいられない」 nghĩa là \"Không thể không... / Bắt buộc phải...\". Ý nghĩa: Tôi biết chỉ hơi mệt một chút mà phụ thuộc vào thuốc là không tốt, nhưng hễ xuất hiện triệu chứng cảm là tôi lại không kìm được mà phải uống thuốc.",
+      "grammar_meanings": {
+        "3": "飲まずにはいられない: Không uống không được / Không kìm nén được việc uống."
+      }
+    }
+  ]
+}
