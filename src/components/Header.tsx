@@ -1,8 +1,9 @@
 "use client";
 
-import { Search, Moon, Sun, ChevronLeft } from "lucide-react";
+import { Moon, Sun, ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import { useTheme } from "./ThemeProvider";
+import GlobalSearch from "./GlobalSearch";
 
 interface HeaderProps {
   searchQuery?: string;
@@ -27,7 +28,7 @@ export default function Header({
           {backHref ? (
             <Link
               href={backHref}
-              className="inline-flex items-center gap-1 text-[13px] sm:text-sm font-semibold text-[#0071e3] dark:text-[#2997ff] hover:opacity-75 active:scale-95 transition-all py-1 px-2 -ml-1 rounded-xl"
+              className="inline-flex items-center gap-1 text-[13px] sm:text-sm font-semibold text-[#df6e53] dark:text-[#f39882] hover:opacity-75 active:scale-95 transition-all py-1 px-2 -ml-1 rounded-xl"
             >
               <ChevronLeft size={18} strokeWidth={2.5} className="-ml-1" />
               <span>{backLabel}</span>
@@ -51,21 +52,13 @@ export default function Header({
           )}
         </div>
 
-        {/* Right controls: iOS Search Bar + Capsule Theme Switcher */}
+        {/* Right controls: Universal Search Bar + Capsule Theme Switcher */}
         <div className="flex items-center gap-2 flex-1 justify-end max-w-xs sm:max-w-none">
-          {/* iOS Styled Search Field */}
-          <div className="relative flex-1 sm:w-64 max-w-[200px] sm:max-w-none group">
-            <Search
-              size={14}
-              strokeWidth={2.2}
-              className="absolute left-2.5 top-1/2 -translate-y-1/2 text-black/40 dark:text-white/40 group-focus-within:text-[#0071e3] dark:group-focus-within:text-[#2997ff] transition-colors"
-            />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => onSearchChange?.(e.target.value)}
-              placeholder="文法を検索..."
-              className="w-full bg-black/[0.05] dark:bg-white/[0.09] hover:bg-black/[0.07] dark:hover:bg-white/[0.12] focus:bg-white dark:focus:bg-[#201c19] text-xs sm:text-[13px] text-[#1d1b19] dark:text-[#f5f0eb] placeholder-black/40 dark:placeholder-white/40 pl-7.5 pr-2.5 py-1.5 rounded-[10px] sm:rounded-[12px] border border-transparent focus:border-black/10 dark:focus:border-white/15 focus:outline-hidden transition-all shadow-2xs"
+          {/* Universal Search across all pages */}
+          <div className="flex-1 sm:w-72 max-w-[210px] sm:max-w-none">
+            <GlobalSearch
+              initialQuery={searchQuery}
+              onQueryChange={onSearchChange}
             />
           </div>
 
