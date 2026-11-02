@@ -1,0 +1,702 @@
+[
+  {
+    "stt": 301,
+    "kanji": "傾",
+    "han_viet": "Khuynh",
+    "giai_thich": "Nghiêng ngả, xu hướng.",
+    "vi_du": "傾向 (けいこう: khuynh hướng), 傾く(かたむく: nghiêng)."
+  },
+  {
+    "stt": 302,
+    "kanji": "刑",
+    "han_viet": "Hình",
+    "giai_thich": "Hình phạt, luật pháp.",
+    "vi_du": "刑事 (けいじ: cảnh sát hình sự), 刑罰 (けいばつ: hình phạt)."
+  },
+  {
+    "stt": 303,
+    "kanji": "汚",
+    "han_viet": "Ô",
+    "giai_thich": "Bẩn, làm vấy bẩn.",
+    "vi_du": "汚す(けがす/よごす: làm bẩn, làm nhục)."
+  },
+  {
+    "stt": 304,
+    "kanji": "汚",
+    "han_viet": "Ô",
+    "giai_thich": "Vết nhơ, sự ô uế.",
+    "vi_du": "けがらわしい (bẩn thỉu, đáng ghê tởm)."
+  },
+  {
+    "stt": 305,
+    "kanji": "汚",
+    "han_viet": "Ô",
+    "giai_thich": "Bị bẩn, vấy bẩn.",
+    "vi_du": "汚れる(けがれる/よごれる: bị bẩn, bị ô uế)."
+  },
+  {
+    "stt": 306,
+    "kanji": "創",
+    "han_viet": "Sáng",
+    "giai_thich": "Sáng lập, tạo ra.",
+    "vi_du": "創作(そうさく: sáng tác), 創業(そうぎょう: thành lập doanh nghiệp)."
+  },
+  {
+    "stt": 307,
+    "kanji": "撃",
+    "han_viet": "Kích",
+    "giai_thich": "Tấn công, đánh.",
+    "vi_du": "攻撃(こうげき: tấn công), 衝撃(しょうげき: chấn động)."
+  },
+  {
+    "stt": 308,
+    "kanji": "撃",
+    "han_viet": "Kích",
+    "giai_thich": "Đánh đập, tấn công mạnh.",
+    "vi_du": "撃つ(うつ: bắn), 反撃 (はんげき: phản công)."
+  },
+  {
+    "stt": 309,
+    "kanji": "激",
+    "han_viet": "Kích",
+    "giai_thich": "Dữ dội, mãnh liệt.",
+    "vi_du": "激しい(はげしい: mãnh liệt, dữ dội), 激増 (げきぞう: tăng vọt)."
+  },
+  {
+    "stt": 310,
+    "kanji": "潔",
+    "han_viet": "Khiết",
+    "giai_thich": "Trong sạch, thanh khiết.",
+    "vi_du": "清潔(せいけつ: sạch sẽ), 不潔(ふけつ: mất vệ sinh)."
+  },
+  {
+    "stt": 311,
+    "kanji": "穴",
+    "han_viet": "Huyệt",
+    "giai_thich": "Cái hang, cái lỗ.",
+    "vi_du": "穴(あな: cái lỗ), 墓穴 (ぼけつ: huyệt mộ)."
+  },
+  {
+    "stt": 312,
+    "kanji": "煙",
+    "han_viet": "Yên",
+    "giai_thich": "Khói.",
+    "vi_du": "煙(けむり: khói), 禁煙 (きんえん: cấm hút thuốc)."
+  },
+  {
+    "stt": 313,
+    "kanji": "煙",
+    "han_viet": "Yên",
+    "giai_thich": "Khói, hiện tượng tỏa khói.",
+    "vi_du": "煙草(たばこ: thuốc lá)."
+  },
+  {
+    "stt": 314,
+    "kanji": "煙",
+    "han_viet": "Yên",
+    "giai_thich": "Tỏa khói, mờ ảo như khói.",
+    "vi_du": "煙る(けむる: tỏa khói, mờ mịt)."
+  },
+  {
+    "stt": 315,
+    "kanji": "券",
+    "han_viet": "Khoán",
+    "giai_thich": "Vé, chứng khoán.",
+    "vi_du": "乗車券(じょうしゃけん: vé xe), 証券 (しょうけん: chứng khoán)."
+  },
+  {
+    "stt": 316,
+    "kanji": "健",
+    "han_viet": "Kiện",
+    "giai_thich": "Khỏe mạnh, vững chắc.",
+    "vi_du": "健康 (けんこう: sức khỏe), 健全(けんぜん: lành mạnh)."
+  },
+  {
+    "stt": 317,
+    "kanji": "肩",
+    "han_viet": "Kiên",
+    "giai_thich": "Vai.",
+    "vi_du": "肩(かた: vai), 肩書(かたがき: chức danh)."
+  },
+  {
+    "stt": 318,
+    "kanji": "兼",
+    "han_viet": "Kiêm",
+    "giai_thich": "Kiêm nhiệm, kiêm luôn.",
+    "vi_du": "兼ねる(かねる: khó mà làm được), 兼用 (けんよう: dùng kiêm nhiều việc)."
+  },
+  {
+    "stt": 319,
+    "kanji": "権",
+    "han_viet": "Quyền",
+    "giai_thich": "Quyền lợi, quyền lực.",
+    "vi_du": "権利 (けんり: quyền lợi), 政権(せいけん: chính quyền)."
+  },
+  {
+    "stt": 320,
+    "kanji": "軒",
+    "han_viet": "Hiên",
+    "giai_thich": "Mái hiên, đơn vị đếm nhà cửa.",
+    "vi_du": "一軒家 (いっけんや: nhà riêng), 軒(のき: mái hiên)."
+  },
+  {
+    "stt": 321,
+    "kanji": "堅",
+    "han_viet": "Kiên",
+    "giai_thich": "Vững chắc, kiên cố.",
+    "vi_du": "堅い(かたい: vững chắc), 堅実(けんじつ: chắc chắn, thiết thực)."
+  },
+  {
+    "stt": 322,
+    "kanji": "賢",
+    "han_viet": "Hiền",
+    "giai_thich": "Thông minh, khôn ngoan.",
+    "vi_du": "賢い(かしこい: thông minh), 賢人 (けんじん: người hiền tài)."
+  },
+  {
+    "stt": 323,
+    "kanji": "嫌",
+    "han_viet": "Hiềm",
+    "giai_thich": "Ghét, không thích.",
+    "vi_du": "嫌い(きらい: ghét), 嫌悪 (けんお: sự chán ghét, ác cảm)."
+  },
+  {
+    "stt": 324,
+    "kanji": "減",
+    "han_viet": "Giảm",
+    "giai_thich": "Giảm bớt, suy giảm.",
+    "vi_du": "減る (へる: giảm đi), 減少(げんしょう: sự suy giảm)."
+  },
+  {
+    "stt": 325,
+    "kanji": "源",
+    "han_viet": "Nguyên",
+    "giai_thich": "Nguồn gốc, nguồn nước.",
+    "vi_du": "源 (みなもと: nguồn), 電源(でんげん: nguồn điện)."
+  },
+  {
+    "stt": 326,
+    "kanji": "限",
+    "han_viet": "Hạn",
+    "giai_thich": "Giới hạn, hạn mức.",
+    "vi_du": "限界 (げんかい: giới hạn), 期限 (きげん: kì hạn)."
+  },
+  {
+    "stt": 327,
+    "kanji": "玄",
+    "han_viet": "Huyền",
+    "giai_thich": "Màu đen huyền, huyền bí.",
+    "vi_du": "玄人(くろうと: chuyên gia), 玄関 (げんかん: cửa ra vào / sảnh)."
+  },
+  {
+    "stt": 328,
+    "kanji": "厳",
+    "han_viet": "Nghiêm",
+    "giai_thich": "Nghiêm ngặt, khắt khe.",
+    "vi_du": "厳しい(きびしい: nghiêm khắc), 厳重 (げんじゅう: nghiêm ngặt, cẩn mật)."
+  },
+  {
+    "stt": 329,
+    "kanji": "眼",
+    "han_viet": "Nhãn",
+    "giai_thich": "Con mắt.",
+    "vi_du": "眼科(がんか: khoa mắt), 眼鏡(めがね: kính mắt)."
+  },
+  {
+    "stt": 330,
+    "kanji": "嫌",
+    "han_viet": "Hiềm",
+    "giai_thich": "Sự ghét bỏ, hiềm khích.",
+    "vi_du": "嫌がる(いやがる: tỏ ra ghét / không thích)."
+  },
+  {
+    "stt": 331,
+    "kanji": "固",
+    "han_viet": "Cố",
+    "giai_thich": "Cứng chắc, cố định.",
+    "vi_du": "固い(かたい: cứng), 固定 (こてい: cố định)."
+  },
+  {
+    "stt": 332,
+    "kanji": "麻",
+    "han_viet": "Ma",
+    "giai_thich": "Cây gai, vải gai, tê.",
+    "vi_du": "麻薬(まやく: ma túy), 摩擦(まさつ: ma sát)."
+  },
+  {
+    "stt": 333,
+    "kanji": "枯",
+    "han_viet": "Khô",
+    "giai_thich": "Héo khô, cạn nước.",
+    "vi_du": "枯れる(かれる: héo úa, tàn lụi)."
+  },
+  {
+    "stt": 334,
+    "kanji": "互",
+    "han_viet": "Hỗ",
+    "giai_thich": "Lẫn nhau, qua lại.",
+    "vi_du": "互いに(たがいに: lẫn nhau), 相互(そうご: tương hỗ)."
+  },
+  {
+    "stt": 335,
+    "kanji": "御",
+    "han_viet": "Ngự",
+    "giai_thich": "Kính ngữ, điều khiển.",
+    "vi_du": "御中 (おんちゅう: kính gửi)."
+  },
+  {
+    "stt": 336,
+    "kanji": "誤",
+    "han_viet": "Ngộ",
+    "giai_thich": "Lầm lẫn, sai sót.",
+    "vi_du": "誤解(ごかい: hiểu lầm), 誤差(ごさ: sai số)."
+  },
+  {
+    "stt": 337,
+    "kanji": "譲",
+    "han_viet": "Nhượng",
+    "giai_thich": "Nhường nhịn, nhượng bộ.",
+    "vi_du": "譲る(ゆずる: nhường, sang nhượng), 譲歩 (じょうほ: nhượng bộ)."
+  },
+  {
+    "stt": 338,
+    "kanji": "濃",
+    "han_viet": "Nùng",
+    "giai_thich": "Đậm đà, đặc (nước/màu).",
+    "vi_du": "濃い (こい: đậm, đặc), 濃度(のうど: nồng độ)."
+  },
+  {
+    "stt": 339,
+    "kanji": "港",
+    "han_viet": "Cảng",
+    "giai_thich": "Cảng biển, bến tàu.",
+    "vi_du": "港(みなと: cảng), 空港 (くうこう: sân bay)."
+  },
+  {
+    "stt": 340,
+    "kanji": "航",
+    "han_viet": "Hàng",
+    "giai_thich": "Hàng hải, bay lượn, đi thuyền.",
+    "vi_du": "航空 (こうくう: hàng không), 航海 (こうかい: hàng hải)."
+  },
+  {
+    "stt": 341,
+    "kanji": "香",
+    "han_viet": "Hương",
+    "giai_thich": "Mùi thơm.",
+    "vi_du": "香水(こうすい: nước hoa), 香り (かおり: hương thơm)."
+  },
+  {
+    "stt": 342,
+    "kanji": "康",
+    "han_viet": "Khang",
+    "giai_thich": "Khỏe mạnh, yên vui.",
+    "vi_du": "健康(けんこう: sức khỏe)."
+  },
+  {
+    "stt": 343,
+    "kanji": "購",
+    "han_viet": "Cấu",
+    "giai_thich": "Mua sắm, đặt mua.",
+    "vi_du": "購入(こうにゅう: mua vào), 購読(こうどく: đặt mua báo/tạp chí)."
+  },
+  {
+    "stt": 344,
+    "kanji": "江",
+    "han_viet": "Giang",
+    "giai_thich": "Sông lớn.",
+    "vi_du": "江戸(えど: Edo)."
+  },
+  {
+    "stt": 345,
+    "kanji": "講",
+    "han_viet": "Giảng",
+    "giai_thich": "Giảng giải, bài giảng.",
+    "vi_du": "講演(こうえん: bài diễn thuyết), 講義 (こうぎ: bài giảng)."
+  },
+  {
+    "stt": 346,
+    "kanji": "攻",
+    "han_viet": "Công",
+    "giai_thich": "Tấn công, đánh chiếm.",
+    "vi_du": "攻撃(こうげき: tấn công)."
+  },
+  {
+    "stt": 347,
+    "kanji": "硬",
+    "han_viet": "Ngạnh",
+    "giai_thich": "Cứng rắn.",
+    "vi_du": "硬貨(こうか: tiền xu), 硬い (かたい: cứng)."
+  },
+  {
+    "stt": 348,
+    "kanji": "紅",
+    "han_viet": "Hồng",
+    "giai_thich": "Màu đỏ.",
+    "vi_du": "紅茶(こうちゃ: trà đen)."
+  },
+  {
+    "stt": 349,
+    "kanji": "鉱",
+    "han_viet": "Khoáng",
+    "giai_thich": "Khoáng sản, quặng mỏ.",
+    "vi_du": "鉱山 (こうざん: mỏ quặng), 鉱物 (こうぶつ: khoáng vật)."
+  },
+  {
+    "stt": 350,
+    "kanji": "更",
+    "han_viet": "Canh",
+    "giai_thich": "Thay đổi, làm mới.",
+    "vi_du": "変更 (へんこう: thay đổi), 更新(こうしん: cập nhật, gia hạn)."
+  },
+  {
+    "stt": 351,
+    "kanji": "洪",
+    "han_viet": "Hồng",
+    "giai_thich": "Nước lớn, lũ lụt.",
+    "vi_du": "洪水(こうずい: lũ lụt), 洪水警報(こうずいけいほう: cảnh báo lũ lụt)."
+  },
+  {
+    "stt": 352,
+    "kanji": "荒",
+    "han_viet": "Hoang",
+    "giai_thich": "Hoang vu, bão táp, gồ ghề.",
+    "vi_du": "荒れる(あれる: bão bùng, hoang hóa), 荒らす(あらす: tàn phá)."
+  },
+  {
+    "stt": 353,
+    "kanji": "被",
+    "han_viet": "Bị",
+    "giai_thich": "Bị (chịu đựng điều gì đó không tốt).",
+    "vi_du": "被る(こうむる: chịu đựng, nhận), 被害 (ひがい: thiệt hại)."
+  },
+  {
+    "stt": 354,
+    "kanji": "越",
+    "han_viet": "Việt",
+    "giai_thich": "Vượt qua, đi qua.",
+    "vi_du": "越える(こえる: vượt qua), 引越し (ひっこし: chuyển nhà)."
+  },
+  {
+    "stt": 355,
+    "kanji": "超",
+    "han_viet": "Siêu",
+    "giai_thich": "Vượt quá mức, siêu cấp.",
+    "vi_du": "超える(こえる: vượt quá), 超過 (ちょうか: vượt mức)."
+  },
+  {
+    "stt": 356,
+    "kanji": "凍",
+    "han_viet": "Đống",
+    "giai_thich": "Đông cứng lại, đóng băng.",
+    "vi_du": "凍る (こおる: đóng băng), 冷凍 (れいとう: làm đông lạnh)."
+  },
+  {
+    "stt": 357,
+    "kanji": "刻",
+    "han_viet": "Khắc",
+    "giai_thich": "Khắc chữ, thời khắc.",
+    "vi_du": "刻む(きざむ: khắc, thái nhỏ), 時刻 (じこく: thời khắc)."
+  },
+  {
+    "stt": 358,
+    "kanji": "極",
+    "han_viet": "Cực",
+    "giai_thich": "Tột cùng, cực kỳ.",
+    "vi_du": "極まる(きわまる: cùng cực), 南極 (なんきょく: Nam Cực)."
+  },
+  {
+    "stt": 359,
+    "kanji": "凍",
+    "han_viet": "Đống",
+    "giai_thich": "Đông cứng, giá lạnh.",
+    "vi_du": "凍える(こごえる: đông cứng người, cóng)."
+  },
+  {
+    "stt": 360,
+    "kanji": "快",
+    "han_viet": "Khoái",
+    "giai_thich": "Sảng khoái, dễ chịu, vui vẻ.",
+    "vi_du": "快適 (かいてき: thoải mái), 快晴 (かいせい: trời quang mây tạnh)."
+  },
+  {
+    "stt": 361,
+    "kanji": "腰",
+    "han_viet": "Yêu",
+    "giai_thich": "Phần eo, thắt lưng.",
+    "vi_du": "腰(こし: eo, lưng), 腰痛 (ようつう: đau lưng)."
+  },
+  {
+    "stt": 362,
+    "kanji": "越",
+    "han_viet": "Việt",
+    "giai_thich": "Vượt qua.",
+    "vi_du": "越す(こす: vượt qua, chuyển nhà)."
+  },
+  {
+    "stt": 363,
+    "kanji": "超",
+    "han_viet": "Siêu",
+    "giai_thich": "Vượt quá.",
+    "vi_du": "超す(こす: vượt quá, quá mức)."
+  },
+  {
+    "stt": 364,
+    "kanji": "応",
+    "han_viet": "Ứng",
+    "giai_thich": "Đáp ứng, ứng phó.",
+    "vi_du": "応える(こたえる: đáp ứng, chịu đựng), 応援(おうえん: cổ vũ)."
+  },
+  {
+    "stt": 365,
+    "kanji": "骨",
+    "han_viet": "Cốt",
+    "giai_thich": "Xương.",
+    "vi_du": "骨(ほね: xương), 骨折(こっせつ: gãy xương)."
+  },
+  {
+    "stt": 366,
+    "kanji": "異",
+    "han_viet": "Dị",
+    "giai_thich": "Khác biệt, kỳ lạ.",
+    "vi_du": "異なる(ことなる: khác biệt), 異常 (いじょう: dị thường)."
+  },
+  {
+    "stt": 367,
+    "kanji": "拒",
+    "han_viet": "Cự",
+    "giai_thich": "Cự tuyệt, từ chối.",
+    "vi_du": "拒む(こばむ: cự tuyệt, từ chối), 拒絶 (きょぜつ: cự tuyệt)."
+  },
+  {
+    "stt": 368,
+    "kanji": "混",
+    "han_viet": "Hỗn",
+    "giai_thich": "Trộn lẫn, hỗn hợp.",
+    "vi_du": "混じる/混じる (まじる/こんじる: lẫn lộn), 混合(こんごう: hỗn hợp)."
+  },
+  {
+    "stt": 369,
+    "kanji": "込",
+    "han_viet": "Nhập / Cầm",
+    "giai_thich": "Chen chúc, đông đúc, nhét vào.",
+    "vi_du": "申し込む (もうしこむ: đăng ký)."
+  },
+  {
+    "stt": 370,
+    "kanji": "込",
+    "han_viet": "Nhập / Cầm",
+    "giai_thich": "Cho vào bên trong.",
+    "vi_du": "申し込む (もうしこむ: đăng ký)."
+  },
+  {
+    "stt": 371,
+    "kanji": "殺",
+    "han_viet": "Sát",
+    "giai_thich": "Giết, tàn sát.",
+    "vi_du": "殺す(ころす: giết), 殺人(さつじん: giết người)."
+  },
+  {
+    "stt": 372,
+    "kanji": "怖",
+    "han_viet": "Bố",
+    "giai_thich": "Sợ hãi, khiếp sợ.",
+    "vi_du": "怖い (こわい: đáng sợ), 恐怖 (きょうふ: sự sợ hãi)."
+  },
+  {
+    "stt": 373,
+    "kanji": "壊",
+    "han_viet": "Hoại",
+    "giai_thich": "Phá hủy, làm hỏng.",
+    "vi_du": "壊す(こわす: làm hỏng, phá vỡ)."
+  },
+  {
+    "stt": 374,
+    "kanji": "壊",
+    "han_viet": "Hoại",
+    "giai_thich": "Bị hỏng, sụp đổ.",
+    "vi_du": "壊れる(こわれる: bị hỏng, đổ vỡ)."
+  },
+  {
+    "stt": 375,
+    "kanji": "混",
+    "han_viet": "Hỗn",
+    "giai_thich": "Trộn lẫn, đông đúc.",
+    "vi_du": "混む(こむ: đông đúc), 混雑 (こんざつ: hỗn tạp, đông nghẹt)."
+  },
+  {
+    "stt": 376,
+    "kanji": "紺",
+    "han_viet": "Cáp",
+    "giai_thich": "Màu xanh đậm (xanh chàm).",
+    "vi_du": "紺色(こんいろ: màu xanh tím than)."
+  },
+  {
+    "stt": 377,
+    "kanji": "勤",
+    "han_viet": "Cần",
+    "giai_thich": "Chăm chỉ, làm việc.",
+    "vi_du": "勤務(きんむ: làm việc, trực ban)."
+  },
+  {
+    "stt": 378,
+    "kanji": "権",
+    "han_viet": "Quyền",
+    "giai_thich": "Quyền lực, quyền lợi.",
+    "vi_du": "権力(けんりょく: quyền lực)."
+  },
+  {
+    "stt": 379,
+    "kanji": "厳",
+    "han_viet": "Nghiêm",
+    "giai_thich": "Nghiêm ngặt.",
+    "vi_du": "厳しい(きびしい: nghiêm khắc)."
+  },
+  {
+    "stt": 380,
+    "kanji": "砂",
+    "han_viet": "Sa",
+    "giai_thich": "Cát.",
+    "vi_du": "砂(すな: cát), 砂漠(さばく: sa mạc)."
+  },
+  {
+    "stt": 381,
+    "kanji": "探",
+    "han_viet": "Thám",
+    "giai_thich": "Tìm kiếm, dò dẫm.",
+    "vi_du": "探す(さがす: tìm kiếm), 探検(たんけん: thám hiểm)."
+  },
+  {
+    "stt": 382,
+    "kanji": "債",
+    "han_viet": "Trái",
+    "giai_thich": "Nợ nần, khoản vay.",
+    "vi_du": "負債(ふさい: khoản nợ), 国債 (こくさい: trái phiếu chính phủ)."
+  },
+  {
+    "stt": 383,
+    "kanji": "財",
+    "han_viet": "Tài",
+    "giai_thich": "Tiền tài, tài sản.",
+    "vi_du": "財産(ざいさん: tài sản), 財務 (ざいむ: tài chính)."
+  },
+  {
+    "stt": 384,
+    "kanji": "殺",
+    "han_viet": "Sát",
+    "giai_thich": "Giết, triệt tiêu.",
+    "vi_du": "殺人(さつじん: giết người), 殺す(ころす: giết)."
+  },
+  {
+    "stt": 385,
+    "kanji": "際",
+    "han_viet": "Tế",
+    "giai_thich": "Dịp, cơ hội, giáp ranh.",
+    "vi_du": "国際(こくさい: quốc tế), 際限(さいげん: giới hạn)."
+  },
+  {
+    "stt": 386,
+    "kanji": "災",
+    "han_viet": "Tai",
+    "giai_thich": "Tai họa, tai ương.",
+    "vi_du": "災害(さいがい: tai họa, thảm họa), 火災 (かさい: hỏa hoạn)."
+  },
+  {
+    "stt": 387,
+    "kanji": "歳",
+    "han_viet": "Tuế",
+    "giai_thich": "Tuổi tác, năm.",
+    "vi_du": "二十歳(はたち: 20 tuổi), 歳暮 (せいぼ: quà cuối năm)."
+  },
+  {
+    "stt": 388,
+    "kanji": "彩",
+    "han_viet": "Thải",
+    "giai_thich": "Màu sắc, trang hoàng.",
+    "vi_du": "色彩(しきさい: sắc thái màu sắc), 彩色(さいしき: tô màu)."
+  },
+  {
+    "stt": 389,
+    "kanji": "僅",
+    "han_viet": "Cận",
+    "giai_thich": "Ít ỏi, chỉ một chút.",
+    "vi_du": "僅か (わずか: chỉ một chút, lượng nhỏ)."
+  },
+  {
+    "stt": 390,
+    "kanji": "裁",
+    "han_viet": "Tài",
+    "giai_thich": "Phán xét, cắt may.",
+    "vi_du": "裁く(さばく: phán xét, xử án), 裁縫 (さいほう: may vá)."
+  },
+  {
+    "stt": 391,
+    "kanji": "埼",
+    "han_viet": "Kỳ",
+    "giai_thich": "Mũi đất vươn ra biển (dùng trong tên tỉnh Saitama).",
+    "vi_du": "埼玉県(さいたまけん: tỉnh Saitama)."
+  },
+  {
+    "stt": 392,
+    "kanji": "財",
+    "han_viet": "Tài",
+    "giai_thich": "Tiền tài, tài chính.",
+    "vi_du": "財政(ざいせい: tài chính)."
+  },
+  {
+    "stt": 393,
+    "kanji": "剤",
+    "han_viet": "Tễ",
+    "giai_thich": "Thuốc (dạng điều chế), hóa chất.",
+    "vi_du": "薬剤(やくざい: dược phẩm), 洗剤 (せんざい: chất tẩy rửa)."
+  },
+  {
+    "stt": 394,
+    "kanji": "境",
+    "han_viet": "Cảnh",
+    "giai_thich": "Biên giới, ranh giới, hoàn cảnh.",
+    "vi_du": "境(さかい: ranh giới), 環境 (かんきょう: môi trường)."
+  },
+  {
+    "stt": 395,
+    "kanji": "栄",
+    "han_viet": "Vinh",
+    "giai_thich": "Vinh quang, thịnh vượng.",
+    "vi_du": "栄える(さかえる: phồn thịnh), 繁栄 (はんえい: phồn vinh)."
+  },
+  {
+    "stt": 396,
+    "kanji": "捜",
+    "han_viet": "Sưu",
+    "giai_thich": "Sưu tầm, tìm kiếm.",
+    "vi_du": "捜す(さがす: tìm kiếm - đồ vật bị mất), 捜査(そうさ: điều tra)."
+  },
+  {
+    "stt": 397,
+    "kanji": "盛",
+    "han_viet": "Thịnh",
+    "giai_thich": "Hưng thịnh, thịnh vượng, đầy đặn.",
+    "vi_du": "盛る(もる: thịnh vượng, vun đầy), 盛んな(さかんな: thịnh hành, phát đạt)."
+  },
+  {
+    "stt": 398,
+    "kanji": "盛",
+    "han_viet": "Thịnh",
+    "giai_thich": "Tràn đầy, phát triển mạnh.",
+    "vi_du": "盛ん(さかん: thịnh hành)."
+  },
+  {
+    "stt": 399,
+    "kanji": "崎",
+    "han_viet": "Ki",
+    "giai_thich": "Mũi đất, mỏm núi nhô ra.",
+    "vi_du": "崎(さき: mũi đất)."
+  },
+  {
+    "stt": 400,
+    "kanji": "割",
+    "han_viet": "Cát",
+    "giai_thich": "Cắt, chia nhỏ, nứt.",
+    "vi_du": "割く(さく: xé rách, chia cắt), 分割 (ぶんかつ: phân chia)."
+  }
+]

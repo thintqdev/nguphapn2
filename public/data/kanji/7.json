@@ -1,0 +1,702 @@
+[
+  {
+    "stt": 601,
+    "kanji": "象",
+    "han_viet": "Tượng",
+    "giai_thich": "Con voi, hình tượng.",
+    "vi_du": "象 (ぞう: con voi), 印象 (いんしょう: ấn tượng)."
+  },
+  {
+    "stt": 602,
+    "kanji": "憎",
+    "han_viet": "Tăng",
+    "giai_thich": "Ghét bỏ, căm ghét.",
+    "vi_du": "憎い(にくい: đáng ghét), 憎む (にくむ: căm ghét)."
+  },
+  {
+    "stt": 603,
+    "kanji": "像",
+    "han_viet": "Tượng",
+    "giai_thich": "Bức tượng, hình ảnh.",
+    "vi_du": "像 (ぞう: bức tượng), 画像 (がぞう: hình ảnh)."
+  },
+  {
+    "stt": 604,
+    "kanji": "即",
+    "han_viet": "Tức",
+    "giai_thich": "Ngay lập tức.",
+    "vi_du": "即座に(そくざに: ngay tức khắc), 即日 (そくじつ: trong ngày)."
+  },
+  {
+    "stt": 605,
+    "kanji": "損",
+    "han_viet": "Tổn",
+    "giai_thich": "Tổn thất, hư hỏng.",
+    "vi_du": "損する(そんする: tổn thất, lỗ), 損傷 (そんしょう: tổn thương)."
+  },
+  {
+    "stt": 606,
+    "kanji": "損",
+    "han_viet": "Tổn",
+    "giai_thich": "Làm hỏng, bị tổn hại.",
+    "vi_du": "損なう (そこなう: làm hỏng, làm tổn hại)."
+  },
+  {
+    "stt": 607,
+    "kanji": "背",
+    "han_viet": "Bối",
+    "giai_thich": "Tấm lưng, quay lưng lại.",
+    "vi_du": "背く(そむく: phản bội, quay lưng lại)."
+  },
+  {
+    "stt": 608,
+    "kanji": "背",
+    "han_viet": "Bối",
+    "giai_thich": "Quay lưng.",
+    "vi_du": "背ける(そむける: quay mặt đi, lảng tránh)."
+  },
+  {
+    "stt": 609,
+    "kanji": "損",
+    "han_viet": "Tổn",
+    "giai_thich": "Thiệt hại, tổn thất.",
+    "vi_du": "損(そん: lỗ, thiệt hại)."
+  },
+  {
+    "stt": 610,
+    "kanji": "尊",
+    "han_viet": "Tôn",
+    "giai_thich": "Tôn kính, quý giá.",
+    "vi_du": "尊敬 (そんけい: tôn kính), 尊い(とうとい/たとい: quý giá)."
+  },
+  {
+    "stt": 611,
+    "kanji": "孫",
+    "han_viet": "Tôn",
+    "giai_thich": "Cháu (nội/ngoại).",
+    "vi_du": "孫(まご: đứa cháu)."
+  },
+  {
+    "stt": 612,
+    "kanji": "苔",
+    "han_viet": "Đài",
+    "giai_thich": "Rêu phong.",
+    "vi_du": "苔(こけ/たい: rêu)."
+  },
+  {
+    "stt": 613,
+    "kanji": "態",
+    "han_viet": "Thái",
+    "giai_thich": "Trạng thái, bộ dạng.",
+    "vi_du": "状態(じょうたい: trạng thái), 態度 (たいど: thái độ)."
+  },
+  {
+    "stt": 614,
+    "kanji": "滞",
+    "han_viet": "Trệ",
+    "giai_thich": "Trì trệ, đọng lại.",
+    "vi_du": "滞る(とどのまる/たどる: trì trệ), 滞在 (たいざい: lưu trú)."
+  },
+  {
+    "stt": 615,
+    "kanji": "隊",
+    "han_viet": "Đội",
+    "giai_thich": "Đội ngũ, đoàn quân.",
+    "vi_du": "軍隊(ぐんたい: quân đội), 隊員 (たいいん: đội viên)."
+  },
+  {
+    "stt": 616,
+    "kanji": "絶",
+    "han_viet": "Tuyệt",
+    "giai_thich": "Cạn kiệt, ngắt quãng.",
+    "vi_du": "絶える(たえる: cạn kiệt), 絶滅 (ぜつめつ: tuyệt chủng)."
+  },
+  {
+    "stt": 617,
+    "kanji": "互",
+    "han_viet": "Hỗ",
+    "giai_thich": "Lẫn nhau.",
+    "vi_du": "互い(たがい: lẫn nhau), 互いに(たがいに: cùng nhau)."
+  },
+  {
+    "stt": 618,
+    "kanji": "宝",
+    "han_viet": "Bảo",
+    "giai_thich": "Bảo vật, quý giá.",
+    "vi_du": "宝(たから: báu vật, kho báu), 宝石(ほうせき: đá quý)."
+  },
+  {
+    "stt": 619,
+    "kanji": "滝",
+    "han_viet": "Lung / Thác",
+    "giai_thich": "Thác nước.",
+    "vi_du": "滝(たき: thác nước)."
+  },
+  {
+    "stt": 620,
+    "kanji": "沢",
+    "han_viet": "Trạch",
+    "giai_thich": "Đầm lầy, ơn huệ.",
+    "vi_du": "沢 (さわ: thung lũng ẩm ướt), 贅沢 (ぜいたく: xa xỉ)."
+  },
+  {
+    "stt": 621,
+    "kanji": "抱",
+    "han_viet": "Bão",
+    "giai_thich": "Ôm, bế, ấp ủ.",
+    "vi_du": "抱く(だく / いだく: ôm, ấp ủ), 抱負(ほうふ: hoài bão)."
+  },
+  {
+    "stt": 622,
+    "kanji": "携",
+    "han_viet": "Huề",
+    "giai_thich": "Mang theo, cầm tay, liên kết.",
+    "vi_du": "携える(たずさえる: mang theo, dắt theo), 携帯 (けいたい: mang theo)."
+  },
+  {
+    "stt": 623,
+    "kanji": "携",
+    "han_viet": "Huề",
+    "giai_thich": "Tham gia vào, làm việc liên quan.",
+    "vi_du": "携わる(たずさわる: tham gia vào, làm công việc gì)."
+  },
+  {
+    "stt": 624,
+    "kanji": "訪",
+    "han_viet": "Phòng",
+    "giai_thich": "Thăm viếng, ghé thăm.",
+    "vi_du": "訪ねる(たずねる: thăm, ghé thăm), 訪問 (ほうもん: thăm viếng)."
+  },
+  {
+    "stt": 625,
+    "kanji": "畳",
+    "han_viet": "Điệp",
+    "giai_thich": "Chiếu tatami, gập lại.",
+    "vi_du": "畳(たたみ: chiếu tatami), 畳む(たためる: gấp lại)."
+  },
+  {
+    "stt": 626,
+    "kanji": "畳",
+    "han_viet": "Điệp",
+    "giai_thich": "Gập lại, xếp lại.",
+    "vi_du": "畳む(たたむ: gập quần áo, xếp lại)."
+  },
+  {
+    "stt": 627,
+    "kanji": "絶",
+    "han_viet": "Tuyệt",
+    "giai_thich": "Cạn kiệt, đứt đoạn, tuyệt diệu.",
+    "vi_du": "絶つ(たつ: cắt đứt, chấm dứt), 絶対 (ぜったい: tuyệt đối)."
+  },
+  {
+    "stt": 628,
+    "kanji": "裁",
+    "han_viet": "Tài",
+    "giai_thich": "Phán quyết, cắt may.",
+    "vi_du": "裁つ(たつ: cắt may), 裁判 (さいばん: xét xử)."
+  },
+  {
+    "stt": 629,
+    "kanji": "脱",
+    "han_viet": "Thoát",
+    "giai_thich": "Cởi bỏ, thoát ra.",
+    "vi_du": "脱ぐ(ぬぐ: cởi quần áo), 脱出 (だっしゅつ: thoát thân)."
+  },
+  {
+    "stt": 630,
+    "kanji": "尊",
+    "han_viet": "Tôn",
+    "giai_thich": "Tôn kính, quý giá.",
+    "vi_du": "尊い(とうとい/たとい: quý giá, cao quý), 尊敬 (そんけい: tôn kính)."
+  },
+  {
+    "stt": 631,
+    "kanji": "尊",
+    "han_viet": "Tôn",
+    "giai_thich": "Tôn trọng, sùng kính.",
+    "vi_du": "尊ぶ(とうとぶ/たとうぶ: tôn trọng, coi trọng)."
+  },
+  {
+    "stt": 632,
+    "kanji": "縦",
+    "han_viet": "Túng",
+    "giai_thich": "Chiều dọc, tung hoành.",
+    "vi_du": "縦(たて: chiều dọc), 縦書き(たてがき: viết dọc)."
+  },
+  {
+    "stt": 633,
+    "kanji": "頼",
+    "han_viet": "Lại",
+    "giai_thich": "Nhờ cậy, tin cậy.",
+    "vi_du": "頼む(たのむ: nhờ vả), 頼もしい(たのもしい: đáng tin cậy)."
+  },
+  {
+    "stt": 634,
+    "kanji": "頼",
+    "han_viet": "Lại",
+    "giai_thich": "Đáng tin cậy, đầy hy vọng.",
+    "vi_du": "頼もしい(たのもしい: đáng tin cậy, vững chãi)."
+  },
+  {
+    "stt": 635,
+    "kanji": "民",
+    "han_viet": "Dân",
+    "giai_thich": "Người dân, dân chúng.",
+    "vi_du": "民(たみ: dân chúng), 国民(こくみん: quốc dân)."
+  },
+  {
+    "stt": 636,
+    "kanji": "絶",
+    "han_viet": "Tuyệt",
+    "giai_thich": "Dứt bỏ, hoàn toàn không còn.",
+    "vi_du": "絶やす(たやす: làm cạn kiệt, xóa sạch)."
+  },
+  {
+    "stt": 637,
+    "kanji": "頼",
+    "han_viet": "Lại",
+    "giai_thich": "Trông cậy, dựa dẫm vào.",
+    "vi_du": "頼る(たよる: dựa dẫm, trông cậy), 頼り(たより: thư tín / sự tin cậy)."
+  },
+  {
+    "stt": 638,
+    "kanji": "誰",
+    "han_viet": "Thùy",
+    "giai_thich": "Ai (đại từ để hỏi).",
+    "vi_du": "誰(だれ: ai), 誰か (だれか: ai đó)."
+  },
+  {
+    "stt": 639,
+    "kanji": "端",
+    "han_viet": "Đoan",
+    "giai_thich": "Đầu mút, rìa, mép.",
+    "vi_du": "端(はし: mép, đầu), 先端(せんたん: mũi nhọn, tiên tiến)."
+  },
+  {
+    "stt": 640,
+    "kanji": "誕",
+    "han_viet": "Đản",
+    "giai_thich": "Sinh ra, ngày sinh.",
+    "vi_du": "誕生日 (たんじょうび: sinh nhật), 生誕 (せいたん: sự giáng sinh/sinh ra)."
+  },
+  {
+    "stt": 641,
+    "kanji": "炭",
+    "han_viet": "Thán",
+    "giai_thich": "Than củi.",
+    "vi_du": "炭(すみ: than), 石炭(せきたん: than đá)."
+  },
+  {
+    "stt": 642,
+    "kanji": "値",
+    "han_viet": "Trị",
+    "giai_thich": "Giá trị, giá cả.",
+    "vi_du": "値(ち/あたい: giá trị), 価値 (かち: giá trị)."
+  },
+  {
+    "stt": 643,
+    "kanji": "致",
+    "han_viet": "Trí",
+    "giai_thich": "Gây ra, làm (khiêm nhường ngữ).",
+    "vi_du": "致す(いたす: làm), 一致 (いっち: nhất trí)."
+  },
+  {
+    "stt": 644,
+    "kanji": "恥",
+    "han_viet": "Sĩ",
+    "giai_thich": "Sự xấu hổ, hổ thẹn.",
+    "vi_du": "恥ずかしい (はずかしい: xấu hổ), 恥じる (はじる: hổ thẹn)."
+  },
+  {
+    "stt": 645,
+    "kanji": "違",
+    "han_viet": "Vi",
+    "giai_thich": "Khác biệt, sai khác.",
+    "vi_du": "違う(ちがう: khác, nhầm), 間違い(まちがい: lỗi lầm)."
+  },
+  {
+    "stt": 646,
+    "kanji": "違",
+    "han_viet": "Vi",
+    "giai_thich": "Làm cho khác đi, làm sai lệch.",
+    "vi_du": "違える(ちがえる: làm khác đi, thay đổi)."
+  },
+  {
+    "stt": 647,
+    "kanji": "契",
+    "han_viet": "Khế",
+    "giai_thich": "Khế ước, cam kết.",
+    "vi_du": "契る(ちぎる: thề thốt, kết nghĩa), 契約 (けいやく: hợp đồng)."
+  },
+  {
+    "stt": 648,
+    "kanji": "畜",
+    "han_viet": "Súc",
+    "giai_thich": "Gia súc, nuôi thú vật.",
+    "vi_du": "家畜 (かちく: gia súc), 畜産(ちくさん: ngành chăn nuôi)."
+  },
+  {
+    "stt": 649,
+    "kanji": "縮",
+    "han_viet": "Súc",
+    "giai_thich": "Co lại, rút ngắn.",
+    "vi_du": "縮まる(ちぢまる: bị co lại), 縮小 (しゅくしょう: thu nhỏ)."
+  },
+  {
+    "stt": 650,
+    "kanji": "縮",
+    "han_viet": "Súc",
+    "giai_thich": "Làm co lại.",
+    "vi_du": "縮める(ちぢめる: rút ngắn, thu nhỏ)."
+  },
+  {
+    "stt": 651,
+    "kanji": "縮",
+    "han_viet": "Súc",
+    "giai_thich": "Co lại, quăn lại.",
+    "vi_du": "縮れる(ちぢれる: xoăn, quăn)."
+  },
+  {
+    "stt": 652,
+    "kanji": "縮",
+    "han_viet": "Súc",
+    "giai_thich": "Trải rộng, làm tơi.",
+    "vi_du": "縮らす(ちぢらす)."
+  },
+  {
+    "stt": 653,
+    "kanji": "縮",
+    "han_viet": "Súc",
+    "giai_thich": "Bị co rút.",
+    "vi_du": "縮れる(ちぢれる)."
+  },
+  {
+    "stt": 654,
+    "kanji": "秋",
+    "han_viet": "Thu",
+    "giai_thich": "Mùa thu.",
+    "vi_du": "秋 (あき: mùa thu), 秋刀魚(さんま: cá thu đao)."
+  },
+  {
+    "stt": 655,
+    "kanji": "荘",
+    "han_viet": "Trang",
+    "giai_thich": "Nhà trọ, trang hoàng.",
+    "vi_du": "荘厳(しょうごん: trang nghiêm)."
+  },
+  {
+    "stt": 656,
+    "kanji": "沖",
+    "han_viet": "Trùng",
+    "giai_thich": "Ngoài khơi.",
+    "vi_du": "沖合(おきあい: ngoài khơi)."
+  },
+  {
+    "stt": 657,
+    "kanji": "宙",
+    "han_viet": "Trụ",
+    "giai_thich": "Không gian, bầu trời.",
+    "vi_du": "宇宙(うちゅう: vũ trụ)."
+  },
+  {
+    "stt": 658,
+    "kanji": "落",
+    "han_viet": "Lạc",
+    "giai_thich": "Rơi rụng, rớt.",
+    "vi_du": "落ちる(おちる: rơi, rớt), 落ち着く(おちつく: bình tĩnh)."
+  },
+  {
+    "stt": 659,
+    "kanji": "緒",
+    "han_viet": "Tự",
+    "giai_thich": "Mối nối, dây buộc.",
+    "vi_du": "一緒に (いっしょに: cùng nhau)."
+  },
+  {
+    "stt": 660,
+    "kanji": "帳",
+    "han_viet": "Trướng",
+    "giai_thich": "Sổ sách, màn trướng.",
+    "vi_du": "手帳 (てちょう: sổ tay), 帳面(ちょうめん: vở ghi chép)."
+  },
+  {
+    "stt": 661,
+    "kanji": "張",
+    "han_viet": "Trương",
+    "giai_thich": "Căng ra, kéo dài, trương lực.",
+    "vi_du": "張る(はる: căng ra, dán), 緊張(きんちょう: căng thẳng)."
+  },
+  {
+    "stt": 662,
+    "kanji": "庁",
+    "han_viet": "Sảnh",
+    "giai_thich": "Cơ quan hành chính cấp bộ cục.",
+    "vi_du": "庁舎(ちょうしゃ: trụ sở cơ quan), 気象庁(きしょうちょう: Cục Khí tượng)."
+  },
+  {
+    "stt": 663,
+    "kanji": "超",
+    "han_viet": "Siêu",
+    "giai_thich": "Vượt quá.",
+    "vi_du": "超過(ちょうか: vượt mức)."
+  },
+  {
+    "stt": 664,
+    "kanji": "頂",
+    "han_viet": "Đính",
+    "giai_thich": "Đỉnh núi, nhận.",
+    "vi_du": "頂上(ちょうじょう: đỉnh núi)."
+  },
+  {
+    "stt": 665,
+    "kanji": "丁目",
+    "han_viet": "Đinh",
+    "giai_thich": "Khu phố, con số đếm (nhà cửa).",
+    "vi_du": "丁寧 (ていねい: lịch sự, cẩn thận), 丁目 (ちょうめ: khu phố)."
+  },
+  {
+    "stt": 666,
+    "kanji": "散",
+    "han_viet": "Tán",
+    "giai_thich": "Phân tán, tản mát.",
+    "vi_du": "散かす(ちらかす: vứt bừa bãi, làm rải rác)."
+  },
+  {
+    "stt": 667,
+    "kanji": "散",
+    "han_viet": "Tán",
+    "giai_thich": "Bị phân tán, bừa bộn.",
+    "vi_du": "散かる(ちらかる: bừa bộn, lộn xộn)."
+  },
+  {
+    "stt": 668,
+    "kanji": "散",
+    "han_viet": "Tán",
+    "giai_thich": "Rải rác, làm tản ra.",
+    "vi_du": "散らす(ちらす: làm tản mác, rải rác)."
+  },
+  {
+    "stt": 669,
+    "kanji": "散",
+    "han_viet": "Tán",
+    "giai_thich": "Rơi rụng, tan tác.",
+    "vi_du": "散る(ちる: rụng, tàn)."
+  },
+  {
+    "stt": 670,
+    "kanji": "賃",
+    "han_viet": "Nhậm",
+    "giai_thich": "Tiền thuê, tiền công.",
+    "vi_du": "賃貸(ちんたい: cho thuê), 運賃 (うんちん: cước phí)."
+  },
+  {
+    "stt": 671,
+    "kanji": "沈",
+    "han_viet": "Trầm",
+    "giai_thich": "Chìm đắm.",
+    "vi_du": "沈む(しずむ: chìm, lặn)."
+  },
+  {
+    "stt": 672,
+    "kanji": "珍",
+    "han_viet": "Trân",
+    "giai_thich": "Quý hiếm, kỳ lạ.",
+    "vi_du": "珍しい(めずらしい: hiếm, lạ), 珍客(ちんきゃく: khách quý)."
+  },
+  {
+    "stt": 673,
+    "kanji": "津",
+    "han_viet": "Tân",
+    "giai_thich": "Bến phà, sóng thần.",
+    "vi_du": "津波 (つなみ: sóng thần)."
+  },
+  {
+    "stt": 674,
+    "kanji": "塚",
+    "han_viet": "Trủng",
+    "giai_thich": "Gò đất, ngôi mộ cổ.",
+    "vi_du": "塚(つか: gò đất, nấm mồ)."
+  },
+  {
+    "stt": 675,
+    "kanji": "捕",
+    "han_viet": "Bộ",
+    "giai_thich": "Bắt giữ.",
+    "vi_du": "捕らえる (とらえる: bắt giữ, nắm bắt)."
+  },
+  {
+    "stt": 676,
+    "kanji": "捕",
+    "han_viet": "Bộ",
+    "giai_thich": "Bị bắt, tóm được.",
+    "vi_du": "捕まる(つかまる: bị bắt, bám vào)."
+  },
+  {
+    "stt": 677,
+    "kanji": "疲",
+    "han_viet": "Bì",
+    "giai_thich": "Mệt mỏi.",
+    "vi_du": "疲れる(つかれる: mệt mỏi), 疲労 (ひろう: sự mệt mỏi)."
+  },
+  {
+    "stt": 678,
+    "kanji": "就",
+    "han_viet": "Tựu",
+    "giai_thich": "Tiến đến, đạt được.",
+    "vi_du": "就く(つく: đảm nhận, tiến vào)."
+  },
+  {
+    "stt": 679,
+    "kanji": "就",
+    "han_viet": "Tựu",
+    "giai_thich": "Gắn với, đính vào.",
+    "vi_du": "結びつく (むすびつく: liên kết)."
+  },
+  {
+    "stt": 680,
+    "kanji": "筒",
+    "han_viet": "Đồng",
+    "giai_thich": "Cái ống (tre/nước).",
+    "vi_du": "筒(つつ: cái ống), 封筒 (ふうとう: phong bì)."
+  },
+  {
+    "stt": 681,
+    "kanji": "勤",
+    "han_viet": "Cần",
+    "giai_thich": "Làm việc, cống hiến.",
+    "vi_du": "勤まる(つとまる: có thể đảm nhận)."
+  },
+  {
+    "stt": 682,
+    "kanji": "務",
+    "han_viet": "Vụ",
+    "giai_thich": "Nhiệm vụ, công việc.",
+    "vi_du": "務まる(つとまる: hoàn thành nhiệm vụ)."
+  },
+  {
+    "stt": 683,
+    "kanji": "勤",
+    "han_viet": "Cần",
+    "giai_thich": "Làm việc công sở.",
+    "vi_du": "勤める(つとめる: làm việc)."
+  },
+  {
+    "stt": 684,
+    "kanji": "務",
+    "han_viet": "Vụ",
+    "giai_thich": "Cố gắng, làm nhiệm vụ.",
+    "vi_du": "努める(つとめる: nỗ lực, cố gắng)."
+  },
+  {
+    "stt": 685,
+    "kanji": "募",
+    "han_viet": "Mộ",
+    "giai_thich": "Chiêu mộ, quyên góp.",
+    "vi_du": "募る(つのる: chiêu mộ, ngày càng mạnh lên)."
+  },
+  {
+    "stt": 686,
+    "kanji": "粒",
+    "han_viet": "Lạp",
+    "giai_thich": "Hạt (gạo, mưa...).",
+    "vi_du": "粒 (つぶ: hạt), 雨粒(あまつぶ: hạt mưa)."
+  },
+  {
+    "stt": 687,
+    "kanji": "詰",
+    "han_viet": "Cật",
+    "giai_thich": "Chật chội, tắc nghẽn, bị kẹt.",
+    "vi_du": "詰まる(つまる: bị tắc, bị kẹt, đầy ắp)."
+  },
+  {
+    "stt": 688,
+    "kanji": "詰",
+    "han_viet": "Cật",
+    "giai_thich": "Nhồi nhét, đóng gói.",
+    "vi_du": "詰める(つめる: đóng gói, nhồi)."
+  },
+  {
+    "stt": 689,
+    "kanji": "詰",
+    "han_viet": "Cật",
+    "giai_thich": "Sự kẹt, đóng gói.",
+    "vi_du": "詰め (つめ: sự đóng gói)."
+  },
+  {
+    "stt": 690,
+    "kanji": "庭",
+    "han_viet": "Đình",
+    "giai_thich": "Sân vườn.",
+    "vi_du": "庭 (にわ: khu vườn), 家庭 (かてい: gia đình)."
+  },
+  {
+    "stt": 691,
+    "kanji": "停",
+    "han_viet": "Đình",
+    "giai_thich": "Dừng lại, đình chỉ.",
+    "vi_du": "停電(ていでん: mất điện), 停留所 (ていりゅうじょ: trạm dừng xe buýt)."
+  },
+  {
+    "stt": 692,
+    "kanji": "丁",
+    "han_viet": "Đinh",
+    "giai_thich": "Phường phố, quân lính.",
+    "vi_du": "丁(ちょう: con phố / đơn vị đếm)."
+  },
+  {
+    "stt": 693,
+    "kanji": "泥",
+    "han_viet": "Nê",
+    "giai_thich": "Bùn lầy.",
+    "vi_du": "泥(どろ: bùn), 泥棒(どろぼう: kẻ trộm)."
+  },
+  {
+    "stt": 694,
+    "kanji": "適",
+    "han_viet": "Thích",
+    "giai_thich": "Thích hợp, phù hợp.",
+    "vi_du": "適当(てきとう: phù hợp), 適切 (てきせつ: thích hợp)."
+  },
+  {
+    "stt": 695,
+    "kanji": "満",
+    "han_viet": "Mãn",
+    "giai_thich": "Đầy đủ, thỏa mãn.",
+    "vi_du": "満足(まんぞく: hài lòng), 満員 (まんいん: đầy người)."
+  },
+  {
+    "stt": 696,
+    "kanji": "敵",
+    "han_viet": "Địch",
+    "giai_thich": "Kẻ thù, đối thủ.",
+    "vi_du": "敵(てき: kẻ thù), 敵対 (てきたい: đối địch)."
+  },
+  {
+    "stt": 697,
+    "kanji": "徹",
+    "han_viet": "Triệt",
+    "giai_thich": "Xuyên suốt, triệt để.",
+    "vi_du": "徹底(てってい: triệt để)."
+  },
+  {
+    "stt": 698,
+    "kanji": "照",
+    "han_viet": "Chiếu",
+    "giai_thich": "Chiếu sáng, soi rọi.",
+    "vi_du": "照らす (てらす: chiếu sáng, soi chiếu)."
+  },
+  {
+    "stt": 699,
+    "kanji": "照",
+    "han_viet": "Chiếu",
+    "giai_thich": "Chiếu sáng, rọi.",
+    "vi_du": "照る(てる: chiếu sáng - mặt trời)."
+  },
+  {
+    "stt": 700,
+    "kanji": "照",
+    "han_viet": "Chiếu",
+    "giai_thich": "Xấu hổ, đỏ mặt.",
+    "vi_du": "照れる(てれる: ngượng ngùng, xấu hổ)."
+  }
+]

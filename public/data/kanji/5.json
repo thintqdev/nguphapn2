@@ -1,0 +1,702 @@
+[
+  {
+    "stt": 401,
+    "kanji": "咲",
+    "han_viet": "Tiếu",
+    "giai_thich": "Hoa nở.",
+    "vi_du": "咲く(さく: hoa nở), 満開 (まんかい: nở rộ)."
+  },
+  {
+    "stt": 402,
+    "kanji": "策",
+    "han_viet": "Sách",
+    "giai_thich": "Kế sách, chiến lược.",
+    "vi_du": "政策(せいさく: chính sách), 対策 (たいさく: đối sách)."
+  },
+  {
+    "stt": 403,
+    "kanji": "酢",
+    "han_viet": "Tạc",
+    "giai_thich": "Giấm ăn.",
+    "vi_du": "酢(す: giấm), 酢豚 (すぶた: thịt lợn xào chua ngọt)."
+  },
+  {
+    "stt": 404,
+    "kanji": "桜",
+    "han_viet": "Anh",
+    "giai_thich": "Hoa anh đào.",
+    "vi_du": "桜(さくら: hoa anh đào), 桜色(さくらいろ: màu hoa anh đào)."
+  },
+  {
+    "stt": 405,
+    "kanji": "叫",
+    "han_viet": "Khiếu",
+    "giai_thich": "Kêu la, hét.",
+    "vi_du": "叫ぶ(さけぶ: gào thét, kêu to)."
+  },
+  {
+    "stt": 406,
+    "kanji": "刺",
+    "han_viet": "Thích",
+    "giai_thich": "Đâm, chích, gai nhọn.",
+    "vi_du": "刺す(さす: đâm, chích, cắm)."
+  },
+  {
+    "stt": 407,
+    "kanji": "刺",
+    "han_viet": "Thích",
+    "giai_thich": "Đâm, chọc.",
+    "vi_du": "刺す(さす: đâm, chích, cắm)."
+  },
+  {
+    "stt": 408,
+    "kanji": "誘",
+    "han_viet": "Dụ",
+    "giai_thich": "Rủ rê, lôi kéo, dụ dỗ.",
+    "vi_du": "誘う(さそう: rủ rê, mời gọi), 誘導 (ゆうどう: dẫn dắt)."
+  },
+  {
+    "stt": 409,
+    "kanji": "札",
+    "han_viet": "Trát",
+    "giai_thich": "Thẻ bài, tờ tiền giấy.",
+    "vi_du": "札 (ふだ: thẻ bài), お札 (おさつ: tiền giấy)."
+  },
+  {
+    "stt": 410,
+    "kanji": "殺",
+    "han_viet": "Sát",
+    "giai_thich": "Giết, triệt tiêu.",
+    "vi_du": "殺す(ころす: giết), 自殺(じさつ: tự sát)."
+  },
+  {
+    "stt": 411,
+    "kanji": "察",
+    "han_viet": "Sát",
+    "giai_thich": "Quan sát, phỏng đoán, xét rõ.",
+    "vi_du": "警察 (けいさつ: cảnh sát), 観察 (かんさつ: quan sát)."
+  },
+  {
+    "stt": 412,
+    "kanji": "刷",
+    "han_viet": "Loát",
+    "giai_thich": "In ấn, chải/quét.",
+    "vi_du": "刷る(する: in ấn), 印刷 (いんさつ: in ấn)."
+  },
+  {
+    "stt": 413,
+    "kanji": "雑",
+    "han_viet": "Tạp",
+    "giai_thich": "Hỗn tạp, nhiều thứ lộn xộn.",
+    "vi_du": "雑音 (ざつおん: tạp âm), 雑誌 (ざっし: tạp chí)."
+  },
+  {
+    "stt": 414,
+    "kanji": "裁",
+    "han_viet": "Tài",
+    "giai_thich": "Phán quyết, cắt may.",
+    "vi_du": "裁く(さばく: xử án, phán xử), 裁判 (さいばん: phiên tòa xét xử)."
+  },
+  {
+    "stt": 415,
+    "kanji": "更",
+    "han_viet": "Canh",
+    "giai_thich": "Thay đổi, làm mới.",
+    "vi_du": "更に(さらに: hơn nữa), 更新(こうしん: cập nhật làm mới)."
+  },
+  {
+    "stt": 416,
+    "kanji": "沢",
+    "han_viet": "Trạch",
+    "giai_thich": "Đầm lầy, ơn huệ.",
+    "vi_du": "沢(さわ: đầm lầy, thung lũng ẩm ướt), 光沢 (こうたく: độ bóng)."
+  },
+  {
+    "stt": 417,
+    "kanji": "騒",
+    "han_viet": "Tao",
+    "giai_thich": "Ồn ào, náo động, xao động.",
+    "vi_du": "騒ぐ(さわぐ: làm ồn, náo động), 騒音 (そうおん: tiếng ồn)."
+  },
+  {
+    "stt": 418,
+    "kanji": "触",
+    "han_viet": "Xúc",
+    "giai_thich": "Sờ, chạm vào.",
+    "vi_du": "触る(さわる: sờ, chạm vào), 接触(せっしょく: tiếp xúc)."
+  },
+  {
+    "stt": 419,
+    "kanji": "参",
+    "han_viet": "Tham",
+    "giai_thich": "Tham gia, đi đến (đền/chùa).",
+    "vi_du": "参る(まいる: đi đến / khiêm nhường ngữ), 参加 (さんか: tham gia)."
+  },
+  {
+    "stt": 420,
+    "kanji": "傘",
+    "han_viet": "Tản",
+    "giai_thich": "Cái ô, cái dù.",
+    "vi_du": "傘(かさ: cái ô)."
+  },
+  {
+    "stt": 421,
+    "kanji": "散",
+    "han_viet": "Tán",
+    "giai_thich": "Rơi rụng, phân tán.",
+    "vi_du": "散る(ちる: rơi rụng, tàn), 散歩 (さんぽ: đi dạo)."
+  },
+  {
+    "stt": 422,
+    "kanji": "誌",
+    "han_viet": "Chí",
+    "giai_thich": "Ghi chép, tạp chí.",
+    "vi_du": "雑誌 (ざっし: tạp chí), 記念誌(きねんし: kỷ niệm chí/sách kỷ niệm)."
+  },
+  {
+    "stt": 423,
+    "kanji": "姿",
+    "han_viet": "Tư",
+    "giai_thich": "Dáng vẻ, hình dáng.",
+    "vi_du": "姿(すがた: dáng vẻ), 姿勢 (しせい: tư thế)."
+  },
+  {
+    "stt": 424,
+    "kanji": "士",
+    "han_viet": "Sĩ",
+    "giai_thich": "Kẻ sĩ, người có học thức.",
+    "vi_du": "博士(はかせ/はくし: tiến sĩ), 弁護士 (べんごし: luật sư)."
+  },
+  {
+    "stt": 425,
+    "kanji": "資",
+    "han_viet": "Tư",
+    "giai_thich": "Tài sản, vốn, tư liệu.",
+    "vi_du": "資金(しきん: vốn), 資料(しりょう: tài liệu)."
+  },
+  {
+    "stt": 426,
+    "kanji": "氏",
+    "han_viet": "Thị",
+    "giai_thich": "Họ, dòng họ.",
+    "vi_du": "氏名 (しめい: họ tên), 氏(し: ngài/ông)."
+  },
+  {
+    "stt": 427,
+    "kanji": "詩",
+    "han_viet": "Thi",
+    "giai_thich": "Thơ ca.",
+    "vi_du": "詩 (し: thơ), 詩人 (しじん: nhà thơ)."
+  },
+  {
+    "stt": 428,
+    "kanji": "司",
+    "han_viet": "Tư",
+    "giai_thich": "Cai quản, cơ quan.",
+    "vi_du": "司会(しかい: người dẫn chương trình/MC), 司法(しほう: tư pháp)."
+  },
+  {
+    "stt": 429,
+    "kanji": "脂",
+    "han_viet": "Chi",
+    "giai_thich": "Mỡ, chất béo.",
+    "vi_du": "脂肪(しぼう: chất béo, mỡ)."
+  },
+  {
+    "stt": 430,
+    "kanji": "視",
+    "han_viet": "Thị",
+    "giai_thich": "Nhìn, quan sát.",
+    "vi_du": "視力(しりょく: thị lực), 視野(しや: tầm nhìn)."
+  },
+  {
+    "stt": 431,
+    "kanji": "刺",
+    "han_viet": "Thích",
+    "giai_thich": "Đâm, chích, thẻ danh thiếp.",
+    "vi_du": "名刺 (めいし: danh thiếp), 刺激(しげき: kích thích)."
+  },
+  {
+    "stt": 432,
+    "kanji": "枝",
+    "han_viet": "Chi",
+    "giai_thich": "Cành cây.",
+    "vi_du": "枝(えだ: cành cây)."
+  },
+  {
+    "stt": 433,
+    "kanji": "紫",
+    "han_viet": "Tử",
+    "giai_thich": "Màu tím.",
+    "vi_du": "紫(むらさき: màu tím), 紫外線 (しがいせん: tia cực tím)."
+  },
+  {
+    "stt": 434,
+    "kanji": "飼",
+    "han_viet": "Tự",
+    "giai_thich": "Nuôi dưỡng gia súc/thú cưng.",
+    "vi_du": "飼う(かう: nuôi động vật), 飼育 (しいく: chăn nuôi)."
+  },
+  {
+    "stt": 435,
+    "kanji": "伺",
+    "han_viet": "Tý",
+    "giai_thich": "Thăm hỏi, thỉnh cầu (khiêm nhường ngữ).",
+    "vi_du": "伺う(うかがう: đến thăm / hỏi thăm)."
+  },
+  {
+    "stt": 436,
+    "kanji": "詞",
+    "han_viet": "Từ",
+    "giai_thich": "Lời ca, từ ngữ.",
+    "vi_du": "歌詞(かし: lời bài hát), 動詞(どうし: động từ)."
+  },
+  {
+    "stt": 437,
+    "kanji": "除",
+    "han_viet": "Trừ",
+    "giai_thich": "Loại bỏ, trừ ra.",
+    "vi_du": "除く(のぞく: loại trừ, lược bỏ), 掃除 (そうじ: dọn dẹp)."
+  },
+  {
+    "stt": 438,
+    "kanji": "似",
+    "han_viet": "Tự",
+    "giai_thich": "Giống nhau.",
+    "vi_du": "似合う(にあう: hợp, xứng), 似る (にる: giống)."
+  },
+  {
+    "stt": 439,
+    "kanji": "鹿",
+    "han_viet": "Lộc",
+    "giai_thich": "Con hươu.",
+    "vi_du": "鹿(しか: con hươu), 奈良の鹿(ならのしか: hươu ở Nara)."
+  },
+  {
+    "stt": 440,
+    "kanji": "敷",
+    "han_viet": "Phu",
+    "giai_thich": "Trải ra, lát (đường, sàn).",
+    "vi_du": "敷く(しく: trải, lát), 敷地(しきち: khu đất)."
+  },
+  {
+    "stt": 441,
+    "kanji": "滴",
+    "han_viet": "Tích",
+    "giai_thich": "Giọt nước, nhỏ giọt.",
+    "vi_du": "滴る(したたる: nhỏ giọt), 水滴 (すいてき: giọt nước)."
+  },
+  {
+    "stt": 442,
+    "kanji": "沈",
+    "han_viet": "Trầm",
+    "giai_thich": "Chìm đắm, lặn xuống.",
+    "vi_du": "沈む(しずむ: chìm, lặn, buồn bã)."
+  },
+  {
+    "stt": 443,
+    "kanji": "沈",
+    "han_viet": "Trầm",
+    "giai_thich": "Nhấn chìm, làm chìm.",
+    "vi_du": "沈める(しずめる: làm chìm, nhấn xuống)."
+  },
+  {
+    "stt": 444,
+    "kanji": "舌",
+    "han_viet": "Thiệt",
+    "giai_thich": "Cái lưỡi.",
+    "vi_du": "舌(した: cái lưỡi), 毒舌(どくぜつ: miệng lưỡi cay độc)."
+  },
+  {
+    "stt": 445,
+    "kanji": "従",
+    "han_viet": "Tòng",
+    "giai_thich": "Theo, tuân theo, đi theo.",
+    "vi_du": "従う(したがう: tuân theo, đi theo)."
+  },
+  {
+    "stt": 446,
+    "kanji": "従",
+    "han_viet": "Tòng",
+    "giai_thich": "Đi theo, thông qua.",
+    "vi_du": "従える(したがえる: thu phục, sai khiến)."
+  },
+  {
+    "stt": 447,
+    "kanji": "滴",
+    "han_viet": "Tích",
+    "giai_thich": "Nhỏ giọt.",
+    "vi_du": "滴る(したたる: nhỏ giọt)."
+  },
+  {
+    "stt": 448,
+    "kanji": "湿",
+    "han_viet": "Thấp",
+    "giai_thich": "Ẩm ướt, độ ẩm.",
+    "vi_du": "湿っぽい(しめっぽい: ẩm ướt, ảm đạm), 湿度(しつど: độ ẩm)."
+  },
+  {
+    "stt": 449,
+    "kanji": "渋",
+    "han_viet": "Sáp",
+    "giai_thich": "Vị chát, gồ ghề, trắc trở, ngập ngừng.",
+    "vi_du": "渋い(しぶい: chát, già dặn), 渋滞 (じゅうたい: tắc nghẽn giao thông)."
+  },
+  {
+    "stt": 450,
+    "kanji": "渋",
+    "han_viet": "Sáp",
+    "giai_thich": "Vị chát.",
+    "vi_du": "渋い(しぶい: chát)."
+  },
+  {
+    "stt": 451,
+    "kanji": "渋",
+    "han_viet": "Sáp",
+    "giai_thich": "Trở nên chát, ngập ngừng, trì trệ.",
+    "vi_du": "渋る(しぶる: chần chừ, ngập ngừng)."
+  },
+  {
+    "stt": 452,
+    "kanji": "温",
+    "han_viet": "Ôn",
+    "giai_thich": "Ấm áp, làm ấm.",
+    "vi_du": "温める(あたためる: làm ấm, hâm nóng)."
+  },
+  {
+    "stt": 453,
+    "kanji": "占",
+    "han_viet": "Chiếm / Chiêm",
+    "giai_thich": "Chiếm giữ, bói toán.",
+    "vi_du": "占める(しめる: chiếm giữ), 占う (うらない: bói toán)."
+  },
+  {
+    "stt": 454,
+    "kanji": "湿",
+    "han_viet": "Thấp",
+    "giai_thich": "Làm cho ẩm ướt.",
+    "vi_du": "湿らす(しめらす: làm ẩm), 湿る(しめる: bị ẩm ướt)."
+  },
+  {
+    "stt": 455,
+    "kanji": "砂",
+    "han_viet": "Sa",
+    "giai_thich": "Cát.",
+    "vi_du": "砂(すな: cát), 砂漠 (さばく: sa mạc)."
+  },
+  {
+    "stt": 456,
+    "kanji": "射",
+    "han_viet": "Xạ",
+    "giai_thich": "Bắn, chiếu sáng.",
+    "vi_du": "射る(いる: bắn), 注射 (ちゅうしゃ: tiêm thuốc)."
+  },
+  {
+    "stt": 457,
+    "kanji": "斜",
+    "han_viet": "Tà",
+    "giai_thich": "Nghiêng, xiên.",
+    "vi_du": "斜め(ななめ: nghiêng, xiên), 傾斜 (けいしゃ: độ nghiêng)."
+  },
+  {
+    "stt": 458,
+    "kanji": "謝",
+    "han_viet": "Tạ",
+    "giai_thich": "Xin lỗi, cảm tạ.",
+    "vi_du": "感謝 (かんしゃ: cảm ơn), 謝罪 (しゃざい: tạ tội, xin lỗi)."
+  },
+  {
+    "stt": 459,
+    "kanji": "酌",
+    "han_viet": "Chước",
+    "giai_thich": "Rót rượu, châm chước.",
+    "vi_du": "酌む(くむ: rót rượu)."
+  },
+  {
+    "stt": 460,
+    "kanji": "修",
+    "han_viet": "Tu",
+    "giai_thich": "Tu sửa, trau dồi.",
+    "vi_du": "修理(しゅうり: sửa chữa), 研修 (けんしゅう: đào tạo, tập huấn)."
+  },
+  {
+    "stt": 461,
+    "kanji": "守",
+    "han_viet": "Thủ",
+    "giai_thich": "Bảo vệ, tuân thủ.",
+    "vi_du": "守る(まもる: bảo vệ, tuân thủ), 留守 (るす: vắng nhà)."
+  },
+  {
+    "stt": 462,
+    "kanji": "家",
+    "han_viet": "Gia",
+    "giai_thich": "Nhà, gia đình.",
+    "vi_du": "家族(かぞく: gia đình), 大家 (おおや: chủ nhà)."
+  },
+  {
+    "stt": 463,
+    "kanji": "就",
+    "han_viet": "Tựu",
+    "giai_thich": "Đạt được, tiến đến, nhậm chức.",
+    "vi_du": "就職(しゅうしょく: tìm việc/nhận việc), 就任(しゅうにん: nhậm chức)."
+  },
+  {
+    "stt": 464,
+    "kanji": "従",
+    "han_viet": "Tòng",
+    "giai_thich": "Đi theo, tòng sự.",
+    "vi_du": "従兄弟(いとこ: anh em họ), 従事 (じゅうじ: tòng sự)."
+  },
+  {
+    "stt": 465,
+    "kanji": "需",
+    "han_viet": "Nhu",
+    "giai_thich": "Nhu cầu, cần thiết.",
+    "vi_du": "需要(じゅよう: nhu cầu), 必需品 (ひつじゅひん: nhu yếu phẩm)."
+  },
+  {
+    "stt": 466,
+    "kanji": "宗",
+    "han_viet": "Tông",
+    "giai_thich": "Tôn giáo, tông phái.",
+    "vi_du": "宗教(しゅうきょう: tôn giáo), 宗派 (しゅうは: tông phái)."
+  },
+  {
+    "stt": 467,
+    "kanji": "就",
+    "han_viet": "Tựu",
+    "giai_thich": "Tiến đến, thi hành.",
+    "vi_du": "就いては(ついては: liên quan đến / do đó)."
+  },
+  {
+    "stt": 468,
+    "kanji": "周",
+    "han_viet": "Chu",
+    "giai_thich": "Vòng quanh, chu vi.",
+    "vi_du": "周囲 (しゅうい: chu vi, xung quanh), 週末(しゅうまつ: cuối tuần)."
+  },
+  {
+    "stt": 469,
+    "kanji": "修",
+    "han_viet": "Tu",
+    "giai_thich": "Học tập, tu dưỡng.",
+    "vi_du": "修士(しゅうし: bậc thạc sĩ)."
+  },
+  {
+    "stt": 470,
+    "kanji": "衆",
+    "han_viet": "Chúng",
+    "giai_thich": "Đông đảo, quần chúng.",
+    "vi_du": "大衆(たいしゅう: đại chúng), 観衆 (かんしゅう: khán giả)."
+  },
+  {
+    "stt": 471,
+    "kanji": "汁",
+    "han_viet": "Trấp",
+    "giai_thich": "Nước canh, nước ép.",
+    "vi_du": "果汁 (かじゅう: nước ép trái cây), 味噌汁 (みそしる: canh miso)."
+  },
+  {
+    "stt": 472,
+    "kanji": "柔",
+    "han_viet": "Nhu",
+    "giai_thich": "Mềm mại, dịu dàng.",
+    "vi_du": "柔らかい (やわらかい: mềm), 柔軟(じゅうなん: linh hoạt, mềm dẻo)."
+  },
+  {
+    "stt": 473,
+    "kanji": "従",
+    "han_viet": "Tòng",
+    "giai_thich": "Đi theo, tòng sự.",
+    "vi_du": "従う(したがう: tuân theo)."
+  },
+  {
+    "stt": 474,
+    "kanji": "充",
+    "han_viet": "Sung",
+    "giai_thich": "Đầy đủ, sung túc.",
+    "vi_du": "充実 (じゅうじつ: sung túc, đầy đủ)."
+  },
+  {
+    "stt": 475,
+    "kanji": "渋",
+    "han_viet": "Sáp",
+    "giai_thich": "Trì trệ, chát.",
+    "vi_du": "渋滞 (じゅうたい: tắc nghẽn)."
+  },
+  {
+    "stt": 476,
+    "kanji": "縦",
+    "han_viet": "Túng",
+    "giai_thich": "Chiều dọc, tung hoành.",
+    "vi_du": "縦(たて: chiều dọc), 縦断 (じゅうだん: dọc theo)."
+  },
+  {
+    "stt": 477,
+    "kanji": "銃",
+    "han_viet": "Súng",
+    "giai_thich": "Khẩu súng.",
+    "vi_du": "銃 (じゅう: súng), 拳銃 (けんじゅう: súng lục)."
+  },
+  {
+    "stt": 478,
+    "kanji": "縮",
+    "han_viet": "Súc",
+    "giai_thich": "Co lại, thu nhỏ.",
+    "vi_du": "縮む(ちぢむ: co lại, rút ngắn), 短縮(たんしゅく: sự rút ngắn)."
+  },
+  {
+    "stt": 479,
+    "kanji": "塾",
+    "han_viet": "Thục",
+    "giai_thich": "Tư gia dạy học, lớp học thêm.",
+    "vi_du": "塾(じゅく: lớp học thêm), 予備校 (よびこう: trường luyện thi)."
+  },
+  {
+    "stt": 480,
+    "kanji": "述",
+    "han_viet": "Thuật",
+    "giai_thich": "Phát biểu, trần thuật.",
+    "vi_du": "述べる(のべる: bày tỏ, phát biểu), 前述 (ぜんじゅつ: đã nêu trên)."
+  },
+  {
+    "stt": 481,
+    "kanji": "純",
+    "han_viet": "Thuần",
+    "giai_thich": "Thuần khiết, nguyên chất.",
+    "vi_du": "純粋(じゅんすい: thuần túy, trong sáng), 単純(たんじゅん: đơn giản)."
+  },
+  {
+    "stt": 482,
+    "kanji": "処",
+    "han_viet": "Xử",
+    "giai_thich": "Giải quyết, xử lý, nơi chốn.",
+    "vi_du": "処分(しょぶん: xử lý, kỷ luật), 処理(しょり: xử lý)."
+  },
+  {
+    "stt": 483,
+    "kanji": "緒",
+    "han_viet": "Tự",
+    "giai_thich": "Đầu mối, dây buộc.",
+    "vi_du": "一緒(いっしょ: cùng nhau), 内緒 (ないしょ: bí mật)."
+  },
+  {
+    "stt": 484,
+    "kanji": "署",
+    "han_viet": "Thự",
+    "giai_thich": "Cơ quan nhà nước (cơ quan công quyền).",
+    "vi_du": "警察署 (けいさつしょ: đồn cảnh sát), 消防署(しょうぼうしょ: trạm cứu hỏa)."
+  },
+  {
+    "stt": 485,
+    "kanji": "除",
+    "han_viet": "Trừ",
+    "giai_thich": "Loại bỏ, trừ ra.",
+    "vi_du": "除く(のぞく: loại bỏ), 掃除 (そうじ: dọn dẹp)."
+  },
+  {
+    "stt": 486,
+    "kanji": "序",
+    "han_viet": "Tự",
+    "giai_thich": "Thứ tự, lời nói đầu.",
+    "vi_du": "順序 (じゅんじょ: thứ tự), 序文 (じょぶん: lời nói đầu)."
+  },
+  {
+    "stt": 487,
+    "kanji": "招",
+    "han_viet": "Chiêu",
+    "giai_thich": "Mời gọi, gây ra.",
+    "vi_du": "招く(まねく: mời, vẫy gọi), 招待(しょうたい: mời)."
+  },
+  {
+    "stt": 488,
+    "kanji": "証",
+    "han_viet": "Chứng",
+    "giai_thich": "Bằng chứng, chứng nhận.",
+    "vi_du": "証明(しょうめい: chứng minh), 免許証(めんきょしょう: giấy phép)."
+  },
+  {
+    "stt": 489,
+    "kanji": "清",
+    "han_viet": "Thanh",
+    "giai_thich": "Trong sạch.",
+    "vi_du": "清い(きよい: trong sạch), 清潔 (せいけつ: sạch sẽ)."
+  },
+  {
+    "stt": 490,
+    "kanji": "照",
+    "han_viet": "Chiếu",
+    "giai_thich": "Chiếu sáng, đối chiếu.",
+    "vi_du": "照る(てる: chiếu sáng), 参照(さんしょう: tham khảo)."
+  },
+  {
+    "stt": 491,
+    "kanji": "松",
+    "han_viet": "Tùng",
+    "giai_thich": "Cây tùng/thông, lỏng lẻo.",
+    "vi_du": "松(まつ: cây thông), 緩む(ゆるむ: long ra)."
+  },
+  {
+    "stt": 492,
+    "kanji": "昭",
+    "han_viet": "Chiêu",
+    "giai_thich": "Sáng sủa, rực rỡ.",
+    "vi_du": "昭和(しょうわ: thời đại Chiêu Hòa)."
+  },
+  {
+    "stt": 493,
+    "kanji": "症",
+    "han_viet": "Chướng",
+    "giai_thich": "Triệu chứng bệnh.",
+    "vi_du": "症状(しょうじょう: triệu chứng), 花粉症 (かふんしょう: dị ứng phấn hoa)."
+  },
+  {
+    "stt": 494,
+    "kanji": "傷",
+    "han_viet": "Thương",
+    "giai_thich": "Vết thương.",
+    "vi_du": "傷 (きず: vết thương), 負傷(ふしょう: bị thương)."
+  },
+  {
+    "stt": 495,
+    "kanji": "従",
+    "han_viet": "Tòng",
+    "giai_thich": "Đi theo, tòng sự.",
+    "vi_du": "従事(じゅうじ: tòng sự)."
+  },
+  {
+    "stt": 496,
+    "kanji": "章",
+    "han_viet": "Chương",
+    "giai_thich": "Chương hồi, huy hiệu.",
+    "vi_du": "第1章(だい1しょう: chương 1), 勲章(くんしょう: huân chương)."
+  },
+  {
+    "stt": 497,
+    "kanji": "象",
+    "han_viet": "Tượng",
+    "giai_thich": "Hình tượng, con voi, hiện tượng.",
+    "vi_du": "現象 (げんしょう: hiện tượng), 印象(いんしょう: ấn tượng)."
+  },
+  {
+    "stt": 498,
+    "kanji": "精",
+    "han_viet": "Tinh",
+    "giai_thich": "Tinh thần, tinh tế.",
+    "vi_du": "精神(せいしん: tinh thần), 精一杯 (せいいっぱい: hết sức)."
+  },
+  {
+    "stt": 499,
+    "kanji": "井",
+    "han_viet": "Tỉnh",
+    "giai_thich": "Cái giếng.",
+    "vi_du": "天井(てんじょう: trần nhà), 井戸 (いど: giếng nước)."
+  },
+  {
+    "stt": 500,
+    "kanji": "昇",
+    "han_viet": "Thăng",
+    "giai_thich": "Tăng lên, bay lên.",
+    "vi_du": "昇る(のぼる: thăng tiến, mọc lên - mặt trời), 昇進 (しょうしん: thăng tiến)."
+  }
+]

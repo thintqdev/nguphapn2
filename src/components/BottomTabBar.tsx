@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, Sparkles, CheckSquare, Heart, Settings } from "lucide-react";
+import { BookOpen, Sparkles, CheckSquare, Heart, Settings, PenLine } from "lucide-react";
 import { useFavorites } from "./FavoritesContext";
 
 export default function BottomTabBar() {
@@ -12,6 +12,7 @@ export default function BottomTabBar() {
   const tabs = [
     { label: "文法", href: "/", icon: BookOpen, badge: null },
     { label: "敬語", href: "/keigo", icon: Sparkles, badge: null },
+    { label: "漢字", href: "/kanji", icon: PenLine, badge: null },
     { label: "練習", href: "/exercise", icon: CheckSquare, badge: null },
     {
       label: "お気に入り",
