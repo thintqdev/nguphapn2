@@ -54,6 +54,39 @@ body {
   box-shadow: 0 4px 24px -2px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes kanji-pop {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes kanji-seal {
+  from { opacity: 0; transform: scale(1.2) rotate(-8deg); }
+  to { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.kanji-tile-enter {
+  animation: kanji-pop 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.kanji-seal-in {
+  animation: kanji-seal 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.kanji-washi {
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(223, 110, 83, 0.07), transparent 45%),
+    radial-gradient(ellipse at 90% 80%, rgba(91, 143, 173, 0.08), transparent 40%);
+}
+
 /* Custom iOS style scrollbar */
 ::-webkit-scrollbar {
   width: 5px;

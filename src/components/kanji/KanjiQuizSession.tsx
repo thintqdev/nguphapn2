@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 import type { KanjiItem, KanjiQuizQuestion } from "@/lib/kanjiTypes";
 import { buildKanjiQuizSession } from "@/lib/kanjiQuiz";
 import { X, CheckCircle2, XCircle, Sparkles } from "lucide-react";
@@ -16,6 +17,7 @@ export default function KanjiQuizSession({
   onClose,
   onFinished,
 }: KanjiQuizSessionProps) {
+  const [mounted, setMounted] = useState(false);
   const [questions] = useState<KanjiQuizQuestion[]>(() =>
     buildKanjiQuizSession(items, Math.min(15, items.length))
   );
@@ -31,9 +33,18 @@ export default function KanjiQuizSession({
 
   const progressPct = useMemo(() => {
     if (questions.length === 0) return 0;
-    const step = done ? questions.length : qi;
+    const step = done ? questions.length : qi + (revealed ? 1 : 0);
     return Math.round((step / questions.length) * 100);
-  }, [qi, done, questions.length]);
+  }, [qi, done, questions.length, revealed]);
+
+  useEffect(() => {
+    setMounted(true);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, []);
 
   function handleSelect(option: string) {
     if (revealed || !q) return;
@@ -56,158 +67,187 @@ export default function KanjiQuizSession({
     setQi((i) => i + 1);
   }
 
+  if (!mounted) return null;
+
+  const shell =
+    "fixed inset-0 z-[100] flex items-center justify-center p-3 bg-black/45 backdrop-blur-[2px]";
+  const card =
+    "w-[min(100%,340px)] bg-white dark:bg-[#1a1714] rounded-[20px] shadow-2xl border border-black/[0.08] dark:border-white/[0.1] animate-fade-in";
+
+  let content: React.ReactNode;
+
   if (questions.length === 0) {
-    return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/45 p-4">
-        <div className="bg-[#faf7f2] dark:bg-[#171410] rounded-[20px] p-6 max-w-sm w-full text-center">
-          <p className="text-sm mb-4">Không đủ dữ liệu để tạo quiz.</p>
+    content = (
+      <div className={shell} onClick={onClose}>
+        <div
+          className={`${card} p-5 text-center`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <p className="text-sm mb-3">Không đủ dữ liệu để tạo quiz.</p>
           <button
             type="button"
             onClick={onClose}
-            className="px-4 py-2 rounded-[12px] bg-[#5b8fad] text-white text-sm font-semibold cursor-pointer"
+            className="px-4 py-2 rounded-[12px] bg-[#df6e53] text-white text-[13px] font-semibold cursor-pointer"
           >
             Đóng
           </button>
         </div>
       </div>
     );
-  }
-
-  if (done) {
+  } else if (done) {
     const pct = Math.round((correctCount / questions.length) * 100);
-    return (
-      <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/45 backdrop-blur-[2px] p-0 sm:p-6">
-        <div className="w-full sm:max-w-md rounded-t-[24px] sm:rounded-[24px] bg-[#faf7f2] dark:bg-[#171410] border border-black/[0.08] dark:border-white/[0.1] shadow-2xl p-6 sm:p-8 text-center animate-fade-in">
-          <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-[#5b8fad]/15 dark:bg-[#6ba3c4]/20 flex items-center justify-center text-[#5b8fad] dark:text-[#8ec4e0]">
-            <Sparkles size={28} />
+    content = (
+      <div className={shell} onClick={onClose}>
+        <div
+          className={`${card} p-5 text-center`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="w-10 h-10 mx-auto mb-2.5 rounded-full bg-[#df6e53]/12 text-[#df6e53] flex items-center justify-center">
+            <Sparkles size={18} />
           </div>
-          <h2 className="font-serif font-bold text-xl mb-1">Hoàn thành!</h2>
-          <p className="text-sm text-[#70665a] dark:text-[#b8aba0] mb-5">
-            Bạn đúng {correctCount}/{questions.length} câu ({pct}%)
+          <h2 className="font-serif font-bold text-lg mb-0.5 text-[#1f1a16] dark:text-[#f5f0eb]">
+            {pct >= 80 ? "Xuất sắc!" : pct >= 50 ? "Tốt lắm!" : "Cố lên nhé!"}
+          </h2>
+          <p className="text-xs text-[#70665a] dark:text-[#b8aba0]">
+            Đúng {correctCount}/{questions.length}
+          </p>
+          <p className="font-serif font-bold text-2xl text-[#df6e53] dark:text-[#f39882] my-3">
+            {pct}%
           </p>
           <button
             type="button"
             onClick={onClose}
-            className="w-full py-3 rounded-[14px] text-sm font-semibold bg-[#5b8fad] text-white cursor-pointer active:scale-[0.98]"
+            className="w-full py-2.5 rounded-[12px] text-[13px] font-bold bg-[#df6e53] text-white cursor-pointer active:scale-[0.98]"
           >
             Đóng
           </button>
         </div>
       </div>
     );
-  }
+  } else {
+    const isKanjiOptions = q.kind !== "kanji_to_hanviet";
+    content = (
+      <div className={`${shell} select-none`} onClick={onClose}>
+        <div
+          className={`${card} max-h-[78vh] flex flex-col overflow-hidden relative`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <button
+            type="button"
+            onClick={onClose}
+            className="absolute top-2.5 right-2.5 z-10 w-7 h-7 rounded-full flex items-center justify-center bg-black/[0.05] dark:bg-white/[0.08] text-[#8a8074] active:scale-90 cursor-pointer"
+            aria-label="Đóng"
+          >
+            <X size={14} />
+          </button>
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/45 backdrop-blur-[2px] p-0 sm:p-6">
-      <div className="w-full sm:max-w-lg max-h-[92vh] overflow-y-auto rounded-t-[24px] sm:rounded-[24px] bg-[#faf7f2] dark:bg-[#171410] border border-black/[0.08] dark:border-white/[0.1] shadow-2xl animate-fade-in">
-        <div className="sticky top-0 z-10 px-4 py-3 border-b border-black/[0.06] dark:border-white/[0.08] bg-[#faf7f2]/95 dark:bg-[#171410]/95">
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-xs font-semibold text-[#8a8074]">
-              Câu {qi + 1}/{questions.length}
-            </span>
-            <button
-              type="button"
-              onClick={onClose}
-              className="w-8 h-8 rounded-full flex items-center justify-center bg-black/[0.05] dark:bg-white/[0.08] active:scale-90 cursor-pointer"
-              aria-label="Đóng"
-            >
-              <X size={16} />
-            </button>
+          <div className="px-3.5 pt-3.5 pb-2 pr-10 shrink-0">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-[11px] font-bold text-[#df6e53] dark:text-[#f39882] flex items-center gap-1">
+                <Sparkles size={12} />
+                Quiz
+              </span>
+              <span className="text-[11px] font-semibold text-[#8a8074] tabular-nums">
+                {qi + 1}/{questions.length}
+              </span>
+            </div>
+            <div className="h-1 rounded-full bg-black/[0.05] dark:bg-white/[0.08] overflow-hidden">
+              <div
+                className="h-full rounded-full bg-[#df6e53] transition-all duration-300"
+                style={{ width: `${progressPct}%` }}
+              />
+            </div>
           </div>
-          <div className="h-1.5 rounded-full bg-black/[0.06] dark:bg-white/[0.08] overflow-hidden">
+
+          <div className="flex-1 overflow-y-auto px-3.5 pb-3.5 space-y-3" key={q.id}>
+            <div className="text-center pt-1">
+              <p className="text-[10px] font-medium text-[#8a8074] mb-2">
+                {q.promptSub}
+              </p>
+              <p
+                className={`font-serif text-[#1f1a16] dark:text-[#f5f0eb] leading-snug ${
+                  q.kind === "kanji_to_hanviet" ? "text-[44px]" : "text-[13px]"
+                }`}
+              >
+                {q.prompt}
+              </p>
+            </div>
+
             <div
-              className="h-full rounded-full bg-[#5b8fad] transition-all"
-              style={{ width: `${progressPct}%` }}
-            />
-          </div>
-        </div>
-
-        <div className="px-5 sm:px-7 py-6 space-y-5">
-          <div className="text-center space-y-2">
-            <p className="text-[11px] font-bold uppercase tracking-wider text-[#5b8fad] dark:text-[#8ec4e0]">
-              {q.promptSub}
-            </p>
-            <p
-              className={`font-serif text-[#1f1a16] dark:text-[#f5f0eb] leading-snug ${
-                q.kind === "kanji_to_hanviet"
-                  ? "text-6xl"
-                  : q.kind === "meaning_to_kanji"
-                    ? "text-base sm:text-lg"
-                    : "text-sm sm:text-base"
+              className={`grid gap-1.5 ${
+                isKanjiOptions ? "grid-cols-2" : "grid-cols-1"
               }`}
             >
-              {q.prompt}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-2.5">
-            {q.options.map((opt) => {
-              let style =
-                "bg-white/70 dark:bg-[#221e1a] border-black/[0.08] dark:border-white/[0.1] hover:border-[#5b8fad]/40";
-              if (revealed) {
-                if (opt === q.answer) {
-                  style =
-                    "bg-[#2e7d58]/12 border-[#2e7d58]/50 text-[#2e7d58] dark:text-[#52c28d]";
-                } else if (opt === selected) {
-                  style =
-                    "bg-[#df6e53]/12 border-[#df6e53]/50 text-[#c4563c]";
-                } else {
-                  style =
-                    "bg-black/[0.02] dark:bg-white/[0.03] border-transparent opacity-50";
+              {q.options.map((opt) => {
+                let style =
+                  "bg-black/[0.03] dark:bg-white/[0.05] border-black/[0.06] dark:border-white/[0.08]";
+                if (revealed) {
+                  if (opt === q.answer) {
+                    style =
+                      "bg-[#2e7d58]/15 border-[#2e7d58] text-[#2e7d58] dark:text-[#52c28d] font-bold";
+                  } else if (opt === selected) {
+                    style =
+                      "bg-[#c0392b]/12 border-[#c0392b] text-[#c0392b]";
+                  } else {
+                    style = "opacity-40 border-transparent";
+                  }
                 }
-              }
 
-              return (
-                <button
-                  key={opt}
-                  type="button"
-                  disabled={revealed}
-                  onClick={() => handleSelect(opt)}
-                  className={`w-full text-left px-4 py-3.5 rounded-[14px] border text-base font-medium transition-all cursor-pointer active:scale-[0.99] disabled:cursor-default ${
-                    q.kind !== "kanji_to_hanviet" ? "font-serif text-2xl" : ""
-                  } ${style}`}
-                >
-                  {opt}
-                </button>
-              );
-            })}
-          </div>
+                return (
+                  <button
+                    key={opt}
+                    type="button"
+                    disabled={revealed}
+                    onClick={() => handleSelect(opt)}
+                    className={`w-full px-2.5 py-2.5 rounded-[12px] border transition-all cursor-pointer active:scale-[0.98] disabled:cursor-default ${
+                      isKanjiOptions
+                        ? "font-serif text-xl text-center"
+                        : "text-[13px] text-left font-medium"
+                    } ${style}`}
+                  >
+                    {opt}
+                  </button>
+                );
+              })}
+            </div>
 
-          {revealed && (
-            <div
-              className={`flex items-start gap-2 rounded-[14px] p-3 text-sm ${
-                isCorrect
-                  ? "bg-[#2e7d58]/10 text-[#2e7d58] dark:text-[#52c28d]"
-                  : "bg-[#df6e53]/10 text-[#c4563c]"
-              }`}
-            >
-              {isCorrect ? (
-                <CheckCircle2 size={18} className="shrink-0 mt-0.5" />
-              ) : (
-                <XCircle size={18} className="shrink-0 mt-0.5" />
-              )}
-              <div>
-                <p className="font-semibold">
-                  {isCorrect ? "Đúng rồi!" : "Chưa đúng"}
-                </p>
-                <p className="text-xs mt-0.5 opacity-90">
-                  {q.item.kanji} · {q.item.han_viet} — {q.item.giai_thich}
+            {revealed && (
+              <div
+                className={`flex items-start gap-1.5 rounded-[12px] p-2.5 text-[12px] ${
+                  isCorrect
+                    ? "bg-[#2e7d58]/10 text-[#2e7d58] dark:text-[#52c28d]"
+                    : "bg-[#df6e53]/10 text-[#c4563c]"
+                }`}
+              >
+                {isCorrect ? (
+                  <CheckCircle2 size={15} className="shrink-0 mt-0.5" />
+                ) : (
+                  <XCircle size={15} className="shrink-0 mt-0.5" />
+                )}
+                <p className="leading-snug">
+                  <span className="font-semibold">
+                    {isCorrect ? "Đúng!" : "Sai."}
+                  </span>{" "}
+                  <span className="font-serif">{q.item.kanji}</span> ·{" "}
+                  {q.item.han_viet}
                 </p>
               </div>
-            </div>
-          )}
+            )}
 
-          {revealed && (
-            <button
-              type="button"
-              onClick={handleNext}
-              className="w-full py-3.5 rounded-[14px] text-sm font-bold bg-[#5b8fad] text-white hover:bg-[#4a7a96] active:scale-[0.98] transition-all cursor-pointer"
-            >
-              {qi >= questions.length - 1 ? "Xem kết quả" : "Câu tiếp →"}
-            </button>
-          )}
+            {revealed && (
+              <button
+                type="button"
+                onClick={handleNext}
+                className="w-full py-2.5 rounded-[12px] text-[13px] font-bold bg-[#df6e53] text-white active:scale-[0.98] cursor-pointer"
+              >
+                {qi >= questions.length - 1 ? "Kết quả" : "Tiếp →"}
+              </button>
+            )}
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
+
+  return createPortal(content, document.body);
 }
