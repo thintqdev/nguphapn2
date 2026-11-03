@@ -36,3 +36,21 @@ export function getAdjacentGrammar(id: string): {
     next: index < data.grammar.length - 1 ? data.grammar[index + 1] : null,
   };
 }
+
+function normalizeGrammarLabel(s: string): string {
+  return s.replace(/[～〜\s（）()／/・·.]/g, "").toLowerCase();
+}
+
+/** Map nhãn related (vd: ～に際して) → grammar trong data */
+export function findGrammarByRelatedLabel(label: string): Grammar | undefined {
+  const n = normalizeGrammarLabel(label);
+  if (!n) return undefined;
+
+  return (
+    data.grammar.find((g) => normalizeGrammarLabel(g.title) === n) ||
+    data.grammar.find((g) => {
+      const t = normalizeGrammarLabel(g.title);
+      return t.includes(n) || n.includes(t);
+    })
+  );
+}

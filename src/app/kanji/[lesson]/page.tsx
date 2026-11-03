@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
+import PageBackLink from "@/components/PageBackLink";
 import KanjiLessonClient from "@/components/kanji/KanjiLessonClient";
 import { getKanjiLesson, getKanjiLessonPaths } from "@/lib/kanji";
 import type { Metadata } from "next";
@@ -41,8 +42,9 @@ export default async function KanjiLessonPage({
     <div className="flex min-h-screen bg-[#f5f3ee] dark:bg-[#0d0c0a] text-[#1d1b19] dark:text-[#f5f0eb] transition-colors pb-24 md:pb-8">
       <Sidebar />
       <div className="flex-1 flex flex-col min-w-0">
-        <Header backHref="/kanji" backLabel="Danh sách bài kanji" />
+        <Header />
         <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-5xl w-full mx-auto">
+          <PageBackLink href="/kanji" label="Danh sách bài kanji" />
           <KanjiLessonClient lesson={lesson} />
         </main>
       </div>

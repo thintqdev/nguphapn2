@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
+import PageBackLink from "@/components/PageBackLink";
 import ExamPlayer from "@/components/exam/ExamPlayer";
 import { getExamById, getExamPaths } from "@/lib/exam";
 import type { Metadata } from "next";
@@ -36,8 +37,9 @@ export default async function ExamDetailPage({
     <div className="flex min-h-screen bg-[#f5f3ee] dark:bg-[#0d0c0a] text-[#1d1b19] dark:text-[#f5f0eb] transition-colors pb-24 md:pb-8">
       <Sidebar />
       <div className="flex-1 flex flex-col min-w-0">
-        <Header backHref="/exam" backLabel="Danh sách đề thi" />
+        <Header />
         <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-5xl w-full mx-auto">
+          <PageBackLink href="/exam" label="Danh sách đề thi" />
           <ExamPlayer exam={exam} />
         </main>
       </div>

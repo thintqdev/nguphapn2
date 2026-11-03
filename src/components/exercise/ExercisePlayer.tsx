@@ -264,7 +264,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
   }, [exercise.questions, isSubmitted, reviewFilter, selectedAnswers, flagged]);
 
   return (
-    <div className="max-w-4xl mx-auto space-y-5 animate-fade-in pb-16">
+    <div className="w-full space-y-5 animate-fade-in pb-16">
       {/* Top Header Card: Title, Back button & Mode Switcher */}
       <div className="p-4 sm:p-5 rounded-[22px] bg-white/90 dark:bg-[#1a1714]/90 ios-glass border border-black/[0.06] dark:border-white/[0.08] shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3.5">
         <div className="flex items-center gap-3">

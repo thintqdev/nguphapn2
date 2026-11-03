@@ -208,7 +208,7 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
 
   if (phase === "ready") {
     return (
-      <div className="max-w-xl mx-auto space-y-5 animate-fade-in py-6">
+      <div className="w-full space-y-5 animate-fade-in py-6">
         <div className="rounded-[20px] border border-black/[0.06] dark:border-white/[0.08] bg-white/90 dark:bg-[#1a1714]/90 p-6 text-center">
           <p className="text-[11px] font-bold text-[#df6e53] dark:text-[#f39882] mb-2">
             JLPT N2 · 模擬試験
@@ -241,7 +241,7 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
   if (phase === "result") {
     const pct = scorable > 0 ? Math.round((score / scorable) * 100) : 0;
     return (
-      <div className="max-w-2xl mx-auto space-y-5 animate-fade-in pb-16">
+      <div className="w-full space-y-5 animate-fade-in pb-16">
         <div className="rounded-[20px] border border-black/[0.06] dark:border-white/[0.08] bg-white/90 dark:bg-[#1a1714]/90 p-6 text-center">
           <h2 className="font-serif font-bold text-xl mb-1">Kết quả</h2>
           <p className="font-serif font-bold text-4xl text-[#df6e53] dark:text-[#f39882] my-2">
@@ -279,7 +279,7 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
   const urgent = timeLeft <= 5 * 60;
 
   return (
-    <div className="max-w-2xl mx-auto pb-28 animate-fade-in">
+    <div className="w-full pb-28 animate-fade-in">
       {/* Sticky timer */}
       <div className="sticky top-[52px] z-20 -mx-1 mb-4 px-3 py-2.5 rounded-[14px] bg-white/95 dark:bg-[#1a1714]/95 border border-black/[0.06] dark:border-white/[0.08] backdrop-blur-md flex items-center justify-between gap-3">
         <div className="flex items-center gap-2 min-w-0">

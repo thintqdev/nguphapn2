@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, CheckSquare, Heart, Settings, PenLine, ClipboardList } from "lucide-react";
+import { BookOpen, Heart, Settings, PenLine, ClipboardList } from "lucide-react";
 import { useFavorites } from "./FavoritesContext";
 
 export default function BottomTabBar() {
@@ -10,17 +10,45 @@ export default function BottomTabBar() {
   const { totalFavorites } = useFavorites();
 
   const tabs = [
-    { label: "文法", href: "/", icon: BookOpen, badge: null },
-    { label: "漢字", href: "/kanji", icon: PenLine, badge: null },
-    { label: "練習", href: "/exercise", icon: CheckSquare, badge: null },
-    { label: "試験", href: "/exam", icon: ClipboardList, badge: null },
+    {
+      label: "文法",
+      href: "/",
+      icon: BookOpen,
+      badge: null as number | null,
+      active:
+        pathname === "/" ||
+        pathname.startsWith("/grammar") ||
+        pathname.startsWith("/keigo") ||
+        pathname.startsWith("/exercise"),
+    },
+    {
+      label: "漢字",
+      href: "/kanji",
+      icon: PenLine,
+      badge: null,
+      active: pathname.startsWith("/kanji"),
+    },
+    {
+      label: "試験",
+      href: "/exam",
+      icon: ClipboardList,
+      badge: null,
+      active: pathname.startsWith("/exam"),
+    },
     {
       label: "お気に入り",
       href: "/favorites",
       icon: Heart,
       badge: totalFavorites > 0 ? totalFavorites : null,
+      active: pathname.startsWith("/favorites"),
     },
-    { label: "設定", href: "/settings", icon: Settings, badge: null },
+    {
+      label: "設定",
+      href: "/settings",
+      icon: Settings,
+      badge: null,
+      active: pathname.startsWith("/settings"),
+    },
   ];
 
   return (
@@ -28,17 +56,12 @@ export default function BottomTabBar() {
       <div className="flex items-center justify-around max-w-md mx-auto">
         {tabs.map((tab) => {
           const Icon = tab.icon;
-          const isActive =
-            tab.href === "/"
-              ? pathname === "/" || pathname.startsWith("/grammar")
-              : pathname === tab.href || pathname.startsWith(tab.href + "/");
-
           return (
             <Link
               key={tab.href}
               href={tab.href}
               className={`flex flex-col items-center justify-center flex-1 py-1 relative select-none transition-transform active:scale-90 ${
-                isActive
+                tab.active
                   ? "text-[#df6e53] dark:text-[#f39882]"
                   : "text-[#8a8074] dark:text-[#9e9285]"
               }`}
@@ -46,18 +69,20 @@ export default function BottomTabBar() {
               <div className="relative">
                 <Icon
                   size={21}
-                  strokeWidth={isActive ? 2.3 : 1.9}
+                  strokeWidth={tab.active ? 2.3 : 1.9}
                   className="transition-colors"
                 />
                 {tab.badge !== null && (
-                  <span className="absolute -top-1 -right-2.5 min-w-[16px] h-4 px-1 rounded-full bg-[#df6e53] text-white text-[10px] font-bold flex items-center justify-center shadow-2xs">
+                  <span className="absolute -top-1 -right-2.5 min-w-[16px] h-4 px-1 rounded-full bg-[#df6e53] text-white text-[10px] font-bold flex items-center justify-center">
                     {tab.badge}
                   </span>
                 )}
               </div>
               <span
                 className={`text-[10px] mt-1 font-medium tracking-tight ${
-                  isActive ? "font-semibold text-[#df6e53] dark:text-[#f39882]" : ""
+                  tab.active
+                    ? "font-semibold text-[#df6e53] dark:text-[#f39882]"
+                    : ""
                 }`}
               >
                 {tab.label}

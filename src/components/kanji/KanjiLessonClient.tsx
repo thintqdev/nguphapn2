@@ -109,82 +109,28 @@ export default function KanjiLessonClient({ lesson }: KanjiLessonClientProps) {
   const knownCount = knownIds.size;
   const pct =
     lesson.count > 0 ? Math.round((knownCount / lesson.count) * 100) : 0;
-  const ring = 2 * Math.PI * 18;
-  const ringOffset = ring - (ring * pct) / 100;
 
   return (
     <div className="space-y-5 animate-fade-in">
-      {/* Lesson hero */}
-      <div className="relative overflow-hidden rounded-[24px] border border-black/[0.06] dark:border-white/[0.08] ios-card-shadow kanji-washi bg-gradient-to-br from-[#f8ede8] via-[#fbf7f2] to-[#eef2f6] dark:from-[#2a1d18] dark:via-[#1a1612] dark:to-[#1a242c] p-5 sm:p-6">
-        <div
-          className="absolute right-3 -bottom-6 font-serif font-black text-8xl text-[#df6e53]/10 dark:text-[#f39882]/10 select-none pointer-events-none"
-          aria-hidden
+      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+        <div>
+          <h1 className="font-serif font-bold text-2xl sm:text-3xl text-[#1f1a16] dark:text-[#f5f0eb]">
+            {lesson.title}
+          </h1>
+          <p className="text-sm text-[#8a8074] mt-1">
+            {lesson.count} chữ
+            {knownCount > 0 ? ` · Đã biết ${knownCount} (${pct}%)` : ""}
+            {quizBest != null ? ` · Quiz ${quizBest}%` : ""}
+          </p>
+        </div>
+        <button
+          type="button"
+          onClick={() => setQuizOpen(true)}
+          className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-[12px] bg-[#df6e53] hover:bg-[#c95d43] text-white text-sm font-bold active:scale-[0.98] cursor-pointer shrink-0"
         >
-          {lesson.id}
-        </div>
-
-        <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div className="flex items-center gap-4 min-w-0">
-            {/* Progress ring */}
-            <div className="relative w-14 h-14 shrink-0">
-              <svg className="w-14 h-14 -rotate-90" viewBox="0 0 44 44">
-                <circle
-                  cx="22"
-                  cy="22"
-                  r="18"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="3.5"
-                  className="text-black/10 dark:text-white/10"
-                />
-                <circle
-                  cx="22"
-                  cy="22"
-                  r="18"
-                  fill="none"
-                  stroke="url(#kanjiRing)"
-                  strokeWidth="3.5"
-                  strokeLinecap="round"
-                  strokeDasharray={ring}
-                  strokeDashoffset={ringOffset}
-                  className="transition-all duration-500"
-                />
-                <defs>
-                  <linearGradient id="kanjiRing" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#df6e53" />
-                    <stop offset="100%" stopColor="#ef927c" />
-                  </linearGradient>
-                </defs>
-              </svg>
-              <span className="absolute inset-0 flex items-center justify-center text-[11px] font-bold text-[#a44d36] dark:text-[#f39882]">
-                {pct}%
-              </span>
-            </div>
-
-            <div className="min-w-0">
-              <p className="text-[11px] font-bold tracking-wider text-[#a44d36] dark:text-[#f39882] mb-0.5">
-                N2 漢字 · Bài học
-              </p>
-              <h1 className="font-serif font-black text-2xl sm:text-3xl text-[#1f1a16] dark:text-[#f5f0eb] tracking-tight">
-                {lesson.title}
-              </h1>
-              <p className="text-xs text-[#8a8074] dark:text-[#9e9285] mt-1">
-                {lesson.count} chữ
-                {knownCount > 0 ? ` · Đã biết ${knownCount}` : " · Chưa học"}
-                {quizBest != null ? ` · Quiz tốt nhất ${quizBest}%` : ""}
-              </p>
-            </div>
-          </div>
-
-          <button
-            type="button"
-            onClick={() => setQuizOpen(true)}
-            className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-[16px] bg-[#df6e53] hover:bg-[#c95d43] text-white text-sm font-bold shadow-md shadow-[#df6e53]/30 active:scale-[0.98] transition-all cursor-pointer shrink-0"
-          >
-            <GraduationCap size={18} />
-            Học bài này
-          </button>
-        </div>
+          <GraduationCap size={16} />
+          Học bài này
+        </button>
       </div>
 
       {/* Toolbar */}

@@ -19,7 +19,7 @@ export default function KeigoPage() {
       {/* Main Content Area */}
       <div className="flex-1 flex flex-col min-w-0">
         {/* iOS Translucent Navigation Bar */}
-        <Header backHref="/" backLabel="ホームに戻る" />
+        <Header />
 
         {/* Content Container */}
         <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-5xl w-full mx-auto">

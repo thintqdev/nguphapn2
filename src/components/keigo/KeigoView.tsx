@@ -8,7 +8,7 @@ import ConjugationRulesSection from "./ConjugationRulesSection";
 import BusinessPhrasesSection from "./BusinessPhrasesSection";
 import JlptTrapsSection from "./JlptTrapsSection";
 import KeigoQuizModal from "./KeigoQuizModal";
-import { Sparkles, HelpCircle, Layers, Table2, BookOpenCheck, Briefcase, AlertOctagon } from "lucide-react";
+import { HelpCircle, Layers, Table2, BookOpenCheck, Briefcase, AlertOctagon } from "lucide-react";
 
 export default function KeigoView({
   data,
@@ -20,44 +20,23 @@ export default function KeigoView({
 
   return (
     <div className="space-y-8 animate-fade-in">
-      {/* Keigo Hero Banner */}
-      <div className="relative overflow-hidden rounded-[26px] bg-gradient-to-br from-[#f8ede8] via-[#fbf5f2] to-[#f4ebe6] dark:from-[#2a1d18] dark:via-[#1e1714] dark:to-[#171210] p-5 sm:p-7 border border-[#df6e53]/20 dark:border-[#df6e53]/25 shadow-sm">
-        {/* Subtle background calligraphy watermark */}
-        <div className="absolute right-4 -bottom-6 font-serif font-black text-8xl sm:text-9xl text-[#df6e53]/10 dark:text-[#df6e53]/10 pointer-events-none select-none">
-          敬
-        </div>
-
-        <div className="relative z-10 max-w-2xl">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#df6e53]/15 dark:bg-[#df6e53]/25 text-[#df6e53] dark:text-[#f39882] text-[11px] font-bold tracking-wide uppercase mb-3">
-            <Sparkles size={13} />
-            <span>Chuyên đề trọng điểm JLPT N2 & Business Japanese</span>
-          </div>
-
-          <h2 className="font-serif font-bold text-2xl sm:text-3xl text-[#1f1a16] dark:text-[#f5f0eb] tracking-tight leading-tight mb-2">
-            敬語・謙譲語マスター
+      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+        <div>
+          <h2 className="font-serif font-bold text-2xl sm:text-3xl text-[#1f1a16] dark:text-[#f5f0eb]">
+            敬語・謙譲語
           </h2>
-          <p className="text-xs sm:text-sm text-[#70665a] dark:text-[#b8aba0] leading-relaxed mb-5">
-            Tổng hợp toàn diện 19 động từ biến đổi đặc biệt, quy tắc tiếp đầu ngữ お／ご, các mẫu câu hội thoại thương mại và những bẫy ngữ pháp thường xuất hiện trong đề thi N2.
+          <p className="text-sm text-[#70665a] dark:text-[#b8aba0] mt-1.5">
+            19 động từ · Công thức · Bẫy đề thi N2
           </p>
-
-          <div className="flex flex-wrap items-center gap-3">
-            <button
-              onClick={() => setIsQuizOpen(true)}
-              className="px-4 py-2.5 rounded-[14px] bg-[#df6e53] hover:bg-[#c95d43] active:scale-95 text-white text-xs sm:text-sm font-semibold transition-all cursor-pointer shadow-md shadow-[#df6e53]/25 flex items-center gap-2"
-            >
-              <HelpCircle size={16} />
-              <span>Luyện trắc nghiệm 10 câu</span>
-            </button>
-
-            <div className="flex items-center gap-2 text-xs text-[#8a8074] dark:text-[#9e9285] font-medium bg-black/[0.04] dark:bg-white/[0.06] px-3.5 py-2.5 rounded-[14px]">
-              <span>19 Động từ</span>
-              <span>•</span>
-              <span>8 Công thức</span>
-              <span>•</span>
-              <span>4 Bẫy đề thi</span>
-            </div>
-          </div>
         </div>
+        <button
+          type="button"
+          onClick={() => setIsQuizOpen(true)}
+          className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-[12px] bg-[#df6e53] hover:bg-[#c95d43] text-white text-sm font-semibold active:scale-95 cursor-pointer shrink-0"
+        >
+          <HelpCircle size={15} />
+          Quiz 10 câu
+        </button>
       </div>
 
       {/* Quick Navigation Filter Pills */}
