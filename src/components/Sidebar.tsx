@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, Sparkles, CheckSquare, Heart, BarChart3, Settings, PenLine } from "lucide-react";
+import { BookOpen, Sparkles, CheckSquare, Heart, BarChart3, Settings, PenLine, ClipboardList } from "lucide-react";
 import { useFavorites } from "./FavoritesContext";
 
 export default function Sidebar() {
@@ -14,6 +14,7 @@ export default function Sidebar() {
     { label: "敬語・謙譲語", href: "/keigo", icon: Sparkles, badge: "N2" },
     { label: "漢字学習", href: "/kanji", icon: PenLine, badge: "10課" },
     { label: "練習問題", href: "/exercise", icon: CheckSquare, badge: "50問" },
+    { label: "模擬試験", href: "/exam", icon: ClipboardList, badge: "試験" },
     {
       label: "お気に入り",
       href: "/favorites",
