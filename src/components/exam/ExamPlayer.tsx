@@ -52,7 +52,7 @@ function HighlightQuestion({
         <span key={i}>
           {part}
           {i < parts.length - 1 && (
-            <span className="underline decoration-2 underline-offset-2 decoration-[#df6e53]">
+            <span className="underline decoration-2 underline-offset-2 decoration-accent">
               {target}
             </span>
           )}
@@ -72,7 +72,7 @@ function ReadingPassage({ text }: { text: string }) {
           return (
             <span
               key={i}
-              className="inline-flex items-center justify-center mx-0.5 min-w-[1.6rem] px-1 rounded bg-[#df6e53]/15 text-[#a44d36] dark:text-[#f39882] text-[12px] font-bold align-baseline"
+              className="inline-flex items-center justify-center mx-0.5 min-w-[1.6rem] px-1 rounded bg-accent/15 text-accent-muted text-[12px] font-bold align-baseline"
             >
               {m[1]}
             </span>
@@ -93,7 +93,7 @@ function StarTemplate({ template }: { template: string }) {
           return (
             <span
               key={i}
-              className="inline-flex mx-0.5 px-1.5 py-0.5 rounded bg-[#df6e53] text-white text-sm font-bold align-middle"
+              className="inline-flex mx-0.5 px-1.5 py-0.5 rounded bg-accent text-white text-sm font-bold align-middle"
             >
               ★
             </span>
@@ -210,7 +210,7 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
     return (
       <div className="w-full space-y-5 animate-fade-in py-6">
         <div className="rounded-[20px] border border-black/[0.06] dark:border-white/[0.08] bg-white/90 dark:bg-[#1a1714]/90 p-6 text-center">
-          <p className="text-[11px] font-bold text-[#df6e53] dark:text-[#f39882] mb-2">
+          <p className="text-[11px] font-bold text-accent mb-2">
             JLPT N2 · 模擬試験
           </p>
           <h1 className="font-serif font-bold text-2xl text-[#1f1a16] dark:text-[#f5f0eb] mb-2">
@@ -228,7 +228,7 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
           <button
             type="button"
             onClick={startExam}
-            className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-[14px] bg-[#df6e53] hover:bg-[#c95d43] text-white text-sm font-bold active:scale-[0.98] cursor-pointer"
+            className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-[14px] bg-accent hover:bg-accent-hover text-white text-sm font-bold active:scale-[0.98] cursor-pointer"
           >
             <Play size={16} />
             Bắt đầu làm bài
@@ -244,7 +244,7 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
       <div className="w-full space-y-5 animate-fade-in pb-16">
         <div className="rounded-[20px] border border-black/[0.06] dark:border-white/[0.08] bg-white/90 dark:bg-[#1a1714]/90 p-6 text-center">
           <h2 className="font-serif font-bold text-xl mb-1">Kết quả</h2>
-          <p className="font-serif font-bold text-4xl text-[#df6e53] dark:text-[#f39882] my-2">
+          <p className="font-serif font-bold text-4xl text-accent my-2">
             {score}/{scorable}
           </p>
           <p className="text-sm text-[#70665a] dark:text-[#b8aba0]">
@@ -285,7 +285,7 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
         <div className="flex items-center gap-2 min-w-0">
           <Clock
             size={15}
-            className={urgent ? "text-red-500" : "text-[#df6e53]"}
+            className={urgent ? "text-red-500" : "text-accent"}
           />
           <span
             className={`font-mono text-sm font-bold tabular-nums ${
@@ -308,7 +308,7 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
                 : "Nộp bài và xem kết quả?";
             if (window.confirm(msg)) submit();
           }}
-          className="inline-flex items-center gap-1 px-3 py-1.5 rounded-[10px] text-[12px] font-bold bg-[#df6e53] text-white cursor-pointer active:scale-95"
+          className="inline-flex items-center gap-1 px-3 py-1.5 rounded-[10px] text-[12px] font-bold bg-accent text-white cursor-pointer active:scale-95"
         >
           <Flag size={12} />
           Nộp bài
@@ -342,7 +342,7 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
                 : "Nộp bài và xem kết quả?";
             if (window.confirm(msg)) submit();
           }}
-          className="w-full py-3 rounded-[14px] text-sm font-bold bg-[#df6e53] hover:bg-[#c95d43] text-white cursor-pointer active:scale-[0.98]"
+          className="w-full py-3 rounded-[14px] text-sm font-bold bg-accent hover:bg-accent-hover text-white cursor-pointer active:scale-[0.98]"
         >
           Nộp bài
         </button>
@@ -367,7 +367,7 @@ function SectionBlock({
   return (
     <section className="space-y-4">
       <div className="border-b border-black/[0.08] dark:border-white/[0.1] pb-2">
-        <p className="text-[11px] font-bold text-[#df6e53] dark:text-[#f39882] mb-1">
+        <p className="text-[11px] font-bold text-accent mb-1">
           問題 {sectionIndex + 1}
         </p>
         <p className="text-[13px] text-[#5e554c] dark:text-[#b8aba0] leading-relaxed">
@@ -449,7 +449,7 @@ function QuestionBlock({
           const isCorrect = review && question.answer === key;
 
           let style =
-            "border-black/[0.08] dark:border-white/[0.1] hover:border-[#df6e53]/40";
+            "border-black/[0.08] dark:border-white/[0.1] hover:border-accent-border";
           if (review) {
             if (isCorrect) {
               style =
@@ -461,7 +461,7 @@ function QuestionBlock({
             }
           } else if (isSelected) {
             style =
-              "border-[#df6e53] bg-[#df6e53]/10 text-[#1f1a16] dark:text-[#f5f0eb]";
+              "border-accent bg-accent/10 text-[#1f1a16] dark:text-[#f5f0eb]";
           }
 
           return (

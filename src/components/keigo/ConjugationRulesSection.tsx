@@ -44,7 +44,7 @@ export default function ConjugationRulesSection({
             onClick={() => setActiveTab("sonkeigo")}
             className={`px-3 py-1.5 rounded-[10px] text-xs font-medium transition-all cursor-pointer ${
               activeTab === "sonkeigo"
-                ? "bg-[#df6e53] text-white shadow-2xs font-semibold"
+                ? "bg-accent text-white shadow-2xs font-semibold"
                 : "text-[#70665a] dark:text-[#a09486]"
             }`}
           >
@@ -69,8 +69,8 @@ export default function ConjugationRulesSection({
         {(activeTab === "all" || activeTab === "sonkeigo") && (
           <div className="space-y-3">
             <div className="flex items-center gap-2 px-1">
-              <span className="w-2 h-2 rounded-full bg-[#df6e53]" />
-              <h4 className="font-serif font-bold text-sm text-[#df6e53] dark:text-[#f39882] uppercase tracking-wider flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-accent" />
+              <h4 className="font-serif font-bold text-sm text-accent uppercase tracking-wider flex items-center gap-1.5">
                 <ArrowUpRight size={15} />
                 <span>尊敬語 (Tôn kính ngữ - Nâng đối phương)</span>
               </h4>
@@ -80,11 +80,11 @@ export default function ConjugationRulesSection({
               {rules.sonkeigo?.map((rule, idx) => (
                 <div
                   key={idx}
-                  className="p-4 rounded-[18px] bg-white/90 dark:bg-[#1a1714]/90 ios-glass border border-[#df6e53]/20 dark:border-[#df6e53]/30 shadow-xs space-y-2.5"
+                  className="p-4 rounded-[18px] bg-white/90 dark:bg-[#1a1714]/90 ios-glass border border-accent/20 dark:border-accent-border shadow-xs space-y-2.5"
                 >
                   {/* Pattern Header */}
                   <div className="flex items-center justify-between gap-2">
-                    <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-[8px] bg-[#df6e53]/10 dark:bg-[#df6e53]/20 text-[#c24a2e] dark:text-[#f7a08c] border border-[#df6e53]/20">
+                    <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-[8px] bg-accent/10 dark:bg-accent/20 text-accent-muted border border-accent/20">
                       {rule.pattern}
                     </span>
                     <span className="text-[11px] font-semibold text-[#8a8074]">
@@ -108,7 +108,7 @@ export default function ConjugationRulesSection({
                   {/* Note */}
                   {rule.note && (
                     <div className="flex items-start gap-1.5 text-[11px] text-[#8a8074] dark:text-[#9e9285] pt-0.5">
-                      <Info size={13} className="shrink-0 mt-0.5 text-[#df6e53]" />
+                      <Info size={13} className="shrink-0 mt-0.5 text-accent" />
                       <span>{rule.note}</span>
                     </div>
                   )}

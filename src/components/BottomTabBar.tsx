@@ -62,7 +62,7 @@ export default function BottomTabBar() {
               href={tab.href}
               className={`flex flex-col items-center justify-center flex-1 py-1 relative select-none transition-transform active:scale-90 ${
                 tab.active
-                  ? "text-[#df6e53] dark:text-[#f39882]"
+                  ? "text-accent"
                   : "text-[#8a8074] dark:text-[#9e9285]"
               }`}
             >
@@ -73,7 +73,7 @@ export default function BottomTabBar() {
                   className="transition-colors"
                 />
                 {tab.badge !== null && (
-                  <span className="absolute -top-1 -right-2.5 min-w-[16px] h-4 px-1 rounded-full bg-[#df6e53] text-white text-[10px] font-bold flex items-center justify-center">
+                  <span className="absolute -top-1 -right-2.5 min-w-[16px] h-4 px-1 rounded-full bg-accent text-white text-[10px] font-bold flex items-center justify-center">
                     {tab.badge}
                   </span>
                 )}
@@ -81,7 +81,7 @@ export default function BottomTabBar() {
               <span
                 className={`text-[10px] mt-1 font-medium tracking-tight ${
                   tab.active
-                    ? "font-semibold text-[#df6e53] dark:text-[#f39882]"
+                    ? "font-semibold text-accent"
                     : ""
                 }`}
               >

@@ -67,11 +67,11 @@ export default function Header({
       countdownLabel = `あと${days}日`;
       countdownTone =
         days <= 30
-          ? "text-[#a44d36] dark:text-[#f39882]"
+          ? "text-accent-muted"
           : "text-[#1f1a16] dark:text-[#f5f0eb]";
     } else if (days === 0) {
       countdownLabel = "今日！";
-      countdownTone = "text-[#a44d36] dark:text-[#f39882]";
+      countdownTone = "text-accent-muted";
     } else {
       countdownLabel = "終了";
       countdownTone = "text-[#8a8074]";
@@ -105,14 +105,14 @@ export default function Header({
         <Link
           href="/settings"
           title={`JLPT · ${formatExamDateJa(examDate)} · 設定で変更`}
-          className="shrink-0 inline-flex items-center gap-2 px-2.5 sm:px-3 py-1.5 rounded-[12px] bg-[#df6e53]/10 dark:bg-[#df6e53]/12 border border-[#df6e53]/18 hover:border-[#df6e53]/35 active:scale-[0.98] transition-all"
+          className="shrink-0 inline-flex items-center gap-2 px-2.5 sm:px-3 py-1.5 rounded-[12px] bg-accent/10 dark:bg-accent-soft border border-accent-border hover:border-accent-border active:scale-[0.98] transition-all"
         >
           <CalendarDays
             size={14}
-            className="text-[#df6e53] dark:text-[#f39882] shrink-0"
+            className="text-accent shrink-0"
           />
           <div className="leading-tight">
-            <p className="text-[9px] font-bold tracking-wide text-[#a44d36]/80 dark:text-[#f39882]/80">
+            <p className="text-[9px] font-bold tracking-wide text-accent-muted/80 dark:text-accent/80">
               JLPT N2
             </p>
             <p className={`text-[12px] sm:text-[13px] font-bold tabular-nums ${countdownTone}`}>

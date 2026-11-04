@@ -170,7 +170,7 @@ export default function GlobalSearch({
         <Search
           size={14}
           strokeWidth={2.2}
-          className="absolute left-3 top-1/2 -translate-y-1/2 text-black/40 dark:text-white/40 group-focus-within:text-[#df6e53] dark:group-focus-within:text-[#f39882] transition-colors pointer-events-none"
+          className="absolute left-3 top-1/2 -translate-y-1/2 text-black/40 dark:text-white/40 group-focus-within:text-accent dark:group-focus-within:text-accent transition-colors pointer-events-none"
         />
 
         <input
@@ -187,7 +187,7 @@ export default function GlobalSearch({
           onChange={(e) => handleInputChange(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="文法を検索 (VD: 際, totan, khi...)"
-          className="w-full bg-black/[0.05] dark:bg-white/[0.09] hover:bg-black/[0.07] dark:hover:bg-white/[0.12] focus:bg-white dark:focus:bg-[#201c19] text-xs sm:text-[13px] text-[#1d1b19] dark:text-[#f5f0eb] placeholder-black/40 dark:placeholder-white/40 pl-8 pr-12 py-1.5 rounded-[12px] border border-transparent focus:border-[#df6e53]/35 dark:focus:border-[#df6e53]/40 focus:outline-hidden transition-all shadow-2xs"
+          className="w-full bg-black/[0.05] dark:bg-white/[0.09] hover:bg-black/[0.07] dark:hover:bg-white/[0.12] focus:bg-white dark:focus:bg-[#201c19] text-xs sm:text-[13px] text-[#1d1b19] dark:text-[#f5f0eb] placeholder-black/40 dark:placeholder-white/40 pl-8 pr-12 py-1.5 rounded-[12px] border border-transparent focus:border-accent-border dark:focus:border-accent-border focus:outline-hidden transition-all shadow-2xs"
         />
 
         {/* Clear or Keyboard shortcut badge */}
@@ -235,7 +235,7 @@ export default function GlobalSearch({
                       onMouseEnter={() => setSelectedIndex(idx)}
                       className={`p-3 rounded-[14px] cursor-pointer transition-all flex items-start justify-between gap-3 ${
                         isSelected
-                          ? "bg-[#df6e53]/10 dark:bg-[#df6e53]/20 border border-[#df6e53]/25"
+                          ? "bg-accent/10 dark:bg-accent/20 border border-accent-border"
                           : "hover:bg-black/[0.04] dark:hover:bg-white/[0.05] border border-transparent"
                       }`}
                     >
@@ -244,12 +244,12 @@ export default function GlobalSearch({
                           <span className="font-serif font-bold text-[14.5px] text-[#1f1a16] dark:text-[#f5f0eb] truncate">
                             {item.title}
                           </span>
-                          <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-[#df6e53]/15 text-[#df6e53] dark:text-[#f39882] shrink-0">
+                          <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-accent/15 text-accent shrink-0">
                             {item.badge}
                           </span>
                         </div>
 
-                        <div className="text-[11px] font-medium text-[#df6e53] dark:text-[#f39882] mb-0.5 truncate">
+                        <div className="text-[11px] font-medium text-accent mb-0.5 truncate">
                           {item.reading}
                         </div>
 
@@ -261,7 +261,7 @@ export default function GlobalSearch({
                       <div className="shrink-0 pt-1 text-[#8a8074] dark:text-[#9e9285]">
                         <ChevronRight
                           size={15}
-                          className={isSelected ? "text-[#df6e53] dark:text-[#f39882] translate-x-0.5 transition-transform" : ""}
+                          className={isSelected ? "text-accent translate-x-0.5 transition-transform" : ""}
                         />
                       </div>
                     </div>
@@ -284,7 +284,7 @@ export default function GlobalSearch({
                     <button
                       key={sug.label}
                       onClick={() => handleInputChange(sug.query)}
-                      className="px-2.5 py-1 rounded-full text-[11px] font-medium bg-black/[0.05] dark:bg-white/[0.08] text-[#1f1a16] dark:text-[#f5f0eb] hover:bg-[#df6e53] hover:text-white transition-colors cursor-pointer"
+                      className="px-2.5 py-1 rounded-full text-[11px] font-medium bg-black/[0.05] dark:bg-white/[0.08] text-[#1f1a16] dark:text-[#f5f0eb] hover:bg-accent hover:text-white transition-colors cursor-pointer"
                     >
                       {sug.label}
                     </button>
@@ -348,7 +348,7 @@ export default function GlobalSearch({
                       <button
                         key={sug.label}
                         onClick={() => handleInputChange(sug.query)}
-                        className="px-2.5 py-1 rounded-[10px] text-[11px] font-medium bg-black/[0.04] dark:bg-white/[0.07] text-[#554d45] dark:text-[#c7bbb0] hover:bg-[#df6e53] hover:text-white transition-colors cursor-pointer"
+                        className="px-2.5 py-1 rounded-[10px] text-[11px] font-medium bg-black/[0.04] dark:bg-white/[0.07] text-[#554d45] dark:text-[#c7bbb0] hover:bg-accent hover:text-white transition-colors cursor-pointer"
                       >
                         {sug.label}
                       </button>
@@ -378,7 +378,7 @@ export default function GlobalSearch({
                 value={query}
                 onChange={(e) => handleInputChange(e.target.value)}
                 placeholder="Tìm ngữ pháp N2, romaji, ý nghĩa..."
-                className="w-full bg-black/[0.05] dark:bg-white/[0.08] text-sm text-[#1f1a16] dark:text-[#f5f0eb] placeholder-black/40 dark:placeholder-white/40 pl-9 pr-9 py-2 rounded-[14px] border border-transparent focus:border-[#df6e53]/30 focus:outline-hidden"
+                className="w-full bg-black/[0.05] dark:bg-white/[0.08] text-sm text-[#1f1a16] dark:text-[#f5f0eb] placeholder-black/40 dark:placeholder-white/40 pl-9 pr-9 py-2 rounded-[14px] border border-transparent focus:border-accent-border focus:outline-hidden"
               />
               {query && (
                 <button
@@ -431,11 +431,11 @@ export default function GlobalSearch({
                         <span className="font-serif font-bold text-base text-[#1f1a16] dark:text-[#f5f0eb]">
                           {item.title}
                         </span>
-                        <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-[#df6e53]/15 text-[#df6e53] dark:text-[#f39882]">
+                        <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-accent/15 text-accent">
                           {item.badge}
                         </span>
                       </div>
-                      <div className="text-xs font-semibold text-[#df6e53] dark:text-[#f39882] mb-1">
+                      <div className="text-xs font-semibold text-accent mb-1">
                         {item.reading}
                       </div>
                       <p className="text-xs text-[#70665a] dark:text-[#aaa094] line-clamp-2">

@@ -15,7 +15,7 @@ export default function PageBackLink({
   return (
     <Link
       href={href}
-      className={`inline-flex items-center gap-0.5 text-[13px] font-semibold text-[#df6e53] dark:text-[#f39882] hover:opacity-80 active:scale-[0.98] transition-all mb-3 -ml-0.5 ${className}`}
+      className={`inline-flex items-center gap-0.5 text-[13px] font-semibold text-accent hover:opacity-80 active:scale-[0.98] transition-all mb-3 -ml-0.5 ${className}`}
     >
       <ChevronLeft size={17} strokeWidth={2.5} />
       {label}

@@ -55,11 +55,11 @@ export default function KanjiListClient({ lessons }: KanjiListClientProps) {
             <Link
               key={lesson.id}
               href={`/kanji/${lesson.id}`}
-              className="group rounded-[16px] border border-black/[0.06] dark:border-white/[0.08] bg-white/90 dark:bg-[#1a1714]/90 p-4 hover:border-[#df6e53]/35 transition-colors"
+              className="group rounded-[16px] border border-black/[0.06] dark:border-white/[0.08] bg-white/90 dark:bg-[#1a1714]/90 p-4 hover:border-accent-border transition-colors"
             >
               <div className="flex items-start justify-between gap-2 mb-3">
                 <div className="flex items-center gap-2.5">
-                  <span className="w-9 h-9 rounded-[12px] bg-[#df6e53]/12 text-[#a44d36] dark:text-[#f39882] font-serif font-bold text-base flex items-center justify-center">
+                  <span className="w-9 h-9 rounded-[12px] bg-accent/12 text-accent-muted font-serif font-bold text-base flex items-center justify-center">
                     {lesson.id}
                   </span>
                   <div>
@@ -75,7 +75,7 @@ export default function KanjiListClient({ lessons }: KanjiListClientProps) {
                 </div>
                 <ArrowRight
                   size={15}
-                  className="text-[#c4b7a8] group-hover:text-[#df6e53] mt-1"
+                  className="text-[#c4b7a8] group-hover:text-accent mt-1"
                 />
               </div>
 
@@ -86,7 +86,7 @@ export default function KanjiListClient({ lessons }: KanjiListClientProps) {
               {known > 0 && (
                 <div className="h-1 rounded-full bg-black/[0.05] dark:bg-white/[0.08] overflow-hidden">
                   <div
-                    className="h-full rounded-full bg-[#df6e53]"
+                    className="h-full rounded-full bg-accent"
                     style={{ width: `${pct}%` }}
                   />
                 </div>

@@ -32,7 +32,7 @@ export default function KeigoView({
         <button
           type="button"
           onClick={() => setIsQuizOpen(true)}
-          className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-[12px] bg-[#df6e53] hover:bg-[#c95d43] text-white text-sm font-semibold active:scale-95 cursor-pointer shrink-0"
+          className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-[12px] bg-accent hover:bg-accent-hover text-white text-sm font-semibold active:scale-95 cursor-pointer shrink-0"
         >
           <HelpCircle size={15} />
           Quiz 10 câu
@@ -57,7 +57,7 @@ export default function KeigoView({
           onClick={() => setActiveSection("verbs")}
           className={`px-3.5 py-2 rounded-[14px] text-xs font-medium whitespace-nowrap transition-all cursor-pointer flex items-center gap-1.5 ${
             activeSection === "verbs"
-              ? "bg-[#df6e53] text-white shadow-sm font-semibold"
+              ? "bg-accent text-white shadow-sm font-semibold"
               : "bg-white/80 dark:bg-[#1a1714]/80 text-[#70665a] dark:text-[#a09486] hover:bg-white dark:hover:bg-[#201d19] border border-black/[0.06] dark:border-white/[0.08]"
           }`}
         >
@@ -69,7 +69,7 @@ export default function KeigoView({
           onClick={() => setActiveSection("rules")}
           className={`px-3.5 py-2 rounded-[14px] text-xs font-medium whitespace-nowrap transition-all cursor-pointer flex items-center gap-1.5 ${
             activeSection === "rules"
-              ? "bg-[#2e7d58] text-white shadow-sm font-semibold"
+              ? "bg-accent text-white shadow-sm font-semibold"
               : "bg-white/80 dark:bg-[#1a1714]/80 text-[#70665a] dark:text-[#a09486] hover:bg-white dark:hover:bg-[#201d19] border border-black/[0.06] dark:border-white/[0.08]"
           }`}
         >
@@ -81,7 +81,7 @@ export default function KeigoView({
           onClick={() => setActiveSection("business")}
           className={`px-3.5 py-2 rounded-[14px] text-xs font-medium whitespace-nowrap transition-all cursor-pointer flex items-center gap-1.5 ${
             activeSection === "business"
-              ? "bg-[#8e44ad] text-white shadow-sm font-semibold"
+              ? "bg-accent text-white shadow-sm font-semibold"
               : "bg-white/80 dark:bg-[#1a1714]/80 text-[#70665a] dark:text-[#a09486] hover:bg-white dark:hover:bg-[#201d19] border border-black/[0.06] dark:border-white/[0.08]"
           }`}
         >
@@ -93,7 +93,7 @@ export default function KeigoView({
           onClick={() => setActiveSection("traps")}
           className={`px-3.5 py-2 rounded-[14px] text-xs font-medium whitespace-nowrap transition-all cursor-pointer flex items-center gap-1.5 ${
             activeSection === "traps"
-              ? "bg-[#e67e22] text-white shadow-sm font-semibold"
+              ? "bg-accent text-white shadow-sm font-semibold"
               : "bg-white/80 dark:bg-[#1a1714]/80 text-[#70665a] dark:text-[#a09486] hover:bg-white dark:hover:bg-[#201d19] border border-black/[0.06] dark:border-white/[0.08]"
           }`}
         >

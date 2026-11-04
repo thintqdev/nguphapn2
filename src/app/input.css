@@ -2,6 +2,17 @@
 
 @custom-variant dark (.dark &);
 
+@theme inline {
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-muted: var(--accent-muted);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-ring: var(--accent-ring);
+  --color-accent-border: var(--accent-border);
+  --color-accent-grad-from: var(--accent-grad-from);
+  --color-accent-grad-to: var(--accent-grad-to);
+}
+
 :root {
   --bg-app: #f5f3ee;
   --bg-sidebar: rgba(252, 250, 246, 0.82);
@@ -13,6 +24,17 @@
   --border-hairline: rgba(0, 0, 0, 0.05);
   --ios-blue: #0071e3;
   --ios-blue-light: rgba(0, 113, 227, 0.1);
+
+  /* Default skin: terracotta */
+  --accent: #df6e53;
+  --accent-hover: #c95d43;
+  --accent-muted: #a44d36;
+  --accent-soft: rgba(223, 110, 83, 0.12);
+  --accent-ring: rgba(223, 110, 83, 0.35);
+  --accent-border: rgba(223, 110, 83, 0.25);
+  --accent-grad-from: #ef927c;
+  --accent-grad-to: #b84a32;
+  --accent-shadow: rgba(223, 110, 83, 0.25);
 }
 
 html.dark,
@@ -28,6 +50,162 @@ html.dark,
   --ios-blue: #2997ff;
   --ios-blue-light: rgba(41, 151, 255, 0.15);
   color-scheme: dark;
+
+  --accent: #f39882;
+  --accent-hover: #ef927c;
+  --accent-muted: #f39882;
+  --accent-soft: rgba(243, 152, 130, 0.15);
+  --accent-ring: rgba(243, 152, 130, 0.4);
+  --accent-border: rgba(243, 152, 130, 0.28);
+  --accent-grad-from: #f39882;
+  --accent-grad-to: #df6e53;
+  --accent-shadow: rgba(243, 152, 130, 0.28);
+}
+
+/* —— Skins (accent only; washi neutrals unchanged) —— */
+
+[data-skin="terracotta"] {
+  --accent: #df6e53;
+  --accent-hover: #c95d43;
+  --accent-muted: #a44d36;
+  --accent-soft: rgba(223, 110, 83, 0.12);
+  --accent-ring: rgba(223, 110, 83, 0.35);
+  --accent-border: rgba(223, 110, 83, 0.25);
+  --accent-grad-from: #ef927c;
+  --accent-grad-to: #b84a32;
+  --accent-shadow: rgba(223, 110, 83, 0.25);
+}
+.dark[data-skin="terracotta"],
+html.dark[data-skin="terracotta"] {
+  --accent: #f39882;
+  --accent-hover: #ef927c;
+  --accent-muted: #f39882;
+  --accent-soft: rgba(243, 152, 130, 0.15);
+  --accent-ring: rgba(243, 152, 130, 0.4);
+  --accent-border: rgba(243, 152, 130, 0.28);
+  --accent-grad-from: #f39882;
+  --accent-grad-to: #df6e53;
+  --accent-shadow: rgba(243, 152, 130, 0.28);
+}
+
+[data-skin="matcha"] {
+  --accent: #5f8f6a;
+  --accent-hover: #4e7a58;
+  --accent-muted: #3f6a4a;
+  --accent-soft: rgba(95, 143, 106, 0.12);
+  --accent-ring: rgba(95, 143, 106, 0.35);
+  --accent-border: rgba(95, 143, 106, 0.25);
+  --accent-grad-from: #8bb894;
+  --accent-grad-to: #3d6a48;
+  --accent-shadow: rgba(95, 143, 106, 0.25);
+}
+.dark[data-skin="matcha"],
+html.dark[data-skin="matcha"] {
+  --accent: #8fbf98;
+  --accent-hover: #a3ceb0;
+  --accent-muted: #8fbf98;
+  --accent-soft: rgba(143, 191, 152, 0.15);
+  --accent-ring: rgba(143, 191, 152, 0.4);
+  --accent-border: rgba(143, 191, 152, 0.28);
+  --accent-grad-from: #a3ceb0;
+  --accent-grad-to: #5f8f6a;
+  --accent-shadow: rgba(143, 191, 152, 0.28);
+}
+
+[data-skin="ai"] {
+  --accent: #4f6f9a;
+  --accent-hover: #405c82;
+  --accent-muted: #3a5578;
+  --accent-soft: rgba(79, 111, 154, 0.12);
+  --accent-ring: rgba(79, 111, 154, 0.35);
+  --accent-border: rgba(79, 111, 154, 0.25);
+  --accent-grad-from: #7a96ba;
+  --accent-grad-to: #35506f;
+  --accent-shadow: rgba(79, 111, 154, 0.25);
+}
+.dark[data-skin="ai"],
+html.dark[data-skin="ai"] {
+  --accent: #8eabcc;
+  --accent-hover: #a4bdd8;
+  --accent-muted: #8eabcc;
+  --accent-soft: rgba(142, 171, 204, 0.15);
+  --accent-ring: rgba(142, 171, 204, 0.4);
+  --accent-border: rgba(142, 171, 204, 0.28);
+  --accent-grad-from: #a4bdd8;
+  --accent-grad-to: #4f6f9a;
+  --accent-shadow: rgba(142, 171, 204, 0.28);
+}
+
+[data-skin="ume"] {
+  --accent: #c46b7a;
+  --accent-hover: #ad5867;
+  --accent-muted: #9a4a5a;
+  --accent-soft: rgba(196, 107, 122, 0.12);
+  --accent-ring: rgba(196, 107, 122, 0.35);
+  --accent-border: rgba(196, 107, 122, 0.25);
+  --accent-grad-from: #d9929d;
+  --accent-grad-to: #8f4555;
+  --accent-shadow: rgba(196, 107, 122, 0.25);
+}
+.dark[data-skin="ume"],
+html.dark[data-skin="ume"] {
+  --accent: #e09aa6;
+  --accent-hover: #ebb0ba;
+  --accent-muted: #e09aa6;
+  --accent-soft: rgba(224, 154, 166, 0.15);
+  --accent-ring: rgba(224, 154, 166, 0.4);
+  --accent-border: rgba(224, 154, 166, 0.28);
+  --accent-grad-from: #ebb0ba;
+  --accent-grad-to: #c46b7a;
+  --accent-shadow: rgba(224, 154, 166, 0.28);
+}
+
+[data-skin="kincha"] {
+  --accent: #c4893f;
+  --accent-hover: #a97534;
+  --accent-muted: #8f632c;
+  --accent-soft: rgba(196, 137, 63, 0.12);
+  --accent-ring: rgba(196, 137, 63, 0.35);
+  --accent-border: rgba(196, 137, 63, 0.25);
+  --accent-grad-from: #dbb06a;
+  --accent-grad-to: #8a5c28;
+  --accent-shadow: rgba(196, 137, 63, 0.25);
+}
+.dark[data-skin="kincha"],
+html.dark[data-skin="kincha"] {
+  --accent: #e0b36a;
+  --accent-hover: #ebc484;
+  --accent-muted: #e0b36a;
+  --accent-soft: rgba(224, 179, 106, 0.15);
+  --accent-ring: rgba(224, 179, 106, 0.4);
+  --accent-border: rgba(224, 179, 106, 0.28);
+  --accent-grad-from: #ebc484;
+  --accent-grad-to: #c4893f;
+  --accent-shadow: rgba(224, 179, 106, 0.28);
+}
+
+[data-skin="sora"] {
+  --accent: #5a8aa0;
+  --accent-hover: #487388;
+  --accent-muted: #3d6478;
+  --accent-soft: rgba(90, 138, 160, 0.12);
+  --accent-ring: rgba(90, 138, 160, 0.35);
+  --accent-border: rgba(90, 138, 160, 0.25);
+  --accent-grad-from: #84b0c2;
+  --accent-grad-to: #3d6a7e;
+  --accent-shadow: rgba(90, 138, 160, 0.25);
+}
+.dark[data-skin="sora"],
+html.dark[data-skin="sora"] {
+  --accent: #8eb9cb;
+  --accent-hover: #a5cada;
+  --accent-muted: #8eb9cb;
+  --accent-soft: rgba(142, 185, 203, 0.15);
+  --accent-ring: rgba(142, 185, 203, 0.4);
+  --accent-border: rgba(142, 185, 203, 0.28);
+  --accent-grad-from: #a5cada;
+  --accent-grad-to: #5a8aa0;
+  --accent-shadow: rgba(142, 185, 203, 0.28);
 }
 
 body {
@@ -83,8 +261,16 @@ body {
 
 .kanji-washi {
   background-image:
-    radial-gradient(ellipse at 20% 10%, rgba(223, 110, 83, 0.07), transparent 45%),
+    radial-gradient(ellipse at 20% 10%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 45%),
     radial-gradient(ellipse at 90% 80%, rgba(91, 143, 173, 0.08), transparent 40%);
+}
+
+.shadow-accent-sm {
+  box-shadow: 0 4px 14px -2px var(--accent-shadow);
+}
+
+.bg-brand-grad {
+  background-image: linear-gradient(to top right, var(--accent-grad-to), var(--accent-grad-from));
 }
 
 /* Custom iOS style scrollbar */

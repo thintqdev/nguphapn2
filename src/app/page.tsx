@@ -99,7 +99,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/exercise"
-              className="inline-flex items-center gap-1 text-xs font-semibold text-[#df6e53] dark:text-[#f39882]"
+              className="inline-flex items-center gap-1 text-xs font-semibold text-accent"
             >
               Luyện tập
               <ArrowRight size={13} />
@@ -137,7 +137,7 @@ export default function HomePage() {
                         setSelectedCategoryId("all");
                         setSearchQuery("");
                       }}
-                      className="mt-2 text-[#df6e53] font-semibold cursor-pointer"
+                      className="mt-2 text-accent font-semibold cursor-pointer"
                     >
                       Xóa bộ lọc
                     </button>

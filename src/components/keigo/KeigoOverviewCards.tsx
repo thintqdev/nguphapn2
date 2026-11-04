@@ -17,11 +17,11 @@ const categoryMeta: Record<
 > = {
   sonkeigo: {
     icon: ArrowUpRight,
-    accentBg: "from-[#df6e53]/15 to-[#df6e53]/5 dark:from-[#df6e53]/25 dark:to-[#df6e53]/10",
-    accentText: "text-[#df6e53] dark:text-[#f39882]",
-    borderLight: "border-[#df6e53]/25 dark:border-[#df6e53]/35",
-    tagText: "text-[#c24a2e] dark:text-[#f7a08c]",
-    tagBg: "bg-[#df6e53]/15 dark:bg-[#df6e53]/25",
+    accentBg: "from-accent/15 to-accent/5 dark:from-accent/25 dark:to-accent/10",
+    accentText: "text-accent",
+    borderLight: "border-accent-border dark:border-accent-border",
+    tagText: "text-accent-muted",
+    tagBg: "bg-accent/15 dark:bg-accent/25",
   },
   "kenjougo-1": {
     icon: ArrowDownRight,

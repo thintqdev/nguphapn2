@@ -77,7 +77,7 @@ export default function KanjiStudyDesk({
               type="button"
               disabled={index <= 0}
               onClick={() => onIndexChange(index - 1)}
-              className="w-7 h-7 rounded-full flex items-center justify-center text-[#df6e53] dark:text-[#f39882] disabled:opacity-25 disabled:cursor-not-allowed hover:bg-[#df6e53]/10 active:scale-90 transition-all cursor-pointer"
+              className="w-7 h-7 rounded-full flex items-center justify-center text-accent disabled:opacity-25 disabled:cursor-not-allowed hover:bg-accent/10 active:scale-90 transition-all cursor-pointer"
               aria-label="Trước"
             >
               <ChevronLeft size={16} />
@@ -89,7 +89,7 @@ export default function KanjiStudyDesk({
               type="button"
               disabled={index >= items.length - 1}
               onClick={() => onIndexChange(index + 1)}
-              className="w-7 h-7 rounded-full flex items-center justify-center text-[#df6e53] dark:text-[#f39882] disabled:opacity-25 disabled:cursor-not-allowed hover:bg-[#df6e53]/10 active:scale-90 transition-all cursor-pointer"
+              className="w-7 h-7 rounded-full flex items-center justify-center text-accent disabled:opacity-25 disabled:cursor-not-allowed hover:bg-accent/10 active:scale-90 transition-all cursor-pointer"
               aria-label="Tiếp"
             >
               <ChevronRight size={16} />
@@ -111,10 +111,10 @@ export default function KanjiStudyDesk({
             <p className="font-serif text-[52px] leading-none text-[#1f1a16] dark:text-[#f5f0eb]">
               {item.kanji}
             </p>
-            <p className="mt-1.5 text-[15px] font-semibold text-[#df6e53] dark:text-[#f39882]">
+            <p className="mt-1.5 text-[15px] font-semibold text-accent">
               {item.han_viet}
               {isKnown && (
-                <span className="ml-1.5 align-middle text-[10px] font-bold text-[#2e7d58] dark:text-[#52c28d]">
+                <span className="ml-1.5 align-middle text-[10px] font-bold text-accent-muted">
                   · đã biết
                 </span>
               )}
@@ -172,7 +172,7 @@ export default function KanjiStudyDesk({
               onMarkKnown(item.stt);
               if (index < items.length - 1) onIndexChange(index + 1);
             }}
-            className="inline-flex items-center justify-center gap-1 py-2.5 rounded-[12px] text-[13px] font-bold bg-[#2e7d58] hover:bg-[#276d4c] text-white active:scale-[0.98] transition-all cursor-pointer"
+            className="inline-flex items-center justify-center gap-1 py-2.5 rounded-[12px] text-[13px] font-bold bg-accent hover:bg-accent-hover text-white active:scale-[0.98] transition-all cursor-pointer"
           >
             <Check size={13} />
             Biết rồi

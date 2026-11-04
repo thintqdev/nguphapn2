@@ -45,7 +45,7 @@ function QuestionText({ text }: { text: string }) {
           return (
             <span
               key={idx}
-              className="inline-flex items-center justify-center mx-0.5 px-2.5 py-0.5 rounded-[8px] bg-[#df6e53] text-white text-base font-bold tracking-wide shadow-sm align-middle"
+              className="inline-flex items-center justify-center mx-0.5 px-2.5 py-0.5 rounded-[8px] bg-accent text-white text-base font-bold tracking-wide shadow-sm align-middle"
             >
               ★
             </span>
@@ -270,7 +270,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
         <div className="flex items-center gap-3">
           <Link
             href="/exercise"
-            className="p-2 rounded-xl bg-black/[0.04] dark:bg-white/[0.06] text-[#70665a] dark:text-[#a09486] hover:text-[#df6e53] dark:hover:text-[#f39882] active:scale-95 transition-all"
+            className="p-2 rounded-xl bg-black/[0.04] dark:bg-white/[0.06] text-[#70665a] dark:text-[#a09486] hover:text-accent dark:hover:text-accent active:scale-95 transition-all"
             title="Quay lại danh sách bài tập"
           >
             <ChevronLeft size={18} strokeWidth={2.5} />
@@ -278,7 +278,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
 
           <div>
             <div className="flex items-center gap-2 mb-0.5">
-              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[#df6e53]/15 text-[#df6e53] dark:text-[#f39882] uppercase tracking-wider">
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-accent/15 text-accent uppercase tracking-wider">
                 JLPT N2
               </span>
               <span className="text-xs text-[#8a8074] dark:text-[#9e9285] font-medium">
@@ -301,7 +301,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
                 onClick={() => setMode("practice")}
                 className={`px-3 py-1.5 rounded-[10px] font-semibold transition-all cursor-pointer ${
                   mode === "practice"
-                    ? "bg-white dark:bg-[#201d19] text-[#df6e53] dark:text-[#f39882] shadow-xs"
+                    ? "bg-white dark:bg-[#201d19] text-accent shadow-xs"
                     : "text-[#70665a] dark:text-[#a09486]"
                 }`}
               >
@@ -312,7 +312,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
                 onClick={() => setMode("exam")}
                 className={`px-3 py-1.5 rounded-[10px] font-semibold transition-all cursor-pointer ${
                   mode === "exam"
-                    ? "bg-[#df6e53] text-white shadow-xs"
+                    ? "bg-accent text-white shadow-xs"
                     : "text-[#70665a] dark:text-[#a09486]"
                 }`}
               >
@@ -323,7 +323,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
 
           {/* Timer if exam mode */}
           {mode === "exam" && !isSubmitted && (
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-[12px] bg-[#df6e53]/10 dark:bg-[#df6e53]/20 text-[#df6e53] dark:text-[#f39882] font-mono font-bold text-xs">
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-[12px] bg-accent/10 dark:bg-accent/20 text-accent font-mono font-bold text-xs">
               <Clock size={14} className={timeLeft < 300 ? "animate-pulse text-red-500" : ""} />
               <span>{formatTime(timeLeft)}</span>
               <button
@@ -362,7 +362,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
           </span>
           <span>
             Đã làm:{" "}
-            <span className="font-bold text-[#df6e53] dark:text-[#f39882]">
+            <span className="font-bold text-accent">
               {answeredCount}
             </span>{" "}
             ({Math.round((answeredCount / totalQuestions) * 100)}%)
@@ -370,7 +370,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
         </div>
         <div className="h-1.5 w-full bg-black/[0.05] dark:bg-white/[0.08] rounded-full overflow-hidden">
           <div
-            className="h-full bg-gradient-to-r from-[#df6e53] to-[#ef927c] transition-all duration-300"
+            className="h-full bg-gradient-to-r from-accent to-accent-grad-from transition-all duration-300"
             style={{ width: `${((currentIndex + 1) / totalQuestions) * 100}%` }}
           />
         </div>
@@ -463,7 +463,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
                 // Exam mode
                 if (isSelected) {
                   optionStyle =
-                    "bg-[#df6e53]/15 border-[#df6e53] text-[#df6e53] dark:text-[#f39882] font-bold shadow-2xs";
+                    "bg-accent/15 border-accent text-accent font-bold shadow-2xs";
                 }
                 if (isSubmitted) {
                   if (isCorrectOpt) {
@@ -499,7 +499,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
                       <XCircle size={18} className="text-[#c0392b] shrink-0" />
                     ) : null
                   ) : isSelected ? (
-                    <span className="w-3 h-3 rounded-full bg-[#df6e53] shrink-0" />
+                    <span className="w-3 h-3 rounded-full bg-accent shrink-0" />
                   ) : null}
                 </div>
               );
@@ -508,9 +508,9 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
 
           {/* Explanation Box (Visible in Practice Mode after choosing answer OR in Exam Mode after submission) */}
           {((mode === "practice" && isCurrentAnswered) || isSubmitted) && (
-            <div className="p-4 sm:p-5 rounded-[20px] bg-gradient-to-br from-[#f8ede8]/60 via-[#fbf5f2]/60 to-transparent dark:from-[#2a1d18]/60 dark:via-[#1e1714]/60 border border-[#df6e53]/25 space-y-3 animate-fade-in">
+            <div className="p-4 sm:p-5 rounded-[20px] bg-gradient-to-br from-accent/10 via-accent/5 to-transparent border border-accent-border space-y-3 animate-fade-in">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#df6e53] dark:text-[#f39882] flex items-center gap-1.5">
+                <span className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
                   <Sparkles size={14} />
                   <span>Đáp án & Giải thích chi tiết</span>
                 </span>
@@ -534,7 +534,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
                   <div className="space-y-1 text-xs text-[#5e5349] dark:text-[#b8ada2]">
                     {Object.entries(currentQ.grammar_meanings).map(([key, val]) => (
                       <div key={key} className="flex items-start gap-1.5">
-                        <span className="font-bold text-[#df6e53] dark:text-[#f39882] shrink-0">
+                        <span className="font-bold text-accent shrink-0">
                           [{key}]
                         </span>
                         <span>{val}</span>
@@ -561,7 +561,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
             {mode === "exam" && !isSubmitted && (
               <button
                 onClick={handleSubmitExam}
-                className="px-5 py-2.5 rounded-[14px] bg-[#df6e53] hover:bg-[#c95d43] active:scale-95 text-white text-xs sm:text-sm font-semibold transition-all cursor-pointer shadow-md shadow-[#df6e53]/25 flex items-center gap-1.5"
+                className="px-5 py-2.5 rounded-[14px] bg-accent hover:bg-accent-hover active:scale-95 text-white text-xs sm:text-sm font-semibold transition-all cursor-pointer shadow-md shadow-accent-sm flex items-center gap-1.5"
               >
                 <FileCheck size={16} />
                 <span>Nộp bài thi</span>
@@ -571,7 +571,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
             <button
               onClick={handleNext}
               disabled={currentIndex === totalQuestions - 1}
-              className="px-4 py-2.5 rounded-[14px] bg-[#df6e53] hover:bg-[#c95d43] active:scale-95 text-white text-xs font-semibold disabled:opacity-40 disabled:cursor-not-allowed transition-all flex items-center gap-1 cursor-pointer shadow-sm shadow-[#df6e53]/20"
+              className="px-4 py-2.5 rounded-[14px] bg-accent hover:bg-accent-hover active:scale-95 text-white text-xs font-semibold disabled:opacity-40 disabled:cursor-not-allowed transition-all flex items-center gap-1 cursor-pointer shadow-sm shadow-accent-sm"
             >
               <span>Câu sau</span>
               <ChevronRight size={16} />
@@ -583,12 +583,12 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
       {/* Submitted Score Summary Banner */}
       {isSubmitted && (
         <div className="p-6 rounded-[24px] bg-white dark:bg-[#1a1714] ios-glass border border-black/[0.06] dark:border-white/[0.08] shadow-md space-y-5 animate-fade-in text-center">
-          <div className="w-16 h-16 rounded-full bg-[#df6e53]/15 text-[#df6e53] dark:text-[#f39882] flex items-center justify-center mx-auto shadow-inner">
+          <div className="w-16 h-16 rounded-full bg-accent/15 text-accent flex items-center justify-center mx-auto shadow-inner">
             <Award size={36} />
           </div>
 
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#df6e53] dark:text-[#f39882]">
+            <span className="text-xs font-bold uppercase tracking-wider text-accent">
               Kết quả bài thi thử
             </span>
             <h2 className="font-serif font-bold text-2xl text-[#1f1a16] dark:text-[#f5f0eb] mt-1">
@@ -629,7 +629,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
             </button>
             <Link
               href="/exercise"
-              className="px-5 py-2.5 rounded-[14px] bg-[#df6e53] hover:bg-[#c95d43] text-white text-xs sm:text-sm font-semibold transition-all cursor-pointer shadow-md shadow-[#df6e53]/25 flex items-center gap-1.5"
+              className="px-5 py-2.5 rounded-[14px] bg-accent hover:bg-accent-hover text-white text-xs sm:text-sm font-semibold transition-all cursor-pointer shadow-md shadow-accent-sm flex items-center gap-1.5"
             >
               <span>Xem danh sách bài tập</span>
               <ArrowRight size={15} />
@@ -719,7 +719,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
                     }
                   } else if (userAns) {
                     btnStyle =
-                      "bg-[#df6e53] text-white border-[#df6e53] font-bold shadow-2xs";
+                      "bg-accent text-white border-accent font-bold shadow-2xs";
                   }
 
                   if (isCurrent) {
@@ -748,7 +748,7 @@ export default function ExercisePlayer({ exercise }: ExercisePlayerProps) {
             {/* Legend footer */}
             <div className="pt-3 border-t border-black/[0.06] dark:border-white/[0.07] flex flex-wrap items-center justify-between text-[11px] text-[#8a8074]">
               <div className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#df6e53]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-accent" />
                 <span>Đã làm</span>
               </div>
               <div className="flex items-center gap-1.5">

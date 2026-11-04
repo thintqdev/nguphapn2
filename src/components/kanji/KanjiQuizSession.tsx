@@ -87,7 +87,7 @@ export default function KanjiQuizSession({
           <button
             type="button"
             onClick={onClose}
-            className="px-4 py-2 rounded-[12px] bg-[#df6e53] text-white text-[13px] font-semibold cursor-pointer"
+            className="px-4 py-2 rounded-[12px] bg-accent text-white text-[13px] font-semibold cursor-pointer"
           >
             Đóng
           </button>
@@ -102,7 +102,7 @@ export default function KanjiQuizSession({
           className={`${card} p-5 text-center`}
           onClick={(e) => e.stopPropagation()}
         >
-          <div className="w-10 h-10 mx-auto mb-2.5 rounded-full bg-[#df6e53]/12 text-[#df6e53] flex items-center justify-center">
+          <div className="w-10 h-10 mx-auto mb-2.5 rounded-full bg-accent/12 text-accent flex items-center justify-center">
             <Sparkles size={18} />
           </div>
           <h2 className="font-serif font-bold text-lg mb-0.5 text-[#1f1a16] dark:text-[#f5f0eb]">
@@ -111,13 +111,13 @@ export default function KanjiQuizSession({
           <p className="text-xs text-[#70665a] dark:text-[#b8aba0]">
             Đúng {correctCount}/{questions.length}
           </p>
-          <p className="font-serif font-bold text-2xl text-[#df6e53] dark:text-[#f39882] my-3">
+          <p className="font-serif font-bold text-2xl text-accent my-3">
             {pct}%
           </p>
           <button
             type="button"
             onClick={onClose}
-            className="w-full py-2.5 rounded-[12px] text-[13px] font-bold bg-[#df6e53] text-white cursor-pointer active:scale-[0.98]"
+            className="w-full py-2.5 rounded-[12px] text-[13px] font-bold bg-accent text-white cursor-pointer active:scale-[0.98]"
           >
             Đóng
           </button>
@@ -143,7 +143,7 @@ export default function KanjiQuizSession({
 
           <div className="px-3.5 pt-3.5 pb-2 pr-10 shrink-0">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-[11px] font-bold text-[#df6e53] dark:text-[#f39882] flex items-center gap-1">
+              <span className="text-[11px] font-bold text-accent flex items-center gap-1">
                 <Sparkles size={12} />
                 Quiz
               </span>
@@ -153,7 +153,7 @@ export default function KanjiQuizSession({
             </div>
             <div className="h-1 rounded-full bg-black/[0.05] dark:bg-white/[0.08] overflow-hidden">
               <div
-                className="h-full rounded-full bg-[#df6e53] transition-all duration-300"
+                className="h-full rounded-full bg-accent transition-all duration-300"
                 style={{ width: `${progressPct}%` }}
               />
             </div>
@@ -180,11 +180,11 @@ export default function KanjiQuizSession({
             >
               {q.options.map((opt) => {
                 let style =
-                  "bg-black/[0.03] dark:bg-white/[0.05] border-black/[0.06] dark:border-white/[0.08]";
+                  "bg-black/[0.03] dark:bg-white/[0.05] border-black/[0.06] dark:border-white/[0.08] hover:bg-accent/10 hover:border-accent-border";
                 if (revealed) {
                   if (opt === q.answer) {
                     style =
-                      "bg-[#2e7d58]/15 border-[#2e7d58] text-[#2e7d58] dark:text-[#52c28d] font-bold";
+                      "bg-accent/15 border-accent text-accent-muted font-bold";
                   } else if (opt === selected) {
                     style =
                       "bg-[#c0392b]/12 border-[#c0392b] text-[#c0392b]";
@@ -215,8 +215,8 @@ export default function KanjiQuizSession({
               <div
                 className={`flex items-start gap-1.5 rounded-[12px] p-2.5 text-[12px] ${
                   isCorrect
-                    ? "bg-[#2e7d58]/10 text-[#2e7d58] dark:text-[#52c28d]"
-                    : "bg-[#df6e53]/10 text-[#c4563c]"
+                    ? "bg-accent/10 text-accent-muted"
+                    : "bg-[#c0392b]/10 text-[#c0392b]"
                 }`}
               >
                 {isCorrect ? (
@@ -238,7 +238,7 @@ export default function KanjiQuizSession({
               <button
                 type="button"
                 onClick={handleNext}
-                className="w-full py-2.5 rounded-[12px] text-[13px] font-bold bg-[#df6e53] text-white active:scale-[0.98] cursor-pointer"
+                className="w-full py-2.5 rounded-[12px] text-[13px] font-bold bg-accent text-white active:scale-[0.98] cursor-pointer"
               >
                 {qi >= questions.length - 1 ? "Kết quả" : "Tiếp →"}
               </button>

@@ -14,7 +14,7 @@ export function FavoriteButton({ grammarId }: { grammarId: string }) {
       type="button"
       className={`inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-1.5 rounded-full border text-xs font-semibold transition-all shadow-xs cursor-pointer active:scale-95 ${
         isFav
-          ? "bg-[#df6e53] border-[#df6e53] text-white shadow-sm shadow-[#df6e53]/30"
+          ? "bg-accent border-accent text-white shadow-accent-sm"
           : "bg-white/90 dark:bg-white/[0.12] backdrop-blur-md hover:bg-white dark:hover:bg-white/[0.18] border-black/[0.06] dark:border-white/[0.12] text-[#554a3e] dark:text-[#ded2c3]"
       }`}
     >
@@ -59,7 +59,7 @@ export function AudioPlayButton({
         title="発音を聞く"
         className={`w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-black/45 hover:bg-black/65 active:scale-90 text-white flex items-center justify-center backdrop-blur-md transition-all shadow-md cursor-pointer ${className}`}
       >
-        <Volume2 size={20} className={isPlaying ? "text-[#df6e53] animate-pulse" : ""} />
+        <Volume2 size={20} className={isPlaying ? "text-accent animate-pulse" : ""} />
       </button>
     );
   }
@@ -70,9 +70,9 @@ export function AudioPlayButton({
         onClick={playVoice}
         type="button"
         title="発音を聞く"
-        className={`w-7 h-7 rounded-full text-black/40 dark:text-white/40 hover:text-[#a44d36] dark:hover:text-[#f39882] hover:bg-black/[0.04] dark:hover:bg-white/[0.06] flex items-center justify-center shrink-0 active:scale-90 transition-all cursor-pointer ${className}`}
+        className={`w-7 h-7 rounded-full text-black/40 dark:text-white/40 hover:text-accent-muted dark:hover:text-accent hover:bg-black/[0.04] dark:hover:bg-white/[0.06] flex items-center justify-center shrink-0 active:scale-90 transition-all cursor-pointer ${className}`}
       >
-        <Volume2 size={15} className={isPlaying ? "text-[#df6e53]" : ""} />
+        <Volume2 size={15} className={isPlaying ? "text-accent" : ""} />
       </button>
     );
   }
@@ -82,9 +82,9 @@ export function AudioPlayButton({
       onClick={playVoice}
       type="button"
       title="発音を聞く"
-      className={`w-8 h-8 rounded-full bg-white dark:bg-[#2c2621] hover:bg-[#faf4ee] dark:hover:bg-[#342d27] text-[#a44d36] dark:text-[#f39882] flex items-center justify-center shadow-xs border border-black/[0.04] dark:border-white/[0.06] active:scale-90 transition-all cursor-pointer shrink-0 ${className}`}
+      className={`w-8 h-8 rounded-full bg-white dark:bg-[#2c2621] hover:bg-[#faf4ee] dark:hover:bg-[#342d27] text-accent-muted flex items-center justify-center shadow-xs border border-black/[0.04] dark:border-white/[0.06] active:scale-90 transition-all cursor-pointer shrink-0 ${className}`}
     >
-      <Volume2 size={16} className={isPlaying ? "text-[#df6e53] animate-pulse" : ""} />
+      <Volume2 size={16} className={isPlaying ? "text-accent animate-pulse" : ""} />
     </button>
   );
 }

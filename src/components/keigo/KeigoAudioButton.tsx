@@ -49,8 +49,8 @@ export default function KeigoAudioButton({
       title={`発音を聞く: ${text}`}
       className={`inline-flex items-center justify-center transition-all cursor-pointer active:scale-90 ${btnClasses[size]} ${
         isPlaying
-          ? "bg-[#df6e53] text-white shadow-xs"
-          : "text-[#8a8074] dark:text-[#9e9387] hover:text-[#df6e53] dark:hover:text-[#f39882] hover:bg-black/[0.05] dark:hover:bg-white/[0.08]"
+          ? "bg-accent text-white shadow-xs"
+          : "text-[#8a8074] dark:text-[#9e9387] hover:text-accent dark:hover:text-accent hover:bg-black/[0.05] dark:hover:bg-white/[0.08]"
       } ${className}`}
     >
       {isPlaying ? (

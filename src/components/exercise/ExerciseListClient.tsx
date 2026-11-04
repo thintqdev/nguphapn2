@@ -89,7 +89,7 @@ export default function ExerciseListClient({ exercises }: ExerciseListClientProp
               className="rounded-[16px] border border-black/[0.06] dark:border-white/[0.08] bg-white/90 dark:bg-[#1a1714]/90 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3"
             >
               <div className="min-w-0">
-                <p className="text-[11px] font-bold text-[#df6e53] dark:text-[#f39882] mb-0.5">
+                <p className="text-[11px] font-bold text-accent mb-0.5">
                   Đề {ex.id} · {ex.questionCount} câu
                 </p>
                 <h3 className="font-serif font-bold text-base text-[#1f1a16] dark:text-[#f5f0eb]">
@@ -105,7 +105,7 @@ export default function ExerciseListClient({ exercises }: ExerciseListClientProp
               </div>
               <Link
                 href={`/exercise/${ex.id}`}
-                className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-[12px] bg-[#df6e53] hover:bg-[#c95d43] text-white text-sm font-semibold shrink-0 active:scale-[0.98]"
+                className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-[12px] bg-accent hover:bg-accent-hover text-white text-sm font-semibold shrink-0 active:scale-[0.98]"
               >
                 {best ? "Làm lại" : "Bắt đầu"}
                 <ArrowRight size={14} />

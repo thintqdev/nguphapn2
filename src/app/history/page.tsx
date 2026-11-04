@@ -40,7 +40,7 @@ export default function HistoryPage() {
               <p className="text-[11px] text-[#8a8074] mt-0.5">Nhóm</p>
             </div>
             <div className="rounded-[14px] border border-black/[0.06] dark:border-white/[0.08] bg-white/90 dark:bg-[#1a1714]/90 p-3.5 text-center">
-              <p className="text-2xl font-bold text-[#df6e53] dark:text-[#f39882]">
+              <p className="text-2xl font-bold text-accent">
                 N2
               </p>
               <p className="text-[11px] text-[#8a8074] mt-0.5">Mức tiêu</p>
@@ -64,7 +64,7 @@ export default function HistoryPage() {
                   </div>
                   <div className="h-1.5 rounded-full bg-black/[0.05] dark:bg-white/[0.08] overflow-hidden">
                     <div
-                      className="h-full rounded-full bg-[#df6e53]/70"
+                      className="h-full rounded-full bg-accent/70"
                       style={{
                         width: `${Math.min(100, (cat.count / 20) * 100)}%`,
                       }}

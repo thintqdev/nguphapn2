@@ -22,9 +22,9 @@ function Mark({ size = 40, gradId }: { size?: number; gradId: string }) {
     >
       <defs>
         <linearGradient id={gradId} x1="8" y1="2" x2="34" y2="38" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#ef927c" />
-          <stop offset="0.55" stopColor="#df6e53" />
-          <stop offset="1" stopColor="#b84a32" />
+          <stop stopColor="var(--accent-grad-from)" />
+          <stop offset="0.55" stopColor="var(--accent)" />
+          <stop offset="1" stopColor="var(--accent-grad-to)" />
         </linearGradient>
       </defs>
       {/* Soft square seal */}

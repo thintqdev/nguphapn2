@@ -54,7 +54,7 @@ export default function SpecialVerbsTable({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Tìm theo động từ (VD: 行く, ăn, nói, 見る...)"
-            className="w-full pl-9 pr-4 py-2 text-[13px] rounded-[14px] bg-black/[0.04] dark:bg-white/[0.06] border border-black/[0.05] dark:border-white/[0.08] text-[#1f1a16] dark:text-[#f5f0eb] placeholder-[#8a8074] dark:placeholder-[#8f857a] focus:outline-none focus:ring-2 focus:ring-[#df6e53]/35 transition-all"
+            className="w-full pl-9 pr-4 py-2 text-[13px] rounded-[14px] bg-black/[0.04] dark:bg-white/[0.06] border border-black/[0.05] dark:border-white/[0.08] text-[#1f1a16] dark:text-[#f5f0eb] placeholder-[#8a8074] dark:placeholder-[#8f857a] focus:outline-none focus:ring-2 focus:ring-accent-ring transition-all"
           />
           {query && (
             <button
@@ -82,7 +82,7 @@ export default function SpecialVerbsTable({
             onClick={() => setActiveTab("sonkeigo")}
             className={`px-3 py-1.5 rounded-[10px] text-xs font-medium transition-all shrink-0 cursor-pointer ${
               activeTab === "sonkeigo"
-                ? "bg-[#df6e53] text-white shadow-2xs font-semibold"
+                ? "bg-accent text-white shadow-2xs font-semibold"
                 : "text-[#70665a] dark:text-[#a09486] hover:text-[#1f1a16]"
             }`}
           >
@@ -135,7 +135,7 @@ export default function SpecialVerbsTable({
               <button
                 onClick={() => copyRow(verb)}
                 title="Sao chép bảng biến đổi"
-                className="p-1.5 rounded-[10px] text-[#8a8074] hover:text-[#df6e53] dark:hover:text-[#f39882] hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-all cursor-pointer"
+                className="p-1.5 rounded-[10px] text-[#8a8074] hover:text-accent dark:hover:text-accent hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-all cursor-pointer"
               >
                 {copiedId === verb.id ? (
                   <Check size={16} className="text-[#2e7d58]" />
@@ -151,12 +151,12 @@ export default function SpecialVerbsTable({
               <div
                 className={`p-2.5 rounded-[12px] transition-all ${
                   activeTab === "sonkeigo"
-                    ? "bg-[#df6e53]/15 ring-1 ring-[#df6e53]/30"
+                    ? "bg-accent/15 ring-1 ring-accent-ring"
                     : "bg-[#fbf9f6] dark:bg-[#201d19]"
                 }`}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <span className="font-bold text-[10px] uppercase tracking-wider text-[#df6e53] dark:text-[#f39882] flex items-center gap-1">
+                  <span className="font-bold text-[10px] uppercase tracking-wider text-accent flex items-center gap-1">
                     <span>尊敬語 (Tôn kính)</span>
                   </span>
                   <KeigoAudioButton text={verb.sonkeigo} size="xs" />
@@ -228,13 +228,13 @@ export default function SpecialVerbsTable({
                 <th
                   className={`py-3.5 px-4 font-bold transition-colors w-[27%] ${
                     activeTab === "sonkeigo"
-                      ? "bg-[#df6e53]/15 text-[#df6e53] dark:text-[#f39882]"
-                      : "text-[#df6e53] dark:text-[#f39882]"
+                      ? "bg-accent/15 text-accent"
+                      : "text-accent"
                   }`}
                 >
                   <span className="flex items-center gap-1">
                     <span>尊敬語 (Tôn kính)</span>
-                    <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-[#df6e53]/15 text-[#df6e53] dark:text-[#f39882]">
+                    <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-accent/15 text-accent">
                       Đối phương
                     </span>
                   </span>
@@ -297,7 +297,7 @@ export default function SpecialVerbsTable({
                   {/* Sonkeigo */}
                   <td
                     className={`py-3.5 px-4 align-top transition-colors ${
-                      activeTab === "sonkeigo" ? "bg-[#df6e53]/5 font-medium" : ""
+                      activeTab === "sonkeigo" ? "bg-accent/5 font-medium" : ""
                     }`}
                   >
                     <div className="flex items-start justify-between gap-1">
@@ -341,7 +341,7 @@ export default function SpecialVerbsTable({
                     <button
                       onClick={() => copyRow(verb)}
                       title="Sao chép toàn bộ dòng"
-                      className="p-1.5 rounded-lg text-[#8a8074] hover:text-[#df6e53] dark:hover:text-[#f39882] hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-all cursor-pointer inline-flex items-center justify-center"
+                      className="p-1.5 rounded-lg text-[#8a8074] hover:text-accent dark:hover:text-accent hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-all cursor-pointer inline-flex items-center justify-center"
                     >
                       {copiedId === verb.id ? (
                         <Check size={14} className="text-[#2e7d58]" />
@@ -365,7 +365,7 @@ export default function SpecialVerbsTable({
           </p>
           <button
             onClick={() => setQuery("")}
-            className="mt-2 text-xs font-semibold text-[#df6e53] hover:underline cursor-pointer"
+            className="mt-2 text-xs font-semibold text-accent hover:underline cursor-pointer"
           >
             Xóa tìm kiếm
           </button>

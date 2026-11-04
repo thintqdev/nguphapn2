@@ -46,7 +46,7 @@ export default function FavoritesPage() {
                 >
                   <Link href={`/grammar/${g.id}`} className="min-w-0 flex-1">
                     {category && (
-                      <p className="text-[10px] font-bold text-[#df6e53] dark:text-[#f39882] mb-0.5">
+                      <p className="text-[10px] font-bold text-accent mb-0.5">
                         {category.roman}. {category.nameVn || category.name}
                       </p>
                     )}
@@ -60,7 +60,7 @@ export default function FavoritesPage() {
                   <button
                     type="button"
                     onClick={() => toggleFavorite(g.id)}
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-[#df6e53] hover:bg-[#df6e53]/10 cursor-pointer"
+                    className="w-8 h-8 rounded-full flex items-center justify-center text-accent hover:bg-accent/10 cursor-pointer"
                     aria-label="Bỏ yêu thích"
                   >
                     <Trash2 size={15} />
@@ -76,7 +76,7 @@ export default function FavoritesPage() {
               <p className="text-sm">Chưa có mục yêu thích.</p>
               <Link
                 href="/"
-                className="inline-block mt-3 text-sm font-semibold text-[#df6e53]"
+                className="inline-block mt-3 text-sm font-semibold text-accent"
               >
                 Xem danh sách ngữ pháp
               </Link>

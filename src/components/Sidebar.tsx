@@ -17,7 +17,7 @@ import BrandLogo from "./BrandLogo";
 function linkClass(active: boolean) {
   return `flex items-center justify-between px-3 py-2 rounded-[10px] text-[13px] font-medium transition-all active:scale-[0.98] ${
     active
-      ? "bg-[#a44d36]/12 dark:bg-[#f39882]/15 text-[#a44d36] dark:text-[#f39882] font-semibold"
+      ? "bg-accent-soft text-accent-muted font-semibold"
       : "text-[#5e554c] dark:text-[#a89d91] hover:bg-black/[0.04] dark:hover:bg-white/[0.06]"
   }`;
 }
@@ -54,7 +54,7 @@ export default function Sidebar() {
             <p
               className={`px-3 mb-1.5 text-[11px] font-bold tracking-wide ${
                 inGrammar
-                  ? "text-[#a44d36] dark:text-[#f39882]"
+                  ? "text-accent-muted"
                   : "text-[#9d9387] dark:text-[#7f7468]"
               }`}
             >
@@ -115,7 +115,7 @@ export default function Sidebar() {
                   お気に入り
                 </span>
                 {totalFavorites > 0 && (
-                  <span className="text-[11px] font-bold px-1.5 py-0.5 rounded-full bg-[#a44d36]/15 text-[#a44d36] dark:text-[#f39882]">
+                  <span className="text-[11px] font-bold px-1.5 py-0.5 rounded-full bg-accent-soft text-accent-muted">
                     {totalFavorites}
                   </span>
                 )}

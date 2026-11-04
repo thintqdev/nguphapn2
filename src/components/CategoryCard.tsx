@@ -25,7 +25,7 @@ export default function CategoryCard({
         onClick={() => setIsExpanded(!isExpanded)}
         className="w-full flex items-center gap-3 p-3.5 sm:p-4 text-left cursor-pointer active:bg-black/[0.02] dark:active:bg-white/[0.03] transition-colors"
       >
-        <span className="w-8 h-8 rounded-full shrink-0 flex items-center justify-center font-serif font-bold text-sm bg-[#df6e53]/12 text-[#a44d36] dark:text-[#f39882]">
+        <span className="w-8 h-8 rounded-full shrink-0 flex items-center justify-center font-serif font-bold text-sm bg-accent/12 text-accent-muted">
           {category.roman}
         </span>
 
@@ -75,13 +75,13 @@ export default function CategoryCard({
                     e.stopPropagation();
                     toggleFavorite(g.id);
                   }}
-                  className="w-8 h-8 rounded-full flex items-center justify-center text-[#c4b7a8] hover:text-[#df6e53] cursor-pointer"
+                  className="w-8 h-8 rounded-full flex items-center justify-center text-[#c4b7a8] hover:text-accent cursor-pointer"
                   aria-label="Favorite"
                 >
                   <Star
                     size={15}
                     className={
-                      fav ? "fill-[#df6e53] text-[#df6e53]" : ""
+                      fav ? "fill-accent text-accent" : ""
                     }
                   />
                 </button>

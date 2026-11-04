@@ -48,8 +48,8 @@ export default function ExerciseAudioButton({
       title="Nghe phát âm câu hỏi"
       className={`inline-flex items-center justify-center p-1.5 rounded-lg text-xs transition-all cursor-pointer active:scale-90 ${
         isPlaying
-          ? "bg-[#df6e53] text-white shadow-xs"
-          : "text-[#8a8074] dark:text-[#9e9387] hover:text-[#df6e53] dark:hover:text-[#f39882] hover:bg-black/[0.05] dark:hover:bg-white/[0.08]"
+          ? "bg-accent text-white shadow-xs"
+          : "text-[#8a8074] dark:text-[#9e9387] hover:text-accent dark:hover:text-accent hover:bg-black/[0.05] dark:hover:bg-white/[0.08]"
       } ${className}`}
     >
       <Volume2 size={iconSizes[size]} className={isPlaying ? "animate-pulse" : ""} />

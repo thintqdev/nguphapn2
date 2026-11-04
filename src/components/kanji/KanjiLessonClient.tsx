@@ -126,7 +126,7 @@ export default function KanjiLessonClient({ lesson }: KanjiLessonClientProps) {
         <button
           type="button"
           onClick={() => setQuizOpen(true)}
-          className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-[12px] bg-[#df6e53] hover:bg-[#c95d43] text-white text-sm font-bold active:scale-[0.98] cursor-pointer shrink-0"
+          className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-[12px] bg-accent hover:bg-accent-hover text-white text-sm font-bold active:scale-[0.98] cursor-pointer shrink-0"
         >
           <GraduationCap size={16} />
           Học bài này
@@ -145,11 +145,11 @@ export default function KanjiLessonClient({ lesson }: KanjiLessonClientProps) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Tìm kanji, Hán Việt, nghĩa..."
-            className="w-full pl-10 pr-4 py-3 rounded-[16px] bg-white/90 dark:bg-[#1a1714]/90 ios-glass border border-black/[0.06] dark:border-white/[0.08] text-sm outline-none focus:border-[#df6e53]/45 focus:ring-2 focus:ring-[#df6e53]/15 transition-all"
+            className="w-full pl-10 pr-4 py-3 rounded-[16px] bg-white/90 dark:bg-[#1a1714]/90 ios-glass border border-black/[0.06] dark:border-white/[0.08] text-sm outline-none focus:border-accent-border focus:ring-2 focus:ring-accent-ring transition-all"
           />
         </div>
         <p className="text-[11px] text-[#8a8074] dark:text-[#9e9285] flex items-center gap-1.5 px-1 sm:px-0 shrink-0">
-          <BookOpen size={12} className="text-[#df6e53]" />
+          <BookOpen size={12} className="text-accent" />
           Chạm chữ → study desk
         </p>
       </div>
@@ -161,7 +161,7 @@ export default function KanjiLessonClient({ lesson }: KanjiLessonClientProps) {
           Chưa học
         </span>
         <span className="inline-flex items-center gap-1.5">
-          <span className="w-3 h-3 rounded-[4px] bg-[#2e7d58]/20 border border-[#2e7d58]/40" />
+          <span className="w-3 h-3 rounded-[4px] bg-accent/20 border border-accent-border" />
           Đã biết
         </span>
         <span className="ml-auto font-medium">
@@ -181,13 +181,13 @@ export default function KanjiLessonClient({ lesson }: KanjiLessonClientProps) {
               style={{ animationDelay: `${Math.min(i, 24) * 18}ms` }}
               className={`kanji-tile-enter relative aspect-square rounded-[16px] flex flex-col items-center justify-center gap-1 border transition-all duration-200 active:scale-95 cursor-pointer group ${
                 known
-                  ? "bg-gradient-to-b from-[#e8f5ee] to-[#dff0e8] dark:from-[#1a2a22] dark:to-[#15241d] border-[#2e7d58]/35 shadow-sm"
-                  : "bg-white/95 dark:bg-[#1a1714]/95 ios-glass border-black/[0.06] dark:border-white/[0.08] hover:border-[#df6e53]/45 hover:-translate-y-0.5 hover:shadow-md"
+                  ? "bg-accent/12 border-accent-border shadow-sm"
+                  : "bg-white/95 dark:bg-[#1a1714]/95 ios-glass border-black/[0.06] dark:border-white/[0.08] hover:border-accent-border hover:-translate-y-0.5 hover:shadow-md"
               }`}
               title={`${item.kanji} — ${item.han_viet}`}
             >
               {known && (
-                <span className="absolute top-1 right-1 w-3.5 h-3.5 rounded-full bg-[#2e7d58] text-white flex items-center justify-center">
+                <span className="absolute top-1 right-1 w-3.5 h-3.5 rounded-full bg-accent text-white flex items-center justify-center">
                   <Check size={9} strokeWidth={3} />
                 </span>
               )}

@@ -45,7 +45,7 @@ export default function ExamListClient({ exams }: ExamListClientProps) {
               className="rounded-[18px] bg-white/90 dark:bg-[#1a1714]/90 border border-black/[0.06] dark:border-white/[0.08] p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4"
             >
               <div className="min-w-0">
-                <p className="text-[11px] font-bold text-[#df6e53] dark:text-[#f39882] mb-1">
+                <p className="text-[11px] font-bold text-accent mb-1">
                   Đề {exam.id}
                 </p>
                 <h2 className="font-serif font-bold text-lg text-[#1f1a16] dark:text-[#f5f0eb]">
@@ -71,7 +71,7 @@ export default function ExamListClient({ exams }: ExamListClientProps) {
 
               <Link
                 href={`/exam/${exam.id}`}
-                className="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-[14px] bg-[#df6e53] hover:bg-[#c95d43] text-white text-sm font-semibold shrink-0 active:scale-[0.98] transition-all"
+                className="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-[14px] bg-accent hover:bg-accent-hover text-white text-sm font-semibold shrink-0 active:scale-[0.98] transition-all"
               >
                 Vào thi
                 <ArrowRight size={15} />

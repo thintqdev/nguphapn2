@@ -13,9 +13,6 @@ import type { GrammarData, Grammar, Category } from "@/lib/types";
 
 const data = grammarDataRaw as GrammarData;
 
-const box =
-  "rounded-[16px] border border-black/[0.07] dark:border-white/[0.09] bg-white/90 dark:bg-[#1a1714]/90 p-4 sm:p-5";
-
 export async function generateStaticParams() {
   return data.grammar.map((g) => ({ id: g.id }));
 }
@@ -50,6 +47,12 @@ export default async function GrammarDetailPage({
     hit: findGrammarByRelatedLabel(label),
   }));
 
+  const examples = (grammar.examples || []).slice(0, 2);
+  const notes = (grammar.notes || []).slice(0, 3);
+  const showDetailMeaning =
+    grammar.meaningDetail &&
+    grammar.meaningDetail.trim() !== grammar.meaning.trim();
+
   return (
     <div className="flex min-h-screen bg-[#f5f3ee] dark:bg-[#0d0c0a] text-[#1d1b19] dark:text-[#f5f0eb] transition-colors pb-24 md:pb-8">
       <Sidebar />
@@ -57,197 +60,172 @@ export default async function GrammarDetailPage({
       <div className="flex-1 flex flex-col min-w-0">
         <Header />
 
-        <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-5xl w-full mx-auto space-y-3.5 animate-fade-in">
+        <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-5xl w-full mx-auto animate-fade-in">
           <PageBackLink href="/" label="Danh sách ngữ pháp" />
 
-          {/* Header card */}
-          <header className={`${box} space-y-3`}>
-            <p className="text-[11px] font-bold text-[#df6e53] dark:text-[#f39882]">
-              {category.roman}. {category.nameVn || category.name}
-            </p>
-
-            {grammar.furigana ? (
-              <h1 className="font-serif font-bold text-3xl sm:text-4xl text-[#1f1a16] dark:text-[#f5f0eb] tracking-tight">
-                <span>{grammar.prefix || "〜"}</span>
-                <ruby>
-                  {grammar.mainWord || grammar.title}
-                  <rt className="text-xs font-sans font-normal text-[#8a8074]">
-                    {grammar.furigana}
-                  </rt>
-                </ruby>
-                <span>{grammar.suffix || ""}</span>
-              </h1>
-            ) : (
-              <h1 className="font-serif font-bold text-3xl sm:text-4xl text-[#1f1a16] dark:text-[#f5f0eb] tracking-tight">
-                {grammar.title}
-              </h1>
-            )}
-
-            <p className="text-sm sm:text-base text-[#5e554c] dark:text-[#c4b7a8] leading-relaxed">
-              {grammar.meaning}
-            </p>
-
-            <div className="flex items-center gap-2">
-              <span className="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-black/[0.05] dark:bg-white/[0.08] text-[#8a8074]">
-                {grammar.level}
-              </span>
-              <FavoriteButton grammarId={grammar.id} />
-            </div>
-          </header>
-
-          {/* Meaning */}
-          <section className={box}>
-            <h2 className="text-[11px] font-bold uppercase tracking-wider text-[#8a8074] mb-2">
-              Ý nghĩa
-            </h2>
-            <p className="text-sm text-[#3d3630] dark:text-[#d4c8bc] leading-relaxed">
-              {grammar.meaningDetail}
-            </p>
-          </section>
-
-          {/* Usage */}
-          <section className={`${box} space-y-3`}>
-            <h2 className="text-[11px] font-bold uppercase tracking-wider text-[#8a8074]">
-              Cách dùng
-            </h2>
-            <p className="font-serif text-center text-base sm:text-lg font-bold text-[#df6e53] dark:text-[#f39882] py-2.5 px-3 rounded-[12px] bg-[#df6e53]/08 dark:bg-[#df6e53]/12">
-              {grammar.usage.pattern}
-            </p>
-            <div className="space-y-1">
-              <div className="flex items-start justify-between gap-2">
-                <p className="font-serif text-[15px] text-[#1f1a16] dark:text-[#f5f0eb] leading-snug">
-                  {grammar.usage.exampleJp}
-                </p>
-                <AudioPlayButton text={grammar.usage.exampleJp} size="sm" />
+          {/* One-screen detail panel */}
+          <article className="rounded-[20px] border border-black/[0.07] dark:border-white/[0.09] bg-white/95 dark:bg-[#1a1714]/95 shadow-sm overflow-hidden">
+            <div className="p-4 sm:p-5 space-y-4">
+              {/* Top meta */}
+              <div className="flex items-start justify-between gap-3">
+                <div className="min-w-0">
+                  <p className="text-[11px] font-bold text-accent">
+                    {category.roman}. {category.nameVn || category.name}
+                  </p>
+                  {grammar.furigana ? (
+                    <h1 className="mt-1 font-serif font-bold text-2xl sm:text-3xl text-[#1f1a16] dark:text-[#f5f0eb] tracking-tight leading-tight">
+                      <span>{grammar.prefix || "〜"}</span>
+                      <ruby>
+                        {grammar.mainWord || grammar.title}
+                        <rt className="text-[10px] font-sans font-normal text-[#8a8074]">
+                          {grammar.furigana}
+                        </rt>
+                      </ruby>
+                      <span>{grammar.suffix || ""}</span>
+                    </h1>
+                  ) : (
+                    <h1 className="mt-1 font-serif font-bold text-2xl sm:text-3xl text-[#1f1a16] dark:text-[#f5f0eb] tracking-tight">
+                      {grammar.title}
+                    </h1>
+                  )}
+                  <p className="mt-1.5 text-[13px] sm:text-sm text-[#5e554c] dark:text-[#c4b7a8] leading-snug">
+                    {grammar.meaning}
+                  </p>
+                </div>
+                <div className="flex items-center gap-1.5 shrink-0">
+                  <span className="text-[10px] font-semibold px-2 py-1 rounded-full bg-black/[0.05] dark:bg-white/[0.08] text-[#8a8074]">
+                    {grammar.level}
+                  </span>
+                  <FavoriteButton grammarId={grammar.id} />
+                </div>
               </div>
-              <p className="text-[12px] text-[#8a8074]">
-                {grammar.usage.exampleReading}
-              </p>
-              <p className="text-[13px] text-[#70665a] dark:text-[#b8aba0]">
-                {grammar.usage.exampleVn}
-              </p>
-            </div>
-          </section>
 
-          {/* Notes */}
-          {grammar.notes && grammar.notes.length > 0 && (
-            <section className={box}>
-              <h2 className="text-[11px] font-bold uppercase tracking-wider text-[#8a8074] mb-2">
-                Lưu ý
-              </h2>
-              <ul className="space-y-1.5">
-                {grammar.notes.map((note, index) => (
-                  <li
-                    key={index}
-                    className="text-sm text-[#3d3630] dark:text-[#d4c8bc] leading-relaxed pl-3 border-l-2 border-[#df6e53]/35"
-                  >
-                    {note}
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
+              {showDetailMeaning && (
+                <p className="text-[12px] sm:text-[13px] text-[#70665a] dark:text-[#b8aba0] leading-relaxed">
+                  {grammar.meaningDetail}
+                </p>
+              )}
 
-          {/* Examples */}
-          {grammar.examples && grammar.examples.length > 0 && (
-            <section className={box}>
-              <h2 className="text-[11px] font-bold uppercase tracking-wider text-[#8a8074] mb-3">
-                Ví dụ
-              </h2>
-              <div className="space-y-3.5">
-                {grammar.examples.map((ex, idx) => (
-                  <div
-                    key={idx}
-                    className={
-                      idx > 0
-                        ? "pt-3.5 border-t border-black/[0.05] dark:border-white/[0.06]"
-                        : ""
-                    }
-                  >
-                    <div className="flex items-start justify-between gap-2">
-                      <p className="font-serif text-[14px] text-[#1f1a16] dark:text-[#f5f0eb] leading-snug">
-                        {ex.jp}
-                      </p>
-                      <AudioPlayButton text={ex.jp} size="sm" />
-                    </div>
-                    <p className="text-[12px] text-[#8a8074] mt-0.5">
-                      {ex.reading}
+              {/* Pattern + primary example */}
+              <div className="rounded-[14px] bg-accent-soft border border-accent-border px-3.5 py-3 space-y-2.5">
+                <p className="font-serif text-center text-[15px] sm:text-base font-bold text-accent">
+                  {grammar.usage.pattern}
+                </p>
+                <div className="flex items-start justify-between gap-2">
+                  <div className="min-w-0">
+                    <p className="font-serif text-[14px] text-[#1f1a16] dark:text-[#f5f0eb] leading-snug">
+                      {grammar.usage.exampleJp}
                     </p>
-                    <p className="text-[13px] text-[#70665a] dark:text-[#b8aba0]">
-                      {ex.vn}
+                    <p className="text-[11px] text-[#8a8074] mt-0.5">
+                      {grammar.usage.exampleReading}
+                    </p>
+                    <p className="text-[12px] text-[#70665a] dark:text-[#b8aba0]">
+                      {grammar.usage.exampleVn}
                     </p>
                   </div>
-                ))}
+                  <AudioPlayButton text={grammar.usage.exampleJp} size="sm" />
+                </div>
               </div>
-            </section>
-          )}
 
-          {/* Memo */}
-          {grammar.memo && (
-            <section className={box}>
-              <h2 className="text-[11px] font-bold uppercase tracking-wider text-[#8a8074] mb-2">
-                Ghi nhớ
-              </h2>
-              <p className="text-sm text-[#5e554c] dark:text-[#c4b7a8] leading-relaxed whitespace-pre-line">
-                {grammar.memo}
-              </p>
-            </section>
-          )}
-
-          {/* Related */}
-          {relatedItems.length > 0 && (
-            <section className={box}>
-              <h2 className="text-[11px] font-bold uppercase tracking-wider text-[#8a8074] mb-2.5">
-                Liên quan
-              </h2>
-              <div className="flex flex-wrap gap-2">
-                {relatedItems.map(({ label, hit }) =>
-                  hit ? (
-                    <Link
-                      key={label}
-                      href={`/grammar/${hit.id}`}
-                      className="inline-flex items-center px-3 py-1.5 rounded-[10px] border border-[#df6e53]/25 bg-[#df6e53]/08 text-[13px] font-medium text-[#a44d36] dark:text-[#f39882] hover:bg-[#df6e53]/15 active:scale-95 transition-all"
+              {/* Extra examples — compact */}
+              {examples.length > 0 && (
+                <div className="space-y-2.5">
+                  <p className="text-[10px] font-bold uppercase tracking-wider text-[#8a8074]">
+                    Ví dụ
+                  </p>
+                  {examples.map((ex, idx) => (
+                    <div
+                      key={idx}
+                      className="flex items-start justify-between gap-2"
                     >
-                      {label}
-                    </Link>
-                  ) : (
-                    <span
-                      key={label}
-                      className="px-3 py-1.5 rounded-[10px] bg-black/[0.04] dark:bg-white/[0.06] text-[13px] font-medium text-[#8a8074]"
-                    >
-                      {label}
-                    </span>
-                  )
-                )}
-              </div>
-            </section>
-          )}
+                      <div className="min-w-0">
+                        <p className="font-serif text-[13px] text-[#1f1a16] dark:text-[#f5f0eb] leading-snug">
+                          {ex.jp}
+                        </p>
+                        <p className="text-[11px] text-[#8a8074]">
+                          {ex.reading}
+                          {ex.vn ? ` · ${ex.vn}` : ""}
+                        </p>
+                      </div>
+                      <AudioPlayButton text={ex.jp} size="sm" />
+                    </div>
+                  ))}
+                </div>
+              )}
 
-          {/* Nav */}
-          <div className="flex items-center justify-between pt-1 pb-2">
-            {prevGrammar ? (
-              <Link
-                href={`/grammar/${prevGrammar.id}`}
-                className="inline-flex items-center gap-0.5 text-sm font-semibold text-[#df6e53] dark:text-[#f39882]"
-              >
-                <ChevronLeft size={17} />
-                Trước
-              </Link>
-            ) : (
-              <span />
-            )}
-            {nextGrammar ? (
-              <Link
-                href={`/grammar/${nextGrammar.id}`}
-                className="inline-flex items-center gap-0.5 text-sm font-semibold text-[#df6e53] dark:text-[#f39882]"
-              >
-                Tiếp
-                <ChevronRight size={17} />
-              </Link>
-            ) : (
-              <span />
-            )}
-          </div>
+              {/* Notes + memo — one block */}
+              {(notes.length > 0 || grammar.memo) && (
+                <div className="space-y-1.5 pt-1 border-t border-black/[0.05] dark:border-white/[0.06]">
+                  <p className="text-[10px] font-bold uppercase tracking-wider text-[#8a8074]">
+                    Lưu ý
+                  </p>
+                  {notes.map((note, index) => (
+                    <p
+                      key={index}
+                      className="text-[12px] sm:text-[13px] text-[#3d3630] dark:text-[#d4c8bc] leading-snug pl-2.5 border-l-2 border-accent-border"
+                    >
+                      {note}
+                    </p>
+                  ))}
+                  {grammar.memo && (
+                    <p className="text-[12px] text-[#5e554c] dark:text-[#c4b7a8] leading-snug whitespace-pre-line">
+                      {grammar.memo}
+                    </p>
+                  )}
+                </div>
+              )}
+
+              {/* Related */}
+              {relatedItems.length > 0 && (
+                <div className="flex flex-wrap gap-1.5 pt-1">
+                  {relatedItems.map(({ label, hit }) =>
+                    hit ? (
+                      <Link
+                        key={label}
+                        href={`/grammar/${hit.id}`}
+                        className="inline-flex items-center px-2.5 py-1 rounded-[8px] border border-accent-border bg-accent/10 text-[12px] font-medium text-accent-muted hover:bg-accent/15 active:scale-95 transition-all"
+                      >
+                        {label}
+                      </Link>
+                    ) : (
+                      <span
+                        key={label}
+                        className="px-2.5 py-1 rounded-[8px] bg-black/[0.04] dark:bg-white/[0.06] text-[12px] font-medium text-[#8a8074]"
+                      >
+                        {label}
+                      </span>
+                    )
+                  )}
+                </div>
+              )}
+            </div>
+
+            {/* Footer nav */}
+            <div className="flex items-center justify-between px-4 sm:px-5 py-3 border-t border-black/[0.05] dark:border-white/[0.06] bg-black/[0.015] dark:bg-white/[0.02]">
+              {prevGrammar ? (
+                <Link
+                  href={`/grammar/${prevGrammar.id}`}
+                  className="inline-flex items-center gap-0.5 text-[13px] font-semibold text-accent"
+                >
+                  <ChevronLeft size={16} />
+                  Trước
+                </Link>
+              ) : (
+                <span />
+              )}
+              {nextGrammar ? (
+                <Link
+                  href={`/grammar/${nextGrammar.id}`}
+                  className="inline-flex items-center gap-0.5 text-[13px] font-semibold text-accent"
+                >
+                  Tiếp
+                  <ChevronRight size={16} />
+                </Link>
+              ) : (
+                <span />
+              )}
+            </div>
+          </article>
         </main>
       </div>
     </div>

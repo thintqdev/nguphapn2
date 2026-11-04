@@ -1,19 +1,38 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useState } from "react";
+import {
+  DEFAULT_SKIN,
+  normalizeSkinId,
+  SKIN_STORAGE_KEY,
+  type SkinId,
+} from "@/lib/skins";
 
 interface ThemeContextType {
   isDark: boolean;
   toggleTheme: () => void;
+  skin: SkinId;
+  setSkin: (id: SkinId) => void;
 }
 
 const ThemeContext = createContext<ThemeContextType>({
   isDark: false,
   toggleTheme: () => {},
+  skin: DEFAULT_SKIN,
+  setSkin: () => {},
 });
 
+function applySkin(skin: SkinId) {
+  document.documentElement.setAttribute("data-skin", skin);
+}
+
+function applyDark(dark: boolean) {
+  document.documentElement.classList.toggle("dark", dark);
+}
+
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [isDark, setIsDark] = useState<boolean>(false);
+  const [isDark, setIsDark] = useState(false);
+  const [skin, setSkinState] = useState<SkinId>(DEFAULT_SKIN);
 
   useEffect(() => {
     try {
@@ -21,16 +40,15 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       const systemPrefersDark = window.matchMedia(
         "(prefers-color-scheme: dark)"
       ).matches;
-
       const shouldBeDark =
         savedTheme === "dark" || (!savedTheme && systemPrefersDark);
 
       setIsDark(shouldBeDark);
-      if (shouldBeDark) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
+      applyDark(shouldBeDark);
+
+      const nextSkin = normalizeSkinId(localStorage.getItem(SKIN_STORAGE_KEY));
+      setSkinState(nextSkin);
+      applySkin(nextSkin);
     } catch {
       // ignore
     }
@@ -39,17 +57,19 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const toggleTheme = () => {
     const nextDark = !isDark;
     setIsDark(nextDark);
-    if (nextDark) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("n2_theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("n2_theme", "light");
-    }
+    applyDark(nextDark);
+    localStorage.setItem("n2_theme", nextDark ? "dark" : "light");
+  };
+
+  const setSkin = (id: SkinId) => {
+    const next = normalizeSkinId(id);
+    setSkinState(next);
+    applySkin(next);
+    localStorage.setItem(SKIN_STORAGE_KEY, next);
   };
 
   return (
-    <ThemeContext.Provider value={{ isDark, toggleTheme }}>
+    <ThemeContext.Provider value={{ isDark, toggleTheme, skin, setSkin }}>
       {children}
     </ThemeContext.Provider>
   );
