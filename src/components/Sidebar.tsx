@@ -11,6 +11,7 @@ import {
   PenLine,
   ClipboardList,
   Layers,
+  FileText,
 } from "lucide-react";
 import { useFavorites } from "./FavoritesContext";
 import BrandLogo from "./BrandLogo";
@@ -40,11 +41,12 @@ export default function Sidebar() {
   const isKanji = pathname.startsWith("/kanji");
   const isAffixes = pathname.startsWith("/affixes");
   const isExam = pathname.startsWith("/exam");
+  const isDocs = pathname.startsWith("/docs");
   const isFav = pathname.startsWith("/favorites");
   const isSettings = pathname.startsWith("/settings");
 
   return (
-    <aside className="w-72 shrink-0 hidden md:flex flex-col justify-between min-h-screen ios-glass bg-[#fbf9f5]/85 dark:bg-[#14110f]/85 border-r border-black/[0.06] dark:border-white/[0.07] p-5 select-none transition-colors">
+    <aside className="w-72 shrink-0 hidden md:flex flex-col justify-between min-h-screen h-full ios-glass bg-[#fbf9f5]/85 dark:bg-[#14110f]/85 border-r border-black/[0.06] dark:border-white/[0.07] p-5 select-none transition-colors">
       <div>
         <div className="mb-7 px-0.5">
           <BrandLogo />
@@ -106,6 +108,12 @@ export default function Sidebar() {
                 <span className="flex items-center gap-2.5">
                   <ClipboardList size={15} strokeWidth={isExam ? 2.2 : 1.9} />
                   模擬試験
+                </span>
+              </Link>
+              <Link href="/docs" className={linkClass(isDocs)}>
+                <span className="flex items-center gap-2.5">
+                  <FileText size={15} strokeWidth={isDocs ? 2.2 : 1.9} />
+                  資料
                 </span>
               </Link>
             </div>

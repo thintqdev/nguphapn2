@@ -9,6 +9,9 @@ export default function BottomTabBar() {
   const pathname = usePathname();
   const { totalFavorites } = useFavorites();
 
+  // Ẩn khi đang đọc PDF full-height
+  if (pathname.startsWith("/docs/")) return null;
+
   const tabs = [
     {
       label: "文法",

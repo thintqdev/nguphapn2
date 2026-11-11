@@ -22,6 +22,7 @@ import {
   getExamDraft,
   saveExamDraft,
 } from "@/lib/examDraft";
+import { exportExamResultPdf } from "@/lib/examPdf";
 import {
   Clock,
   Play,
@@ -32,6 +33,7 @@ import {
   Pause,
   Save,
   PlayCircle,
+  FileDown,
 } from "lucide-react";
 
 interface ExamPlayerProps {
@@ -404,14 +406,43 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
           <p className="text-sm text-[#70665a] dark:text-[#b8aba0]">
             {pct}% · Thời gian {formatTime(spent)}
           </p>
-          <button
-            type="button"
-            onClick={restart}
-            className="mt-5 inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[12px] text-sm font-semibold bg-black/[0.05] dark:bg-white/[0.08] cursor-pointer"
-          >
-            <RotateCcw size={14} />
-            Làm lại
-          </button>
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
+            <button
+              type="button"
+              onClick={() => {
+                const name = window.prompt(
+                  "Họ tên học sinh (hiện trên phiếu nộp GV):",
+                  ""
+                );
+                if (name === null) return;
+                const ok = exportExamResultPdf({
+                  exam,
+                  answers,
+                  score,
+                  total: scorable,
+                  timeSpentSeconds: spent,
+                  studentName: name,
+                });
+                if (!ok) {
+                  window.alert(
+                    "Không mở được cửa sổ PDF. Cho phép popup rồi thử lại."
+                  );
+                }
+              }}
+              className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[12px] text-sm font-bold bg-accent hover:bg-accent-hover text-white cursor-pointer active:scale-[0.98]"
+            >
+              <FileDown size={14} />
+              Xuất PDF nộp GV
+            </button>
+            <button
+              type="button"
+              onClick={restart}
+              className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[12px] text-sm font-semibold bg-black/[0.05] dark:bg-white/[0.08] cursor-pointer"
+            >
+              <RotateCcw size={14} />
+              Làm lại
+            </button>
+          </div>
         </div>
 
         <div className="space-y-6">
