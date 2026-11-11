@@ -10,6 +10,7 @@ import {
   Settings,
   PenLine,
   ClipboardList,
+  Layers,
 } from "lucide-react";
 import { useFavorites } from "./FavoritesContext";
 import BrandLogo from "./BrandLogo";
@@ -37,6 +38,7 @@ export default function Sidebar() {
   const isKeigo = pathname.startsWith("/keigo");
   const isExercise = pathname.startsWith("/exercise");
   const isKanji = pathname.startsWith("/kanji");
+  const isAffixes = pathname.startsWith("/affixes");
   const isExam = pathname.startsWith("/exam");
   const isFav = pathname.startsWith("/favorites");
   const isSettings = pathname.startsWith("/settings");
@@ -92,6 +94,12 @@ export default function Sidebar() {
                 <span className="flex items-center gap-2.5">
                   <PenLine size={15} strokeWidth={isKanji ? 2.2 : 1.9} />
                   漢字
+                </span>
+              </Link>
+              <Link href="/affixes" className={linkClass(isAffixes)}>
+                <span className="flex items-center gap-2.5">
+                  <Layers size={15} strokeWidth={isAffixes ? 2.2 : 1.9} />
+                  接辞
                 </span>
               </Link>
               <Link href="/exam" className={linkClass(isExam)}>

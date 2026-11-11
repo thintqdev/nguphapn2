@@ -6,6 +6,7 @@ import type {
   ExamQuestion,
   ExamResultRecord,
   ExamSection,
+  ExamDraftRecord,
 } from "@/lib/examTypes";
 import {
   EXAM_DURATION_MINUTES,
@@ -17,12 +18,20 @@ import {
   optionKey,
 } from "@/lib/examUtils";
 import {
+  clearExamDraft,
+  getExamDraft,
+  saveExamDraft,
+} from "@/lib/examDraft";
+import {
   Clock,
   Play,
   CheckCircle2,
   XCircle,
   RotateCcw,
   Flag,
+  Pause,
+  Save,
+  PlayCircle,
 } from "lucide-react";
 
 interface ExamPlayerProps {
@@ -118,7 +127,13 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [timeLeft, setTimeLeft] = useState(EXAM_DURATION_MINUTES * 60);
   const [spent, setSpent] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const [draft, setDraft] = useState<ExamDraftRecord | null>(null);
+  const [draftSavedAt, setDraftSavedAt] = useState<string | null>(null);
+  const [mounted, setMounted] = useState(false);
   const submittingRef = useRef(false);
+  const answersRef = useRef(answers);
+  const timeLeftRef = useRef(timeLeft);
 
   const scorable = useMemo(() => countScorable(exam), [exam]);
   const allQuestions = useMemo(
@@ -134,6 +149,33 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
     }
     return correct;
   }, [allQuestions, answers]);
+
+  useEffect(() => {
+    answersRef.current = answers;
+  }, [answers]);
+
+  useEffect(() => {
+    timeLeftRef.current = timeLeft;
+  }, [timeLeft]);
+
+  useEffect(() => {
+    setMounted(true);
+    setDraft(getExamDraft(exam.id));
+  }, [exam.id]);
+
+  const persistDraft = useCallback(
+    (
+      nextAnswers: Record<number, string>,
+      nextTimeLeft: number,
+      notify = false
+    ) => {
+      const saved = saveExamDraft(exam.id, nextAnswers, nextTimeLeft);
+      setDraft(saved);
+      if (notify) setDraftSavedAt(saved.updatedAt);
+      return saved;
+    },
+    [exam.id]
+  );
 
   const submit = useCallback(() => {
     if (submittingRef.current) return;
@@ -162,11 +204,15 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
       // ignore
     }
 
+    clearExamDraft(exam.id);
+    setDraft(null);
+    setDraftSavedAt(null);
+    setIsPaused(false);
     setPhase("result");
   }, [answers, allQuestions, exam.id, scorable, timeLeft]);
 
   useEffect(() => {
-    if (phase !== "doing") return;
+    if (phase !== "doing" || isPaused) return;
     const id = window.setInterval(() => {
       setTimeLeft((t) => {
         if (t <= 1) {
@@ -177,36 +223,110 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
       });
     }, 1000);
     return () => window.clearInterval(id);
-  }, [phase]);
+  }, [phase, isPaused]);
 
   useEffect(() => {
-    if (phase === "doing" && timeLeft === 0) {
+    if (phase === "doing" && timeLeft === 0 && !isPaused) {
       submit();
     }
-  }, [phase, timeLeft, submit]);
+  }, [phase, timeLeft, isPaused, submit]);
+
+  // Lưu khi đổi đáp án
+  useEffect(() => {
+    if (phase !== "doing") return;
+    persistDraft(answers, timeLeftRef.current);
+  }, [phase, answers, persistDraft]);
+
+  // Lưu định kỳ thời gian còn lại (im lặng)
+  useEffect(() => {
+    if (phase !== "doing") return;
+    const id = window.setInterval(() => {
+      saveExamDraft(exam.id, answersRef.current, timeLeftRef.current);
+    }, 10000);
+    return () => window.clearInterval(id);
+  }, [phase, exam.id]);
+
+  // Lưu khi rời trang
+  useEffect(() => {
+    if (phase !== "doing") return;
+    const onLeave = () => {
+      saveExamDraft(exam.id, answersRef.current, timeLeftRef.current);
+    };
+    window.addEventListener("beforeunload", onLeave);
+    return () => window.removeEventListener("beforeunload", onLeave);
+  }, [phase, exam.id]);
 
   function selectAnswer(qid: number, key: string) {
-    if (phase !== "doing") return;
+    if (phase !== "doing" || isPaused) return;
     setAnswers((prev) => ({ ...prev, [qid]: key }));
   }
 
   function startExam() {
     submittingRef.current = false;
+    clearExamDraft(exam.id);
+    setDraft(null);
+    setDraftSavedAt(null);
     setAnswers({});
     setTimeLeft(EXAM_DURATION_MINUTES * 60);
     setSpent(0);
+    setIsPaused(false);
+    setPhase("doing");
+  }
+
+  function resumeDraft() {
+    const d = getExamDraft(exam.id);
+    if (!d) return;
+    submittingRef.current = false;
+    setAnswers(d.answers ?? {});
+    setTimeLeft(
+      Math.min(
+        EXAM_DURATION_MINUTES * 60,
+        Math.max(0, d.timeLeftSeconds)
+      )
+    );
+    setSpent(0);
+    setIsPaused(false);
+    setDraft(d);
+    setDraftSavedAt(d.updatedAt);
     setPhase("doing");
   }
 
   function restart() {
     submittingRef.current = false;
+    clearExamDraft(exam.id);
+    setDraft(null);
+    setDraftSavedAt(null);
     setAnswers({});
     setTimeLeft(EXAM_DURATION_MINUTES * 60);
     setSpent(0);
+    setIsPaused(false);
     setPhase("ready");
   }
 
+  function togglePause() {
+    if (phase !== "doing") return;
+    setIsPaused((p) => {
+      const next = !p;
+      if (next) {
+        persistDraft(answers, timeLeft, true);
+      }
+      return next;
+    });
+  }
+
+  function saveDraftManual() {
+    if (phase !== "doing") return;
+    persistDraft(answers, timeLeft, true);
+    window.alert(
+      `Đã lưu tạm trên máy này.\nĐã chọn ${answeredCount}/${allQuestions.length} câu · còn ${formatTime(timeLeft)}.`
+    );
+  }
+
   if (phase === "ready") {
+    const draftAnswered = draft
+      ? Object.keys(draft.answers ?? {}).length
+      : 0;
+
     return (
       <div className="w-full space-y-5 animate-fade-in py-6">
         <div className="rounded-[20px] border border-black/[0.06] dark:border-white/[0.08] bg-white/90 dark:bg-[#1a1714]/90 p-6 text-center">
@@ -222,17 +342,51 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
           </p>
           <ul className="text-left text-xs text-[#5e554c] dark:text-[#b8aba0] space-y-1.5 mb-6 bg-black/[0.03] dark:bg-white/[0.04] rounded-[12px] p-3.5">
             <li>· Làm từ trên xuống theo từng Mondai</li>
-            <li>· Có đồng hồ; hết giờ tự nộp</li>
-            <li>· Chỉ xem đáp án sau khi nộp bài</li>
+            <li>· Pause đồng hồ hoặc Lưu tạm (localStorage, không cần DB)</li>
+            <li>· Hết giờ tự nộp · chỉ xem đáp án sau khi nộp</li>
           </ul>
-          <button
-            type="button"
-            onClick={startExam}
-            className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-[14px] bg-accent hover:bg-accent-hover text-white text-sm font-bold active:scale-[0.98] cursor-pointer"
-          >
-            <Play size={16} />
-            Bắt đầu làm bài
-          </button>
+
+          {mounted && draft && (
+            <div className="mb-4 rounded-[12px] border border-accent-border bg-accent-soft px-3.5 py-3 text-left">
+              <p className="text-[12px] font-semibold text-accent-muted">
+                Có bài đang làm dở
+              </p>
+              <p className="text-[11px] text-[#70665a] dark:text-[#b8aba0] mt-0.5">
+                Đã chọn {draftAnswered}/{allQuestions.length} · còn{" "}
+                {formatTime(draft.timeLeftSeconds)}
+              </p>
+            </div>
+          )}
+
+          <div className="space-y-2.5">
+            {mounted && draft && (
+              <button
+                type="button"
+                onClick={resumeDraft}
+                className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-[14px] bg-accent hover:bg-accent-hover text-white text-sm font-bold active:scale-[0.98] cursor-pointer"
+              >
+                <PlayCircle size={16} />
+                Tiếp tục bài đã lưu
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={() => {
+                if (draft && !window.confirm("Bắt đầu mới sẽ xoá bài lưu tạm. Tiếp tục?")) {
+                  return;
+                }
+                startExam();
+              }}
+              className={`inline-flex items-center justify-center gap-2 w-full py-3 rounded-[14px] text-sm font-bold active:scale-[0.98] cursor-pointer ${
+                draft
+                  ? "bg-black/[0.05] dark:bg-white/[0.08] text-[#1f1a16] dark:text-[#f5f0eb]"
+                  : "bg-accent hover:bg-accent-hover text-white"
+              }`}
+            >
+              <Play size={16} />
+              {draft ? "Bắt đầu mới" : "Bắt đầu làm bài"}
+            </button>
+          </div>
         </div>
       </div>
     );
@@ -279,47 +433,100 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
   const urgent = timeLeft <= 5 * 60;
 
   return (
-    <div className="w-full pb-28 animate-fade-in">
+    <div className="w-full pb-28 animate-fade-in relative">
       {/* Sticky timer */}
-      <div className="sticky top-[52px] z-20 -mx-1 mb-4 px-3 py-2.5 rounded-[14px] bg-white/95 dark:bg-[#1a1714]/95 border border-black/[0.06] dark:border-white/[0.08] backdrop-blur-md flex items-center justify-between gap-3">
+      <div className="sticky top-[52px] z-20 -mx-1 mb-4 px-3 py-2.5 rounded-[14px] bg-white/95 dark:bg-[#1a1714]/95 border border-black/[0.06] dark:border-white/[0.08] backdrop-blur-md flex items-center justify-between gap-2 flex-wrap">
         <div className="flex items-center gap-2 min-w-0">
           <Clock
             size={15}
-            className={urgent ? "text-red-500" : "text-accent"}
+            className={
+              isPaused ? "text-[#8a8074]" : urgent ? "text-red-500" : "text-accent"
+            }
           />
           <span
             className={`font-mono text-sm font-bold tabular-nums ${
-              urgent ? "text-red-500" : "text-[#1f1a16] dark:text-[#f5f0eb]"
+              isPaused
+                ? "text-[#8a8074]"
+                : urgent
+                  ? "text-red-500"
+                  : "text-[#1f1a16] dark:text-[#f5f0eb]"
             }`}
           >
             {formatTime(timeLeft)}
+            {isPaused ? " · tạm dừng" : ""}
           </span>
         </div>
         <span className="text-[11px] text-[#8a8074] shrink-0">
           Đã chọn {answeredCount}/{allQuestions.length}
+          {draftSavedAt ? " · đã lưu" : ""}
         </span>
-        <button
-          type="button"
-          onClick={() => {
-            const miss = allQuestions.length - answeredCount;
-            const msg =
-              miss > 0
-                ? `Còn ${miss} câu chưa chọn. Nộp bài?`
-                : "Nộp bài và xem kết quả?";
-            if (window.confirm(msg)) submit();
-          }}
-          className="inline-flex items-center gap-1 px-3 py-1.5 rounded-[10px] text-[12px] font-bold bg-accent text-white cursor-pointer active:scale-95"
-        >
-          <Flag size={12} />
-          Nộp bài
-        </button>
+        <div className="flex items-center gap-1.5">
+          <button
+            type="button"
+            onClick={togglePause}
+            className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-[10px] text-[12px] font-semibold bg-black/[0.05] dark:bg-white/[0.08] text-[#1f1a16] dark:text-[#f5f0eb] cursor-pointer active:scale-95"
+            title={isPaused ? "Tiếp tục" : "Tạm dừng đồng hồ"}
+          >
+            {isPaused ? <Play size={12} /> : <Pause size={12} />}
+            {isPaused ? "Tiếp tục" : "Pause"}
+          </button>
+          <button
+            type="button"
+            onClick={saveDraftManual}
+            className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-[10px] text-[12px] font-semibold bg-black/[0.05] dark:bg-white/[0.08] text-[#1f1a16] dark:text-[#f5f0eb] cursor-pointer active:scale-95"
+            title="Lưu tạm trên máy này"
+          >
+            <Save size={12} />
+            Lưu tạm
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              const miss = allQuestions.length - answeredCount;
+              const msg =
+                miss > 0
+                  ? `Còn ${miss} câu chưa chọn. Nộp bài?`
+                  : "Nộp bài và xem kết quả?";
+              if (window.confirm(msg)) submit();
+            }}
+            className="inline-flex items-center gap-1 px-3 py-1.5 rounded-[10px] text-[12px] font-bold bg-accent text-white cursor-pointer active:scale-95"
+          >
+            <Flag size={12} />
+            Nộp bài
+          </button>
+        </div>
       </div>
+
+      {isPaused && (
+        <div className="mb-4 rounded-[14px] border border-accent-border bg-accent-soft px-4 py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <p className="text-sm font-semibold text-accent-muted">
+              Đồng hồ đang tạm dừng
+            </p>
+            <p className="text-[12px] text-[#70665a] dark:text-[#b8aba0] mt-0.5">
+              Bài đã được lưu tạm. Bấm Tiếp tục để làm tiếp.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => setIsPaused(false)}
+            className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-[12px] bg-accent hover:bg-accent-hover text-white text-[13px] font-bold cursor-pointer active:scale-95 shrink-0"
+          >
+            <Play size={14} />
+            Tiếp tục
+          </button>
+        </div>
+      )}
 
       <h1 className="font-serif font-bold text-lg mb-4 text-[#1f1a16] dark:text-[#f5f0eb]">
         {exam.test_title}
       </h1>
 
-      <div className="space-y-8">
+      <div
+        className={`space-y-8 transition-opacity ${
+          isPaused ? "opacity-50 pointer-events-none select-none" : ""
+        }`}
+      >
         {exam.sections.map((section, si) => (
           <SectionBlock
             key={section.section_id}
@@ -331,7 +538,14 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
         ))}
       </div>
 
-      <div className="mt-8 pt-4 border-t border-black/[0.06] dark:border-white/[0.08]">
+      <div className="mt-8 pt-4 border-t border-black/[0.06] dark:border-white/[0.08] space-y-2.5">
+        <button
+          type="button"
+          onClick={saveDraftManual}
+          className="w-full py-2.5 rounded-[14px] text-sm font-semibold bg-black/[0.05] dark:bg-white/[0.08] text-[#1f1a16] dark:text-[#f5f0eb] cursor-pointer active:scale-[0.98]"
+        >
+          Lưu tạm &amp; làm tiếp sau
+        </button>
         <button
           type="button"
           onClick={() => {

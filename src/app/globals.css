@@ -591,6 +591,9 @@
   .scale-\[1\.01\] {
     scale: 1.01;
   }
+  .rotate-180 {
+    rotate: 180deg;
+  }
   .animate-pulse {
     animation: var(--animate-pulse);
   }
@@ -1356,6 +1359,9 @@
   }
   .pb-3\.5 {
     padding-bottom: calc(var(--spacing) * 3.5);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);

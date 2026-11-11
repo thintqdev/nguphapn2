@@ -1,0 +1,1759 @@
+{
+    "title": "Tổng hợp 60 Tiền tố & Hậu tố JLPT N2 (JLPT N2 Prefixes and Suffixes)",
+    "language": "Japanese - Vietnamese",
+    "total_items": 60,
+    "prefixes": [
+        {
+            "id": "P01",
+            "kanji": "無",
+            "hiragana": "む",
+            "romaji": "mu-",
+            "meaning": "Không, vô (chỉ sự thiếu vắng hoàn toàn hoặc không tồn tại của tính chất/sự vật)",
+            "usage_notes": "Thường ghép với danh từ để chỉ sự không có, vô tư, không giới hạn.",
+            "examples": [
+                {
+                    "word": "無意識",
+                    "reading": "むいしき",
+                    "meaning": "Vô thức, không cố ý"
+                },
+                {
+                    "word": "無関心",
+                    "reading": "むかんしん",
+                    "meaning": "Vô cảm, không quan tâm"
+                },
+                {
+                    "word": "無差別",
+                    "reading": "むさべつ",
+                    "meaning": "Không phân biệt, vô差"
+                },
+                {
+                    "word": "無料",
+                    "reading": "むりょう",
+                    "meaning": "Miễn phí (không tốn tiền)"
+                }
+            ]
+        },
+        {
+            "id": "P02",
+            "kanji": "非",
+            "hiragana": "ひ",
+            "romaji": "hi-",
+            "meaning": "Phi, không đúng với (trái với bản chất, tiêu chuẩn thông thường)",
+            "usage_notes": "Dùng để phủ định mang tính chất danh từ hoặc tính từ, chỉ điều trái với tự nhiên/quy tắc.",
+            "examples": [
+                {
+                    "word": "非公式",
+                    "reading": "ひこうしき",
+                    "meaning": "Phi chính thức"
+                },
+                {
+                    "word": "非現実的",
+                    "reading": "ひげんじつてき",
+                    "meaning": "Phi thực tế"
+                },
+                {
+                    "word": "非日常",
+                    "reading": "ひにちじょう",
+                    "meaning": "Khác thường ngày, khác nhật thường"
+                },
+                {
+                    "word": "非論理的",
+                    "reading": "ひろんりてき",
+                    "meaning": "Phi logic"
+                }
+            ]
+        },
+        {
+            "id": "P03",
+            "kanji": "未",
+            "hiragana": "み",
+            "romaji": "mi-",
+            "meaning": "Vị, chưa (chưa đạt đến, chưa hoàn thành tại thời điểm nói)",
+            "usage_notes": "Rất dễ nhận biết: Luôn mang nghĩa 'chưa...'. Ghép với trạng thái hoặc hành động dự định.",
+            "examples": [
+                {
+                    "word": "未解決",
+                    "reading": "みかいけつ",
+                    "meaning": "Chưa giải quyết"
+                },
+                {
+                    "word": "未経験",
+                    "reading": "みけいけん",
+                    "meaning": "Chưa có kinh nghiệm"
+                },
+                {
+                    "word": "未成年",
+                    "reading": "みせいねん",
+                    "meaning": "Vị thành niên (chưa đủ tuổi)"
+                },
+                {
+                    "word": "未完成",
+                    "reading": "みかんせい",
+                    "meaning": "Chưa hoàn thành"
+                }
+            ]
+        },
+        {
+            "id": "P04",
+            "kanji": "不",
+            "hiragana": "ふ / ぶ",
+            "romaji": "fu- / bu-",
+            "meaning": "Bất, không (trạng thái xấu, không đạt tiêu chuẩn, trái ngược)",
+            "usage_notes": "Phủ định tính chất hoặc trạng thái. Thường kết hợp với Tính từ đuôi な và Danh từ.",
+            "examples": [
+                {
+                    "word": "不景気",
+                    "reading": "ふけいき",
+                    "meaning": "Kinh tế suy thoái, ảm đạm"
+                },
+                {
+                    "word": "不完全",
+                    "reading": "ふかんぜん",
+                    "meaning": "Bất hoàn hảo, không đầy đủ"
+                },
+                {
+                    "word": "不平",
+                    "reading": "ふへい",
+                    "meaning": "Bất bình, phàn nàn"
+                },
+                {
+                    "word": "不気味",
+                    "reading": "ぶきみ",
+                    "meaning": "Rùng rợn, đáng sợ"
+                }
+            ]
+        },
+        {
+            "id": "P05",
+            "kanji": "超",
+            "hiragana": "ちょう",
+            "romaji": "chou-",
+            "meaning": "Siêu, vượt quá mức bình thường",
+            "usage_notes": "Dùng để nhấn mạnh mức độ cực kỳ cao hoặc vượt xa ranh giới chuẩn.",
+            "examples": [
+                {
+                    "word": "超小型",
+                    "reading": "ちょうこがた",
+                    "meaning": "Siêu nhỏ"
+                },
+                {
+                    "word": "超満員",
+                    "reading": "ちょうまんいん",
+                    "meaning": "Siêu đông người, quá tải"
+                },
+                {
+                    "word": "超自然",
+                    "reading": "ちょうしぜん",
+                    "meaning": "Siêu nhiên"
+                },
+                {
+                    "word": "超音速",
+                    "reading": "ちょうおんそく",
+                    "meaning": "Tốc độ siêu thanh"
+                }
+            ]
+        },
+        {
+            "id": "P06",
+            "kanji": "高",
+            "hiragana": "こう",
+            "romaji": "kou-",
+            "meaning": "Cao (về số lượng, chất lượng, giá trị, cấp độ)",
+            "usage_notes": "Ghép với các từ chỉ thông số, chất lượng hoặc địa vị.",
+            "examples": [
+                {
+                    "word": "高収入",
+                    "reading": "こうしゅうにゅう",
+                    "meaning": "Thu nhập cao"
+                },
+                {
+                    "word": "高性能",
+                    "reading": "こうのうのう",
+                    "meaning": "Hiệu suất cao, tính năng cao"
+                },
+                {
+                    "word": "高血圧",
+                    "reading": "こうけつあつ",
+                    "meaning": "Cao huyết áp"
+                },
+                {
+                    "word": "高気圧",
+                    "reading": "こうきあつ",
+                    "meaning": "Khí áp cao"
+                }
+            ]
+        },
+        {
+            "id": "P07",
+            "kanji": "低",
+            "hiragana": "てい",
+            "romaji": "tei-",
+            "meaning": "Thấp (về số lượng, chỉ số, mức độ)",
+            "usage_notes": "Từ trái nghĩa của 高(こう). Đi kèm các từ đo lường số liệu.",
+            "examples": [
+                {
+                    "word": "低価格",
+                    "reading": "ていかかく",
+                    "meaning": "Giá thấp, giá rẻ"
+                },
+                {
+                    "word": "低気圧",
+                    "reading": "ていきあつ",
+                    "meaning": "Khí áp thấp"
+                },
+                {
+                    "word": "低カロリー",
+                    "reading": "ていかろりー",
+                    "meaning": "Lượng calo thấp"
+                }
+            ]
+        },
+        {
+            "id": "P08",
+            "kanji": "好",
+            "hiragana": "こう",
+            "romaji": "kou-",
+            "meaning": "Hảo, tốt, thuận lợi",
+            "usage_notes": "Mang lại ấn tượng tích cực, điều kiện tốt.",
+            "examples": [
+                {
+                    "word": "好印象",
+                    "reading": "こういんしょう",
+                    "meaning": "Ấn tượng tốt"
+                },
+                {
+                    "word": "好都合",
+                    "reading": "こうつごう",
+                    "meaning": "Thích hợp, thuận lợi"
+                },
+                {
+                    "word": "好条件",
+                    "reading": "こうじょうけん",
+                    "meaning": "Điều kiện tốt"
+                },
+                {
+                    "word": "好景気",
+                    "reading": "こうけいき",
+                    "meaning": "Kinh tế phát triển, thịnh vượng"
+                }
+            ]
+        },
+        {
+            "id": "P09",
+            "kanji": "悪",
+            "hiragana": "あく",
+            "romaji": "aku-",
+            "meaning": "Ác, xấu, bất lợi",
+            "usage_notes": "Từ trái nghĩa của 好(こう). Chỉ điều kiện xấu hoặc tác động tiêu cực.",
+            "examples": [
+                {
+                    "word": "悪条件",
+                    "reading": "あくじょうけん",
+                    "meaning": "Điều kiện bất lợi/xấu"
+                },
+                {
+                    "word": "悪影響",
+                    "reading": "あくえいきょう",
+                    "meaning": "Ảnh hưởng xấu"
+                },
+                {
+                    "word": "悪天候",
+                    "reading": "あくてんこう",
+                    "meaning": "Thời tiết xấu"
+                },
+                {
+                    "word": "悪循環",
+                    "reading": "あくじゅんかん",
+                    "meaning": "Vòng lẩn quẩn xấu"
+                }
+            ]
+        },
+        {
+            "id": "P10",
+            "kanji": "新",
+            "hiragana": "しん",
+            "romaji": "shin-",
+            "meaning": "Tân, mới",
+            "usage_notes": "Ghép phía trước để chỉ sự vật, vị trí mới xuất hiện hoặc thay thế.",
+            "examples": [
+                {
+                    "word": "新製品",
+                    "reading": "しんせいひん",
+                    "meaning": "Sản phẩm mới"
+                },
+                {
+                    "word": "新人",
+                    "reading": "しんじん",
+                    "meaning": "Lính mới, người mới"
+                },
+                {
+                    "word": "新記録",
+                    "reading": "しんきろく",
+                    "meaning": "Kỷ lục mới"
+                },
+                {
+                    "word": "新体制",
+                    "reading": "しんたいせい",
+                    "meaning": "Thể chế/Hệ thống mới"
+                }
+            ]
+        },
+        {
+            "id": "P11",
+            "kanji": "古",
+            "hiragana": "ふる",
+            "romaji": "furu-",
+            "meaning": "Cổ, cũ",
+            "usage_notes": "Đi trước danh từ để chỉ đồ đã qua sử dụng hoặc cũ kĩ.",
+            "examples": [
+                {
+                    "word": "古本",
+                    "reading": "ふるほん",
+                    "meaning": "Sách cũ"
+                },
+                {
+                    "word": "古新聞",
+                    "reading": "ふるしんぶん",
+                    "meaning": "Báo cũ"
+                },
+                {
+                    "word": "古時計",
+                    "reading": "ふるどけい",
+                    "meaning": "Đồng hồ cổ/cũ"
+                }
+            ]
+        },
+        {
+            "id": "P12",
+            "kanji": "初",
+            "hiragana": "はつ",
+            "romaji": "hatsu-",
+            "meaning": "Sơ, lần đầu tiên",
+            "usage_notes": "Nhấn mạnh trải nghiệm hoặc sự kiện xảy ra lần đầu tiên trong đời/trong năm.",
+            "examples": [
+                {
+                    "word": "初体験",
+                    "reading": "はつたいけん",
+                    "meaning": "Trải nghiệm lần đầu"
+                },
+                {
+                    "word": "初登場",
+                    "reading": "はつとうじょう",
+                    "meaning": "Xuất hiện lần đầu"
+                },
+                {
+                    "word": "初優勝",
+                    "reading": "はつゆうしょう",
+                    "meaning": "Vô địch lần đầu"
+                },
+                {
+                    "word": "初公開",
+                    "reading": "はつこうかい",
+                    "meaning": "Công khai lần đầu"
+                }
+            ]
+        },
+        {
+            "id": "P13",
+            "kanji": "再",
+            "hiragana": "さい",
+            "romaji": "sai-",
+            "meaning": "Tái, làm lại lần nữa",
+            "usage_notes": "Đi kèm danh từ hành động để thể hiện việc lặp lại.",
+            "examples": [
+                {
+                    "word": "再開発",
+                    "reading": "さいかいはつ",
+                    "meaning": "Quy hoạch/Tái phát triển"
+                },
+                {
+                    "word": "再放送",
+                    "reading": "さいほうそう",
+                    "meaning": "Phát sóng lại"
+                },
+                {
+                    "word": "再発見",
+                    "reading": "さいはっけん",
+                    "meaning": "Tái phát hiện, phát hiện lại"
+                },
+                {
+                    "word": "再検討",
+                    "reading": "さいけんとう",
+                    "meaning": "Xem xét lại"
+                }
+            ]
+        },
+        {
+            "id": "P14",
+            "kanji": "最",
+            "hiragana": "さい",
+            "romaji": "sai-",
+            "meaning": "Tối, nhất (mức độ cao nhất)",
+            "usage_notes": "Đi với danh từ/tính từ để chỉ trạng thái cực hạn.",
+            "examples": [
+                {
+                    "word": "最先端",
+                    "reading": "さいせんたん",
+                    "meaning": "Tiên tiến nhất, hiện đại nhất"
+                },
+                {
+                    "word": "最高峰",
+                    "reading": "さいこうほう",
+                    "meaning": "Đỉnh cao nhất"
+                },
+                {
+                    "word": "最優先",
+                    "reading": "さいゆうせん",
+                    "meaning": "Ưu tiên hàng đầu"
+                },
+                {
+                    "word": "最чно/終",
+                    "reading": "さいしゅう",
+                    "meaning": "Cuối cùng"
+                }
+            ]
+        },
+        {
+            "id": "P15",
+            "kanji": "諸",
+            "hiragana": "しょ",
+            "romaji": "sho-",
+            "meaning": "Chư, các, nhiều",
+            "usage_notes": "Chỉ số nhiều của các danh từ mang tính tổ chức, phạm vi.",
+            "examples": [
+                {
+                    "word": "諸問題",
+                    "reading": "しょもんだい",
+                    "meaning": "Các vấn đề"
+                },
+                {
+                    "word": "諸事情",
+                    "reading": "しょじじょう",
+                    "meaning": "Nhiều lý do/hoàn cảnh khác nhau"
+                },
+                {
+                    "word": "諸外国",
+                    "reading": "しょがいこく",
+                    "meaning": "Các nước ngoài"
+                },
+                {
+                    "word": "諸費用",
+                    "reading": "しょひよう",
+                    "meaning": "Các khoản chi phí"
+                }
+            ]
+        },
+        {
+            "id": "P16",
+            "kanji": "総",
+            "hiragana": "そう",
+            "romaji": "sou-",
+            "meaning": "Tổng, toàn bộ",
+            "usage_notes": "Gộp tất cả mọi mặt, con số hoặc chức danh người đứng đầu.",
+            "examples": [
+                {
+                    "word": "総売上",
+                    "reading": "そううりあげ",
+                    "meaning": "Tổng doanh thu"
+                },
+                {
+                    "word": "総人口",
+                    "reading": "そうじんこう",
+                    "meaning": "Tổng dân số"
+                },
+                {
+                    "word": "総支配人",
+                    "reading": "そうしはいにん",
+                    "meaning": "Tổng quản lý/Tổng giám đốc"
+                },
+                {
+                    "word": "総額",
+                    "reading": "そうがく",
+                    "meaning": "Tổng số tiền"
+                }
+            ]
+        },
+        {
+            "id": "P17",
+            "kanji": "全",
+            "hiragana": "ぜん",
+            "romaji": "zen-",
+            "meaning": "Toàn, tất cả",
+            "usage_notes": "Chỉ tính trọn vẹn, không bỏ sót phạm vi nào.",
+            "examples": [
+                {
+                    "word": "全国",
+                    "reading": "ぜんこく",
+                    "meaning": "Toàn quốc"
+                },
+                {
+                    "word": "全責任",
+                    "reading": "ぜんせきにん",
+                    "meaning": "Toàn bộ trách nhiệm"
+                },
+                {
+                    "word": "全自動",
+                    "reading": "ぜんじどう",
+                    "meaning": "Hoàn toàn tự động"
+                },
+                {
+                    "word": "全世界",
+                    "reading": "ぜんせかい",
+                    "meaning": "Toàn thế giới"
+                }
+            ]
+        },
+        {
+            "id": "P18",
+            "kanji": "各",
+            "hiragana": "かく",
+            "romaji": "kaku-",
+            "meaning": "Các, mỗi",
+            "usage_notes": "Nhấn mạnh từng cá thể riêng biệt trong một tập hợp.",
+            "examples": [
+                {
+                    "word": "各家庭",
+                    "reading": "かくかてい",
+                    "meaning": "Mỗi gia đình"
+                },
+                {
+                    "word": "各地域",
+                    "reading": "かくちいき",
+                    "meaning": "Từng khu vực"
+                },
+                {
+                    "word": "各部署",
+                    "reading": "かくぶしょ",
+                    "meaning": "Mỗi phòng ban"
+                }
+            ]
+        },
+        {
+            "id": "P19",
+            "kanji": "反",
+            "hiragana": "はん",
+            "romaji": "han-",
+            "meaning": "Phản, chống lại, ngược lại",
+            "usage_notes": "Chỉ sự đối lập tư tưởng, hướng đi hoặc hành vi.",
+            "examples": [
+                {
+                    "word": "反社会",
+                    "reading": "はんしゃかい",
+                    "meaning": "Phản xã hội"
+                },
+                {
+                    "word": "反体制",
+                    "reading": "はんたいせい",
+                    "meaning": "Phản thể chế"
+                },
+                {
+                    "word": "反射性",
+                    "reading": "はんしゃせい",
+                    "meaning": "Tính phản xạ"
+                }
+            ]
+        },
+        {
+            "id": "P20",
+            "kanji": "脱",
+            "hiragana": "だつ",
+            "romaji": "datsu-",
+            "meaning": "Thoát, ra khỏi, từ bỏ",
+            "usage_notes": "Chỉ việc thoát khỏi một trạng thái hoặc mô hình cũ.",
+            "examples": [
+                {
+                    "word": "脱原発",
+                    "reading": "だつげんぱつ",
+                    "meaning": "Từ bỏ điện hạt nhân"
+                },
+                {
+                    "word": "脱サラ",
+                    "reading": "だつさら",
+                    "meaning": "Bỏ nghề làm thuê để tự kinh doanh"
+                },
+                {
+                    "word": "脱出",
+                    "reading": "だっしゅつ",
+                    "meaning": "Thoát khỏi"
+                }
+            ]
+        },
+        {
+            "id": "P21",
+            "kanji": "半",
+            "hiragana": "はん",
+            "romaji": "han-",
+            "meaning": "Bán, một nửa",
+            "usage_notes": "Chỉ một nửa số lượng, mức độ hoặc thời gian.",
+            "examples": [
+                {
+                    "word": "半額",
+                    "reading": "はんがく",
+                    "meaning": "Giảm nửa giá"
+                },
+                {
+                    "word": "半日",
+                    "reading": "はんにち",
+                    "meaning": "Nửa ngày"
+                },
+                {
+                    "word": "半年",
+                    "reading": "はんとし",
+                    "meaning": "Nửa năm"
+                },
+                {
+                    "word": "半信半疑",
+                    "reading": "はんしんはんぎ",
+                    "meaning": "Nửa tin nửa ngờ"
+                }
+            ]
+        },
+        {
+            "id": "P22",
+            "kanji": "両",
+            "hiragana": "りょう",
+            "romaji": "ryou-",
+            "meaning": "Lưỡng, cả hai",
+            "usage_notes": "Nhấn mạnh hai phía / hai đối tượng cùng lúc.",
+            "examples": [
+                {
+                    "word": "両親",
+                    "reading": "りょうしん",
+                    "meaning": "Bố mẹ"
+                },
+                {
+                    "word": "両者",
+                    "reading": "りょうしゃ",
+                    "meaning": "Cả hai bên"
+                },
+                {
+                    "word": "両立",
+                    "reading": "りょうりつ",
+                    "meaning": "Song song, cân bằng cả hai"
+                },
+                {
+                    "word": "両手",
+                    "reading": "りょうて",
+                    "meaning": "Hai tay"
+                }
+            ]
+        },
+        {
+            "id": "P23",
+            "kanji": "同",
+            "hiragana": "どう",
+            "romaji": "dou-",
+            "meaning": "Đồng, cùng một",
+            "usage_notes": "Chỉ sự giống nhau hoặc thuộc cùng nhóm/thời điểm.",
+            "examples": [
+                {
+                    "word": "同時",
+                    "reading": "どうじ",
+                    "meaning": "Cùng lúc"
+                },
+                {
+                    "word": "同僚",
+                    "reading": "どうりょう",
+                    "meaning": "Đồng nghiệp"
+                },
+                {
+                    "word": "同性",
+                    "reading": "どうせい",
+                    "meaning": "Cùng giới"
+                },
+                {
+                    "word": "同一",
+                    "reading": "どういつ",
+                    "meaning": "Đồng nhất, giống hệt"
+                }
+            ]
+        },
+        {
+            "id": "P24",
+            "kanji": "毎",
+            "hiragana": "まい",
+            "romaji": "mai-",
+            "meaning": "Mỗi, hàng (lặp lại theo chu kỳ)",
+            "usage_notes": "Ghép với đơn vị thời gian: ngày, tuần, tháng, năm.",
+            "examples": [
+                {
+                    "word": "毎日",
+                    "reading": "まいにち",
+                    "meaning": "Mỗi ngày"
+                },
+                {
+                    "word": "毎週",
+                    "reading": "まいしゅう",
+                    "meaning": "Mỗi tuần"
+                },
+                {
+                    "word": "毎月",
+                    "reading": "まいつき",
+                    "meaning": "Mỗi tháng"
+                },
+                {
+                    "word": "毎年",
+                    "reading": "まいとし",
+                    "meaning": "Mỗi năm"
+                }
+            ]
+        },
+        {
+            "id": "P25",
+            "kanji": "被",
+            "hiragana": "ひ",
+            "romaji": "hi-",
+            "meaning": "Bị, chịu (tác động từ bên ngoài)",
+            "usage_notes": "Thường chỉ trạng thái bị động, chịu thiệt hại hoặc ảnh hưởng.",
+            "examples": [
+                {
+                    "word": "被害",
+                    "reading": "ひがい",
+                    "meaning": "Thiệt hại"
+                },
+                {
+                    "word": "被災",
+                    "reading": "ひさい",
+                    "meaning": "Bị thiên tai"
+                },
+                {
+                    "word": "被験者",
+                    "reading": "ひけんしゃ",
+                    "meaning": "Người được thí nghiệm"
+                },
+                {
+                    "word": "被選挙権",
+                    "reading": "ひせんきょけん",
+                    "meaning": "Quyền ứng cử"
+                }
+            ]
+        },
+        {
+            "id": "P26",
+            "kanji": "相",
+            "hiragana": "そう",
+            "romaji": "sou-",
+            "meaning": "Tương, lẫn nhau",
+            "usage_notes": "Chỉ quan hệ hai chiều hoặc sự tương tác.",
+            "examples": [
+                {
+                    "word": "相談",
+                    "reading": "そうだん",
+                    "meaning": "Thảo luận, bàn bạc"
+                },
+                {
+                    "word": "相手",
+                    "reading": "あいて",
+                    "meaning": "Đối phương"
+                },
+                {
+                    "word": "相互",
+                    "reading": "そうご",
+                    "meaning": "Lẫn nhau"
+                },
+                {
+                    "word": "相違",
+                    "reading": "そうい",
+                    "meaning": "Sự khác biệt"
+                }
+            ]
+        },
+        {
+            "id": "P27",
+            "kanji": "単",
+            "hiragana": "たん",
+            "romaji": "tan-",
+            "meaning": "Đơn, đơn giản, một mình",
+            "usage_notes": "Đối lập với 複. Chỉ sự đơn nhất hoặc đơn giản.",
+            "examples": [
+                {
+                    "word": "単語",
+                    "reading": "たんご",
+                    "meaning": "Từ vựng"
+                },
+                {
+                    "word": "単純",
+                    "reading": "たんじゅん",
+                    "meaning": "Đơn giản"
+                },
+                {
+                    "word": "単独",
+                    "reading": "たんどく",
+                    "meaning": "Đơn độc, một mình"
+                },
+                {
+                    "word": "単位",
+                    "reading": "たんい",
+                    "meaning": "Đơn vị (tín chỉ/đo lường)"
+                }
+            ]
+        },
+        {
+            "id": "P28",
+            "kanji": "多",
+            "hiragana": "た",
+            "romaji": "ta-",
+            "meaning": "Đa, nhiều",
+            "usage_notes": "Chỉ số lượng hoặc chủng loại phong phú.",
+            "examples": [
+                {
+                    "word": "多数",
+                    "reading": "たすう",
+                    "meaning": "Đa số"
+                },
+                {
+                    "word": "多様",
+                    "reading": "たよう",
+                    "meaning": "Đa dạng"
+                },
+                {
+                    "word": "多目的",
+                    "reading": "たもくてき",
+                    "meaning": "Đa mục đích"
+                },
+                {
+                    "word": "多忙",
+                    "reading": "たぼう",
+                    "meaning": "Bận rộn"
+                }
+            ]
+        },
+        {
+            "id": "P29",
+            "kanji": "前",
+            "hiragana": "ぜん",
+            "romaji": "zen-",
+            "meaning": "Tiền, trước (thời gian / vị trí)",
+            "usage_notes": "Chỉ phần trước hoặc giai đoạn trước đó.",
+            "examples": [
+                {
+                    "word": "前回",
+                    "reading": "ぜんかい",
+                    "meaning": "Lần trước"
+                },
+                {
+                    "word": "前提",
+                    "reading": "ぜんてい",
+                    "meaning": "Tiền đề"
+                },
+                {
+                    "word": "前年",
+                    "reading": "ぜんねん",
+                    "meaning": "Năm trước"
+                },
+                {
+                    "word": "前述",
+                    "reading": "ぜんじゅつ",
+                    "meaning": "Đã nêu ở trên"
+                }
+            ]
+        },
+        {
+            "id": "P30",
+            "kanji": "後",
+            "hiragana": "ご / こう",
+            "romaji": "go- / kou-",
+            "meaning": "Hậu, sau",
+            "usage_notes": "Chỉ phần sau về thời gian hoặc thứ tự. Đọc ご hoặc こう tùy từ.",
+            "examples": [
+                {
+                    "word": "後半",
+                    "reading": "こうはん",
+                    "meaning": "Nửa sau"
+                },
+                {
+                    "word": "後輩",
+                    "reading": "こうはい",
+                    "meaning": "Hậu bối"
+                },
+                {
+                    "word": "後日",
+                    "reading": "ごじつ",
+                    "meaning": "Ngày sau"
+                },
+                {
+                    "word": "後悔",
+                    "reading": "こうかい",
+                    "meaning": "Hối hận"
+                }
+            ]
+        }
+    ],
+    "suffixes": [
+        {
+            "id": "S01",
+            "kanji": "風",
+            "hiragana": "ふう",
+            "romaji": "-fuu",
+            "meaning": "Phong, phong cách, kiểu",
+            "usage_notes": "Đứng sau danh từ để miêu tả kiểu dáng, phong cách văn hóa hoặc diện mạo.",
+            "examples": [
+                {
+                    "word": "和風",
+                    "reading": "わふう",
+                    "meaning": "Phong cách Nhật Bản"
+                },
+                {
+                    "word": "洋風",
+                    "reading": "ようふう",
+                    "meaning": "Phong cách phương Tây"
+                },
+                {
+                    "word": "現代風",
+                    "reading": "げんだいふう",
+                    "meaning": "Kiểu hiện đại"
+                },
+                {
+                    "word": "学生風",
+                    "reading": "がくせいふう",
+                    "meaning": "Dáng vẻ sinh viên"
+                }
+            ]
+        },
+        {
+            "id": "S02",
+            "kanji": "流",
+            "hiragana": "りゅう",
+            "romaji": "-ryuu",
+            "meaning": "Lưu, trường phái, phong cách riêng",
+            "usage_notes": "Chỉ phương pháp, nét đặc trưng độc đáo của cá nhân hoặc vùng miền/trường phái.",
+            "examples": [
+                {
+                    "word": "自己流",
+                    "reading": "じこりゅう",
+                    "meaning": "Phong cách/Cách làm tự chế"
+                },
+                {
+                    "word": "プロ流",
+                    "reading": "ぷろりゅう",
+                    "meaning": "Phong cách chuyên nghiệp"
+                },
+                {
+                    "word": "アメリカ流",
+                    "reading": "あめりかりゅう",
+                    "meaning": "Kiểu/Phong cách Mỹ"
+                }
+            ]
+        },
+        {
+            "id": "S03",
+            "kanji": "感",
+            "hiragana": "かん",
+            "romaji": "-kan",
+            "meaning": "Cảm, cảm giác, tinh thần",
+            "usage_notes": "Gắn sau danh từ chỉ tâm lý, cảm xúc hoặc trạng thái nhận thức.",
+            "examples": [
+                {
+                    "word": "責任感",
+                    "reading": "せきにんかん",
+                    "meaning": "Tinh thần trách nhiệm"
+                },
+                {
+                    "word": "緊張感",
+                    "reading": "きんちょうかん",
+                    "meaning": "Cảm giác căng thẳng"
+                },
+                {
+                    "word": "危機感",
+                    "reading": "ききかん",
+                    "meaning": "Cảm giác khủng hoảng/nguy cơ"
+                },
+                {
+                    "word": "一体感",
+                    "reading": "いったいかん",
+                    "meaning": "Cảm giác đồng lòng/hợp nhất"
+                }
+            ]
+        },
+        {
+            "id": "S04",
+            "kanji": "性",
+            "hiragana": "せい",
+            "romaji": "-sei",
+            "meaning": "Tính, bản chất, khả năng",
+            "usage_notes": "Chuyển danh từ/tính từ thành từ chỉ tính chất, xu hướng.",
+            "examples": [
+                {
+                    "word": "可能性",
+                    "reading": "かのうせい",
+                    "meaning": "Khả năng, tính khả thi"
+                },
+                {
+                    "word": "危険性",
+                    "reading": "きけんせい",
+                    "meaning": "Tính nguy hiểm"
+                },
+                {
+                    "word": "安全性",
+                    "reading": "あんぜんせい",
+                    "meaning": "Tính an toàn"
+                },
+                {
+                    "word": "生産性",
+                    "reading": "せいさんせい",
+                    "meaning": "Năng suất, tính sản xuất"
+                }
+            ]
+        },
+        {
+            "id": "S05",
+            "kanji": "化",
+            "hiragana": "か",
+            "romaji": "-ka",
+            "meaning": "Hóa, biến đổi thành trạng thái khác",
+            "usage_notes": "Tương đương hậu tố '-ization' trong tiếng Anh. Thường đi kèm trợ động từ する.",
+            "examples": [
+                {
+                    "word": "映画化",
+                    "reading": "えいがか",
+                    "meaning": "Chuyển thể thành phim"
+                },
+                {
+                    "word": "国際化",
+                    "reading": "こくさいか",
+                    "meaning": "Quốc tế hóa"
+                },
+                {
+                    "word": "少子化",
+                    "reading": "しょうしか",
+                    "meaning": "Tình trạng giảm tỷ lệ sinh"
+                },
+                {
+                    "word": "温暖化",
+                    "reading": "おんだんか",
+                    "meaning": "Hiện tượng nóng lên toàn cầu"
+                }
+            ]
+        },
+        {
+            "id": "S06",
+            "kanji": "目",
+            "hiragana": "め",
+            "romaji": "-me",
+            "meaning": "Mục, thứ/mức độ nhẹ",
+            "usage_notes": "Dùng tính thứ tự (1番目) hoặc đứng sau tính từ chỉ mức độ nhẹ (nói bớt).",
+            "examples": [
+                {
+                    "word": "二回目",
+                    "reading": "にかいめ",
+                    "meaning": "Lần thứ 2"
+                },
+                {
+                    "word": "高め",
+                    "reading": "たかめ",
+                    "meaning": "Hơi cao một chút"
+                },
+                {
+                    "word": "多め",
+                    "reading": "おおめ",
+                    "meaning": "Hơi nhiều một chút"
+                },
+                {
+                    "word": "早め",
+                    "reading": "はやめ",
+                    "meaning": "Sớm một chút"
+                }
+            ]
+        },
+        {
+            "id": "S07",
+            "kanji": "代理",
+            "hiragana": "だいり",
+            "romaji": "-dairi",
+            "meaning": "Đại lý, đại diện",
+            "usage_notes": "Thường đứng sau tên cơ quan hoặc chức danh để chỉ người làm thay.",
+            "examples": [
+                {
+                    "word": "課長代理",
+                    "reading": "かちょうだいり",
+                    "meaning": "Phó phòng / Quyền trưởng phòng"
+                },
+                {
+                    "word": "販売代理",
+                    "reading": "はんばいだいり",
+                    "meaning": "Đại lý bán hàng"
+                }
+            ]
+        },
+        {
+            "id": "S08",
+            "kanji": "者",
+            "hiragana": "しゃ / もの",
+            "romaji": "-sha / -mono",
+            "meaning": "Giả, người làm hành động",
+            "usage_notes": "Đi sau động từ/danh từ chỉ nghề nghiệp, chức năng của con người.",
+            "examples": [
+                {
+                    "word": "研究者",
+                    "reading": "けんきゅうしゃ",
+                    "meaning": "Nhà nghiên cứu"
+                },
+                {
+                    "word": "経験者",
+                    "reading": "けいけんしゃ",
+                    "meaning": "Người đã có kinh nghiệm"
+                },
+                {
+                    "word": "候補者",
+                    "reading": "こうほしゃ",
+                    "meaning": "Ứng cử viên"
+                },
+                {
+                    "word": "創業者",
+                    "reading": "そうぎょうしゃ",
+                    "meaning": "Người sáng lập"
+                }
+            ]
+        },
+        {
+            "id": "S09",
+            "kanji": "家",
+            "hiragana": "か",
+            "romaji": "-ka",
+            "meaning": "Gia, chuyên gia, nhà (chuyên môn)",
+            "usage_notes": "Chỉ những người có chuyên môn cao, nghệ sĩ, nhà khoa học.",
+            "examples": [
+                {
+                    "word": "政治家",
+                    "reading": "せいじか",
+                    "meaning": "Chính trị gia"
+                },
+                {
+                    "word": "芸術家",
+                    "reading": "げいじゅつか",
+                    "meaning": "Nghệ sĩ"
+                },
+                {
+                    "word": "小説家",
+                    "reading": "しょうせつか",
+                    "meaning": "Nhà văn"
+                },
+                {
+                    "word": "専門家",
+                    "reading": "せんもんか",
+                    "meaning": "Chuyên gia"
+                }
+            ]
+        },
+        {
+            "id": "S10",
+            "kanji": "師",
+            "hiragana": "し",
+            "romaji": "-shi",
+            "meaning": "Sư, người có bằng cấp/chứng chỉ chuyên môn",
+            "usage_notes": "Chỉ người có chứng chỉ quốc gia, tay nghề trình độ cao.",
+            "examples": [
+                {
+                    "word": "看護師",
+                    "reading": "かんごし",
+                    "meaning": "Y tá, điều dưỡng"
+                },
+                {
+                    "word": "医師",
+                    "reading": "いし",
+                    "meaning": "Bác sĩ"
+                },
+                {
+                    "word": "技師",
+                    "reading": "ぎし",
+                    "meaning": "Kỹ sư"
+                },
+                {
+                    "word": "美容師",
+                    "reading": "びようし",
+                    "meaning": "Thợ làm tóc/thẩm mỹ"
+                }
+            ]
+        },
+        {
+            "id": "S11",
+            "kanji": "員",
+            "hiragana": "いん",
+            "romaji": "-in",
+            "meaning": "Viên, thành viên tổ chức",
+            "usage_notes": "Chỉ người thuộc về một tổ chức, công ty, đoàn thể.",
+            "examples": [
+                {
+                    "word": "従業員",
+                    "reading": "じゅうぎょういん",
+                    "meaning": "Nhân viên, người làm thuê"
+                },
+                {
+                    "word": "公務員",
+                    "reading": "こうむいん",
+                    "meaning": "Công chức"
+                },
+                {
+                    "word": "警備員",
+                    "reading": "けいびいん",
+                    "meaning": "Bảo vệ"
+                }
+            ]
+        },
+        {
+            "id": "S12",
+            "kanji": "力",
+            "hiragana": "りょく / りき",
+            "romaji": "-ryoku / -riki",
+            "meaning": "Lực, khả năng, sức mạnh",
+            "usage_notes": "Gắn sau danh từ để biểu thị năng lực chuyên môn hoặc sức mạnh vật lý.",
+            "examples": [
+                {
+                    "word": "集中力",
+                    "reading": "しゅうちゅうりょく",
+                    "meaning": "Khả năng tập trung"
+                },
+                {
+                    "word": "労働力",
+                    "reading": "ろうどうりょく",
+                    "meaning": "Sức lao động"
+                },
+                {
+                    "word": "説得力",
+                    "reading": "せっとくりょく",
+                    "meaning": "Sức thuyết phục"
+                },
+                {
+                    "word": "購買力",
+                    "reading": "こうばいりょく",
+                    "meaning": "Sức mua"
+                }
+            ]
+        },
+        {
+            "id": "S13",
+            "kanji": "率",
+            "hiragana": "りつ",
+            "romaji": "-ritsu",
+            "meaning": "Suất, tỷ lệ",
+            "usage_notes": "Chỉ các con số tính bằng phần trăm (%) hoặc tỷ lệ phân chia.",
+            "examples": [
+                {
+                    "word": "合格率",
+                    "reading": "ごうかくりつ",
+                    "meaning": "Tỷ lệ đỗ"
+                },
+                {
+                    "word": "失業率",
+                    "reading": "しつぎょうりつ",
+                    "meaning": "Tỷ lệ thất nghiệp"
+                },
+                {
+                    "word": "成功率",
+                    "reading": "せいこうりつ",
+                    "meaning": "Tỷ lệ thành công"
+                },
+                {
+                    "word": "視聴率",
+                    "reading": "しちょうりつ",
+                    "meaning": "Tỷ lệ người xem"
+                }
+            ]
+        },
+        {
+            "id": "S14",
+            "kanji": "量",
+            "hiragana": "りょう",
+            "romaji": "-ryou",
+            "meaning": "Lượng, khối lượng, số lượng",
+            "usage_notes": "Gắn sau vật thể hoặc thông số đo đạc.",
+            "examples": [
+                {
+                    "word": "交通量",
+                    "reading": "こうつうりょう",
+                    "meaning": "Lượng giao thông"
+                },
+                {
+                    "word": "運動量",
+                    "reading": "うんどうりょう",
+                    "meaning": "Lượng vận động"
+                },
+                {
+                    "word": "降水量",
+                    "reading": "こうすいりょう",
+                    "meaning": "Lượng mưa"
+                },
+                {
+                    "word": "生産量",
+                    "reading": "せいさんりょう",
+                    "meaning": "Sản lượng"
+                }
+            ]
+        },
+        {
+            "id": "S15",
+            "kanji": "費",
+            "hiragana": "ひ",
+            "romaji": "-hi",
+            "meaning": "Phí, chi phí",
+            "usage_notes": "Chỉ các khoản tiền phải chi trả cho dịch vụ, hoạt động.",
+            "examples": [
+                {
+                    "word": "交通費",
+                    "reading": "こうつうひ",
+                    "meaning": "Phí đi lại/giao thông"
+                },
+                {
+                    "word": "学費",
+                    "reading": "がくひ",
+                    "meaning": "Học phí"
+                },
+                {
+                    "word": "光熱費",
+                    "reading": "こうねつひ",
+                    "meaning": "Tiền điện nước chất đốt"
+                },
+                {
+                    "word": "医療費",
+                    "reading": "いりょうひ",
+                    "meaning": "Chi phí y tế"
+                }
+            ]
+        },
+        {
+            "id": "S16",
+            "kanji": "料",
+            "hiragana": "りょう",
+            "romaji": "-ryou",
+            "meaning": "Liệu, tiền phí dịch vụ",
+            "usage_notes": "Khác với 費 (chi phí sinh hoạt), 料 thường là tiền trả cho hàng hóa/dịch vụ cố định.",
+            "examples": [
+                {
+                    "word": "入場料",
+                    "reading": "にゅうじょうりょう",
+                    "meaning": "Vé vào cửa"
+                },
+                {
+                    "word": "手数料",
+                    "reading": "てすうりょう",
+                    "meaning": "Phí hoa hồng/giao dịch"
+                },
+                {
+                    "word": "使用料",
+                    "reading": "しようりょう",
+                    "meaning": "Phí sử dụng"
+                },
+                {
+                    "word": "授業料",
+                    "reading": "じゅぎょうりょう",
+                    "meaning": "Tiền học phí"
+                }
+            ]
+        },
+        {
+            "id": "S17",
+            "kanji": "代",
+            "hiragana": "だい",
+            "romaji": "-dai",
+            "meaning": "Đại, tiền thay thế/tiền trả định kỳ",
+            "usage_notes": "Tiền trả cho đồ tiêu dùng hàng ngày hoặc dịch vụ thông thường.",
+            "examples": [
+                {
+                    "word": "部屋代",
+                    "reading": "へやだい",
+                    "meaning": "Tiền phòng"
+                },
+                {
+                    "word": "食事代",
+                    "reading": "しょくじだい",
+                    "meaning": "Tiền ăn"
+                },
+                {
+                    "word": "電話代",
+                    "reading": "でんわだい",
+                    "meaning": "Tiền điện thoại"
+                },
+                {
+                    "word": "バス代",
+                    "reading": "ばすだい",
+                    "meaning": "Tiền xe xe buýt"
+                }
+            ]
+        },
+        {
+            "kanji": "制",
+            "hiragana": "せい",
+            "romaji": "-sei",
+            "meaning": "Chế, chế độ, hệ thống",
+            "usage_notes": "Đứng sau các từ chỉ tổ chức, hình thức quy định xã hội/kinh doanh.",
+            "examples": [
+                {
+                    "word": "予約制",
+                    "reading": "よやくせい",
+                    "meaning": "Chế độ đặt trước"
+                },
+                {
+                    "word": "会員制",
+                    "reading": "かいいんせい",
+                    "meaning": "Chế độ hội viên"
+                },
+                {
+                    "word": "シフト制",
+                    "reading": "しふとせい",
+                    "meaning": "Làm việc theo ca"
+                },
+                {
+                    "word": "申告制",
+                    "reading": "しんこくせい",
+                    "meaning": "Hệ thống tự khai báo"
+                }
+            ],
+            "id": "S18"
+        },
+        {
+            "id": "S19",
+            "kanji": "沿い",
+            "hiragana": "ぞい",
+            "romaji": "-zoi",
+            "meaning": "Dọc theo",
+            "usage_notes": "Ghép sau danh từ chỉ con đường, bờ sông, tuyến tàu.",
+            "examples": [
+                {
+                    "word": "線路沿い",
+                    "reading": "せんろぞい",
+                    "meaning": "Dọc theo đường tàu"
+                },
+                {
+                    "word": "川沿い",
+                    "reading": "かわぞい",
+                    "meaning": "Dọc theo bờ sông"
+                },
+                {
+                    "word": "海岸沿い",
+                    "reading": "かいがんぞい",
+                    "meaning": "Dọc theo bờ biển"
+                }
+            ]
+        },
+        {
+            "id": "S20",
+            "kanji": "難い",
+            "hiragana": "がたい",
+            "romaji": "-gatai",
+            "meaning": "Khó (khó về mặt tâm lý, tinh thần)",
+            "usage_notes": "Ghép sau động từ thể Masu bỏ Masu. Dùng cho cảm giác, suy nghĩ (khó tin, khó tha thứ).",
+            "examples": [
+                {
+                    "word": "信じ難い",
+                    "reading": "しんじがたい",
+                    "meaning": "Khó tin"
+                },
+                {
+                    "word": "許し難い",
+                    "reading": "ゆるしがたい",
+                    "meaning": "Khó tha thứ"
+                },
+                {
+                    "word": "得難い",
+                    "reading": "えがたい",
+                    "meaning": "Khó có được, quý giá"
+                },
+                {
+                    "word": "理解し難い",
+                    "reading": "りかいしがたい",
+                    "meaning": "Khó hiểu"
+                }
+            ]
+        },
+        {
+            "id": "S21",
+            "kanji": "的",
+            "hiragana": "てき",
+            "romaji": "-teki",
+            "meaning": "Tính chất … (biến danh từ thành tính từ đuôi な)",
+            "usage_notes": "Hậu tố cực kỳ phổ biến ở N2. Ghép sau danh từ: 〜的な／〜的に.",
+            "examples": [
+                {
+                    "word": "効果的",
+                    "reading": "こうかてき",
+                    "meaning": "Hiệu quả"
+                },
+                {
+                    "word": "個人的",
+                    "reading": "こじんてき",
+                    "meaning": "Mang tính cá nhân"
+                },
+                {
+                    "word": "客観的",
+                    "reading": "きゃっかんてき",
+                    "meaning": "Khách quan"
+                },
+                {
+                    "word": "比較的",
+                    "reading": "ひかくてき",
+                    "meaning": "Tương đối"
+                }
+            ]
+        },
+        {
+            "id": "S22",
+            "kanji": "中",
+            "hiragana": "ちゅう / じゅう",
+            "romaji": "-chuu / -juu",
+            "meaning": "Trong lúc / suốt (toàn bộ)",
+            "usage_notes": "ちゅう: đang trong quá trình. じゅう: suốt toàn phạm vi/thời gian.",
+            "examples": [
+                {
+                    "word": "会議中",
+                    "reading": "かいぎちゅう",
+                    "meaning": "Đang họp"
+                },
+                {
+                    "word": "仕事中",
+                    "reading": "しごとちゅう",
+                    "meaning": "Đang làm việc"
+                },
+                {
+                    "word": "一年中",
+                    "reading": "いちねんじゅう",
+                    "meaning": "Suốt cả năm"
+                },
+                {
+                    "word": "世界中",
+                    "reading": "せかいじゅう",
+                    "meaning": "Khắp thế giới"
+                }
+            ]
+        },
+        {
+            "id": "S23",
+            "kanji": "用",
+            "hiragana": "よう",
+            "romaji": "-you",
+            "meaning": "Dùng cho …, dành cho",
+            "usage_notes": "Ghép sau danh từ chỉ mục đích hoặc đối tượng sử dụng.",
+            "examples": [
+                {
+                    "word": "家庭用",
+                    "reading": "かていよう",
+                    "meaning": "Dùng trong gia đình"
+                },
+                {
+                    "word": "業務用",
+                    "reading": "ぎょうむよう",
+                    "meaning": "Dùng cho công việc"
+                },
+                {
+                    "word": "学生用",
+                    "reading": "がくせいよう",
+                    "meaning": "Dành cho học sinh"
+                },
+                {
+                    "word": "非常用",
+                    "reading": "ひじょうよう",
+                    "meaning": "Dùng khi khẩn cấp"
+                }
+            ]
+        },
+        {
+            "id": "S24",
+            "kanji": "式",
+            "hiragana": "しき",
+            "romaji": "-shiki",
+            "meaning": "Kiểu, nghi thức, công thức",
+            "usage_notes": "Chỉ hình thức, kiểu cách hoặc buổi lễ.",
+            "examples": [
+                {
+                    "word": "日本式",
+                    "reading": "にほんしき",
+                    "meaning": "Kiểu Nhật"
+                },
+                {
+                    "word": "結婚式",
+                    "reading": "けっこんしき",
+                    "meaning": "Lễ cưới"
+                },
+                {
+                    "word": "新式",
+                    "reading": "しんしき",
+                    "meaning": "Kiểu mới"
+                },
+                {
+                    "word": "数式",
+                    "reading": "すうしき",
+                    "meaning": "Công thức toán"
+                }
+            ]
+        },
+        {
+            "id": "S25",
+            "kanji": "型",
+            "hiragana": "がた / けい",
+            "romaji": "-gata / -kei",
+            "meaning": "Kiểu, mẫu, hình dạng",
+            "usage_notes": "がた: kiểu/mẫu. けい: loại hình (máu, tính cách…).",
+            "examples": [
+                {
+                    "word": "大型",
+                    "reading": "おおがた",
+                    "meaning": "Loại lớn"
+                },
+                {
+                    "word": "新型",
+                    "reading": "しんがた",
+                    "meaning": "Kiểu mới"
+                },
+                {
+                    "word": "血液型",
+                    "reading": "けつえきがた",
+                    "meaning": "Nhóm máu"
+                },
+                {
+                    "word": "円型",
+                    "reading": "えんけい",
+                    "meaning": "Hình tròn"
+                }
+            ]
+        },
+        {
+            "id": "S26",
+            "kanji": "状",
+            "hiragana": "じょう",
+            "romaji": "-jou",
+            "meaning": "Trạng thái, hình dạng, thư/giấy tờ",
+            "usage_notes": "Chỉ tình trạng hoặc dạng vật; cũng dùng cho giấy tờ (招待状).",
+            "examples": [
+                {
+                    "word": "状態",
+                    "reading": "じょうたい",
+                    "meaning": "Trạng thái"
+                },
+                {
+                    "word": "現状",
+                    "reading": "げんじょう",
+                    "meaning": "Hiện trạng"
+                },
+                {
+                    "word": "環状",
+                    "reading": "かんじょう",
+                    "meaning": "Hình vòng"
+                },
+                {
+                    "word": "招待状",
+                    "reading": "しょうたいじょう",
+                    "meaning": "Thiệp mời"
+                }
+            ]
+        },
+        {
+            "id": "S27",
+            "kanji": "向き",
+            "hiragana": "むき",
+            "romaji": "-muki",
+            "meaning": "Phù hợp với …, hướng tới đối tượng",
+            "usage_notes": "Nhấn mạnh phù hợp với nhóm người/mục đích cụ thể.",
+            "examples": [
+                {
+                    "word": "子供向き",
+                    "reading": "こどもむき",
+                    "meaning": "Phù hợp trẻ em"
+                },
+                {
+                    "word": "初心者向き",
+                    "reading": "しょしんしゃむき",
+                    "meaning": "Dành cho người mới"
+                },
+                {
+                    "word": "女性向き",
+                    "reading": "じょせいむき",
+                    "meaning": "Phù hợp phụ nữ"
+                },
+                {
+                    "word": "実用向き",
+                    "reading": "じつようむき",
+                    "meaning": "Thiên về thực dụng"
+                }
+            ]
+        },
+        {
+            "id": "S28",
+            "kanji": "向け",
+            "hiragana": "むけ",
+            "romaji": "-muke",
+            "meaning": "Hướng tới (thị trường / đối tượng)",
+            "usage_notes": "Hay gặp trong kinh doanh: sản phẩm hướng đến ai.",
+            "examples": [
+                {
+                    "word": "輸出向け",
+                    "reading": "ゆしゅつむけ",
+                    "meaning": "Hướng xuất khẩu"
+                },
+                {
+                    "word": "外国人向け",
+                    "reading": "がいこくじんむけ",
+                    "meaning": "Dành cho người nước ngoài"
+                },
+                {
+                    "word": "若者向け",
+                    "reading": "わかものむけ",
+                    "meaning": "Hướng đến giới trẻ"
+                },
+                {
+                    "word": "国内向け",
+                    "reading": "こくないむけ",
+                    "meaning": "Hướng thị trường trong nước"
+                }
+            ]
+        },
+        {
+            "id": "S29",
+            "kanji": "通り",
+            "hiragana": "どおり",
+            "romaji": "-doori",
+            "meaning": "Đúng như …, theo đúng",
+            "usage_notes": "Ghép sau danh từ/động từ thể thường. Đọc どおり (biến âm).",
+            "examples": [
+                {
+                    "word": "予定通り",
+                    "reading": "よていどおり",
+                    "meaning": "Đúng như dự định"
+                },
+                {
+                    "word": "計画通り",
+                    "reading": "けいかくどおり",
+                    "meaning": "Theo đúng kế hoạch"
+                },
+                {
+                    "word": "時間通り",
+                    "reading": "じかんどおり",
+                    "meaning": "Đúng giờ"
+                },
+                {
+                    "word": "説明通り",
+                    "reading": "せつめいどおり",
+                    "meaning": "Đúng như đã giải thích"
+                }
+            ]
+        },
+        {
+            "id": "S30",
+            "kanji": "気味",
+            "hiragana": "ぎみ",
+            "romaji": "-gimi",
+            "meaning": "Hơi …, có vẻ hơi (thường tiêu cực nhẹ)",
+            "usage_notes": "Ghép sau danh từ/động từ thể Masu bỏ Masu. Chỉ xu hướng nhẹ.",
+            "examples": [
+                {
+                    "word": "疲れ気味",
+                    "reading": "つかれぎみ",
+                    "meaning": "Hơi mệt"
+                },
+                {
+                    "word": "遅れ気味",
+                    "reading": "おくれぎみ",
+                    "meaning": "Hơi chậm"
+                },
+                {
+                    "word": "太り気味",
+                    "reading": "ふとりぎみ",
+                    "meaning": "Hơi tăng cân"
+                },
+                {
+                    "word": "不足気味",
+                    "reading": "ふそくぎみ",
+                    "meaning": "Hơi thiếu"
+                }
+            ]
+        }
+    ]
+}

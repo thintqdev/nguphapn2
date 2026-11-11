@@ -2,16 +2,24 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import type { ExamMeta, ExamResultRecord } from "@/lib/examTypes";
+import type { ExamDraftRecord, ExamMeta, ExamResultRecord } from "@/lib/examTypes";
 import { EXAM_DURATION_MINUTES, EXAM_RESULT_KEY } from "@/lib/examTypes";
-import { ClipboardList, Clock, ArrowRight } from "lucide-react";
+import { listExamDrafts } from "@/lib/examDraft";
+import { ClipboardList, Clock, ArrowRight, PauseCircle } from "lucide-react";
 
 interface ExamListClientProps {
   exams: ExamMeta[];
 }
 
+function formatTime(sec: number): string {
+  const m = Math.floor(Math.max(0, sec) / 60);
+  const s = Math.max(0, sec) % 60;
+  return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+}
+
 export default function ExamListClient({ exams }: ExamListClientProps) {
   const [results, setResults] = useState<ExamResultRecord[]>([]);
+  const [drafts, setDrafts] = useState<Record<string, ExamDraftRecord>>({});
 
   useEffect(() => {
     try {
@@ -20,6 +28,11 @@ export default function ExamListClient({ exams }: ExamListClientProps) {
     } catch {
       // ignore
     }
+    const map: Record<string, ExamDraftRecord> = {};
+    for (const d of listExamDrafts()) {
+      map[d.examId] = d;
+    }
+    setDrafts(map);
   }, []);
 
   return (
@@ -29,7 +42,8 @@ export default function ExamListClient({ exams }: ExamListClientProps) {
           試験 · Thi thử
         </h1>
         <p className="text-sm text-[#70665a] dark:text-[#b8aba0] mt-1.5 leading-relaxed">
-          Làm đề từ trên xuống, có đồng hồ. Chỉ xem đáp án sau khi nộp bài.
+          Làm đề từ trên xuống, có đồng hồ. Pause / lưu tạm trên máy — không cần
+          đăng nhập.
         </p>
       </div>
 
@@ -38,6 +52,10 @@ export default function ExamListClient({ exams }: ExamListClientProps) {
           const best = results
             .filter((r) => r.examId === exam.id)
             .sort((a, b) => b.score / b.total - a.score / a.total)[0];
+          const draft = drafts[exam.id];
+          const draftAnswered = draft
+            ? Object.keys(draft.answers ?? {}).length
+            : 0;
 
           return (
             <div
@@ -66,6 +84,13 @@ export default function ExamListClient({ exams }: ExamListClientProps) {
                       {Math.round((best.score / best.total) * 100)}%)
                     </span>
                   )}
+                  {draft && (
+                    <span className="inline-flex items-center gap-1 text-accent-muted font-semibold">
+                      <PauseCircle size={13} />
+                      Đang làm dở · {draftAnswered}/{exam.questionCount} · còn{" "}
+                      {formatTime(draft.timeLeftSeconds)}
+                    </span>
+                  )}
                 </div>
               </div>
 
@@ -73,7 +98,7 @@ export default function ExamListClient({ exams }: ExamListClientProps) {
                 href={`/exam/${exam.id}`}
                 className="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-[14px] bg-accent hover:bg-accent-hover text-white text-sm font-semibold shrink-0 active:scale-[0.98] transition-all"
               >
-                Vào thi
+                {draft ? "Tiếp tục" : "Vào thi"}
                 <ArrowRight size={15} />
               </Link>
             </div>

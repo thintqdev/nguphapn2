@@ -37,5 +37,14 @@ export interface ExamResultRecord {
   date: string;
 }
 
+/** Bài đang làm dở — lưu localStorage, không cần DB */
+export interface ExamDraftRecord {
+  examId: string;
+  answers: Record<number, string>;
+  timeLeftSeconds: number;
+  updatedAt: string;
+}
+
 export const EXAM_DURATION_MINUTES = 60;
 export const EXAM_RESULT_KEY = "n2_exam_results";
+export const EXAM_DRAFT_KEY = "n2_exam_drafts";
