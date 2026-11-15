@@ -13,6 +13,7 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-sm: 24rem;
     --container-md: 28rem;
     --container-lg: 32rem;
     --container-5xl: 64rem;
@@ -238,6 +239,9 @@
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
   }
+  .top-2 {
+    top: calc(var(--spacing) * 2);
+  }
   .top-2\.5 {
     top: calc(var(--spacing) * 2.5);
   }
@@ -331,11 +335,20 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mt-2\.5 {
+    margin-top: calc(var(--spacing) * 2.5);
+  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
@@ -466,6 +479,9 @@
   .h-11 {
     height: calc(var(--spacing) * 11);
   }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
+  }
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
@@ -483,6 +499,9 @@
   }
   .max-h-\[440px\] {
     max-height: 440px;
+  }
+  .min-h-0 {
+    min-height: 0px;
   }
   .min-h-\[36px\] {
     min-height: 36px;
@@ -516,6 +535,9 @@
   }
   .w-11 {
     width: calc(var(--spacing) * 11);
+  }
+  .w-14 {
+    width: calc(var(--spacing) * 14);
   }
   .w-16 {
     width: calc(var(--spacing) * 16);
@@ -570,6 +592,9 @@
   }
   .max-w-md {
     max-width: var(--container-md);
+  }
+  .max-w-sm {
+    max-width: var(--container-sm);
   }
   .min-w-0 {
     min-width: 0px;
@@ -1092,6 +1117,12 @@
       background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
     }
   }
+  .bg-black\/55 {
+    background-color: color-mix(in srgb, #000 55%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 55%, transparent);
+    }
+  }
   .bg-black\/\[0\.02\] {
     background-color: color-mix(in srgb, #000 2%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1397,9 +1428,6 @@
   }
   .pb-28 {
     padding-bottom: calc(var(--spacing) * 28);
-  }
-  .pb-\[5\.25rem\] {
-    padding-bottom: 5.25rem;
   }
   .pl-0 {
     padding-left: 0px;
@@ -2314,8 +2342,8 @@
     .md\:grid-cols-6 {
       grid-template-columns: repeat(6, minmax(0, 1fr));
     }
-    .md\:pb-3 {
-      padding-bottom: calc(var(--spacing) * 3);
+    .md\:pt-2 {
+      padding-top: calc(var(--spacing) * 2);
     }
     .md\:pb-8 {
       padding-bottom: calc(var(--spacing) * 8);

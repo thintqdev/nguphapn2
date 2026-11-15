@@ -1,5 +1,5 @@
 import type { ExamData, ExamQuestion, ExamSection } from "./examTypes";
-import { isExamAnswerCorrect, optionKey } from "./examUtils";
+import { getSectionQuestions, isExamAnswerCorrect, optionKey } from "./examUtils";
 
 export interface ExamPdfPayload {
   exam: ExamData;
@@ -124,16 +124,32 @@ function renderSection(section: ExamSection, index: number, answers: Record<numb
     ? `<div class="reading"><div class="reading-label">読解文</div><div class="reading-body">${renderReading(section.reading_text)}</div></div>`
     : "";
 
-  const qs = section.questions
-    .map((q) => renderQuestion(q, answers[q.id]))
-    .join("");
+  let body = "";
+  if (Array.isArray(section.sub_sections) && section.sub_sections.length > 0) {
+    body = section.sub_sections
+      .map((sub, si) => {
+        const subReading = sub.text
+          ? `<div class="reading"><div class="reading-label">読解文 (${si + 1})</div><div class="reading-body">${renderReading(sub.text)}</div></div>`
+          : "";
+        const qs = (sub.questions || [])
+          .map((q) => renderQuestion(q, answers[q.id]))
+          .join("");
+        return `${subReading}${qs}`;
+      })
+      .join("");
+  } else {
+    body =
+      reading +
+      getSectionQuestions(section)
+        .map((q) => renderQuestion(q, answers[q.id]))
+        .join("");
+  }
 
   return `
     <section class="section">
       <h2>問題 ${index + 1}</h2>
       <p class="instruction">${esc(section.instruction)}</p>
-      ${reading}
-      ${qs}
+      ${body}
     </section>`;
 }
 

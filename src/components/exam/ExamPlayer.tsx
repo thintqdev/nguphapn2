@@ -14,6 +14,7 @@ import {
 } from "@/lib/examTypes";
 import {
   countScorable,
+  getAllExamQuestions,
   isExamAnswerCorrect,
   optionKey,
 } from "@/lib/examUtils";
@@ -139,7 +140,7 @@ export default function ExamPlayer({ exam }: ExamPlayerProps) {
 
   const scorable = useMemo(() => countScorable(exam), [exam]);
   const allQuestions = useMemo(
-    () => exam.sections.flatMap((s) => s.questions),
+    () => getAllExamQuestions(exam),
     [exam]
   );
   const answeredCount = Object.keys(answers).length;
@@ -609,6 +610,13 @@ function SectionBlock({
   onSelect?: (qid: number, key: string) => void;
   review?: boolean;
 }) {
+  const directQuestions = Array.isArray(section.questions)
+    ? section.questions
+    : [];
+  const subSections = Array.isArray(section.sub_sections)
+    ? section.sub_sections
+    : [];
+
   return (
     <section className="space-y-4">
       <div className="border-b border-black/[0.08] dark:border-white/[0.1] pb-2">
@@ -626,17 +634,45 @@ function SectionBlock({
         </div>
       )}
 
-      <div className="space-y-5">
-        {section.questions.map((q) => (
-          <QuestionBlock
-            key={q.id}
-            question={q}
-            selected={answers[q.id]}
-            onSelect={onSelect}
-            review={review}
-          />
-        ))}
-      </div>
+      {subSections.length > 0 ? (
+        <div className="space-y-6">
+          {subSections.map((sub, si) => (
+            <div key={sub.passage_id || `sub-${si}`} className="space-y-3">
+              {sub.text && (
+                <div className="rounded-[14px] bg-black/[0.03] dark:bg-white/[0.04] p-3.5 sm:p-4">
+                  <p className="text-[10px] font-bold text-accent mb-2">
+                    ({si + 1})
+                  </p>
+                  <ReadingPassage text={sub.text} />
+                </div>
+              )}
+              <div className="space-y-5">
+                {(sub.questions || []).map((q) => (
+                  <QuestionBlock
+                    key={q.id}
+                    question={q}
+                    selected={answers[q.id]}
+                    onSelect={onSelect}
+                    review={review}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="space-y-5">
+          {directQuestions.map((q) => (
+            <QuestionBlock
+              key={q.id}
+              question={q}
+              selected={answers[q.id]}
+              onSelect={onSelect}
+              review={review}
+            />
+          ))}
+        </div>
+      )}
     </section>
   );
 }

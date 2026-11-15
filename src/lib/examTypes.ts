@@ -8,11 +8,21 @@ export interface ExamQuestion {
   correct_order?: number[];
 }
 
+/** Đoạn đọc hiểu con (exam 7: Mondai 10–12) */
+export interface ExamSubSection {
+  passage_id?: string;
+  text?: string;
+  questions: ExamQuestion[];
+}
+
 export interface ExamSection {
   section_id: string;
   instruction: string;
   reading_text?: string;
-  questions: ExamQuestion[];
+  /** Câu hỏi trực tiếp — có thể thiếu nếu dùng sub_sections */
+  questions?: ExamQuestion[];
+  /** Nhiều đoạn đọc, mỗi đoạn kèm câu hỏi riêng */
+  sub_sections?: ExamSubSection[];
 }
 
 export interface ExamData {

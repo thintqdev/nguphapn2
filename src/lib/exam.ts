@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { ExamData, ExamMeta } from "./examTypes";
+import { countSectionQuestions } from "./examUtils";
 
 const EXAM_DIR = path.join(process.cwd(), "public/data/exam");
 
@@ -26,8 +27,8 @@ export function getAllExams(): ExamMeta[] {
         data.total_questions ||
         (Array.isArray(data.sections)
           ? data.sections.reduce(
-              (n: number, s: { questions?: unknown[] }) =>
-                n + (Array.isArray(s.questions) ? s.questions.length : 0),
+              (n: number, s: { questions?: unknown[]; sub_sections?: { questions?: unknown[] }[] }) =>
+                n + countSectionQuestions(s),
               0
             )
           : 0);
