@@ -1,0 +1,1420 @@
+{
+  "document_title": "Cẩm nang Phương pháp Đọc hiểu JLPT N2 - Tài liệu học sinh MIO",
+  "core_mindset": [
+    {
+      "title": "Nhận diện thói quen đọc (癖 - くせ)",
+      "description": "Người làm đọc hiểu chưa tốt thường có thói quen đọc lệch hoặc dịch từng chữ. Muốn đạt điểm cao, cần biết điểm yếu của bản thân để điều chỉnh cách đọc cân bằng hơn."
+    },
+    {
+      "title": "Đọc có mục đích",
+      "description": "Đọc hiểu trong kỳ thi JLPT không phải để 'cảm thụ tự do', mà là tìm ra cách hiểu khớp với người ra đề. Gợi ý cho điều đó nằm ngay ở câu hỏi (設問 - せつもん)."
+    },
+    {
+      "title": "Phân biệt 2 chế độ luyện tập",
+      "modes": {
+        "練習 (Luyện tập)": "Áp dụng khi ôn bài ở nhà để rèn tư duy và phản xạ nhận diện cấu trúc.",
+        "本番 (Thi thật)": "Áp dụng trong phòng thi — thao tác gọn, ưu tiên tốc độ, không sa đà gạch chân hay vẽ sơ đồ rườm rà."
+      }
+    }
+  ],
+  "reading_stages": [
+    {
+      "stage_id": "Stage_1",
+      "name": "Giai đoạn 1: Trước khi đọc (読む前の工夫)",
+      "duration": "15-20 giây",
+      "steps": [
+        {
+          "step": "2-1",
+          "title": "Nhìn tiêu đề, đoán nội dung (タイトルを見て予測する)",
+          "modes": [
+            "練習",
+            "本番"
+          ],
+          "details": [
+            "Nhìn tiêu đề để dự đoán chủ đề (話題 - わだい) và quan điểm lập trường của tác giả (筆者の主張 - ひっしゃのしゅちょう).",
+            "Khi đọc vào bài, chỉ cần kiểm chứng xem dự đoán của mình đúng hay sai giúp nắm ý chính nhanh hơn gấp đôi."
+          ]
+        },
+        {
+          "step": "2-2",
+          "title": "Lướt nhanh tìm từ lặp lại (ざっと見て、多く出てくる言葉を見つける)",
+          "modes": [
+            "練習",
+            "本番"
+          ],
+          "details": [
+            "Dành 10-15 giây đảo mắt toàn bài để tìm những từ xuất hiện nhiều lần.",
+            "Đó chính là từ khóa (キーワード) trung tâm của bài. Có thể ghi chú nhanh từ khóa ra lề."
+          ]
+        },
+        {
+          "step": "2-3",
+          "title": "Đọc câu hỏi để lập kế hoạch (設問を見て、読み方を計画する)",
+          "modes": [
+            "練習",
+            "本番"
+          ],
+          "details": [
+            "Đọc trước câu hỏi để biết đề đang hỏi gì (ví dụ: Tác giả muốn nói điều gì nhất?, Từ gạch chân chỉ điều gì?, Điều nào đúng với nội dung bài?).",
+            "Nhờ vậy, khi đọc bài bạn sẽ biết mình cần tập trung 'săn' thông tin ở đâu."
+          ]
+        }
+      ]
+    },
+    {
+      "stage_id": "Stage_2A",
+      "name": "Giai đoạn 2A: Trong khi đọc – Đọc chính xác (正確に読む)",
+      "steps": [
+        {
+          "step": "3-1",
+          "title": "Đánh dấu các 'tín hiệu' quan trọng (印や線でチェックする)",
+          "modes": [
+            "練習",
+            "本番"
+          ],
+          "note": "Khi 本番 (thi thật), chỉ đánh dấu điểm cốt lõi, tránh gạch quá nhiều gây rối mắt.",
+          "signal_groups": [
+            {
+              "group": "Đối lập / Bẻ lái",
+              "signals": [
+                "しかし",
+                "だが",
+                "ところが",
+                "にもかかわらず",
+                "一方(いっぽう)",
+                "他方(たほう)",
+                "反面(はんめん)",
+                "cặp từ trái nghĩa (有料・無料...)"
+              ],
+              "meaning_and_handling": "Cực kỳ quan trọng! Ý chính và quan điểm của tác giả thường nằm ngay phía sau các từ này."
+            },
+            {
+              "group": "Đồng nghĩa / Giải thích lại",
+              "signals": [
+                "つまり",
+                "すなわち",
+                "要するに(ようするに)",
+                "かつ",
+                "および",
+                "そのうえ",
+                "しかも",
+                "さらに",
+                "これ・それ・この・その"
+              ],
+              "meaning_and_handling": "Dùng để tóm tắt, nhấn mạnh lại ý trước đó hoặc nối tiếp các ý cùng chiều."
+            },
+            {
+              "group": "Thứ tự / Thời gian",
+              "signals": [
+                "第一に",
+                "第二に",
+                "まず",
+                "次に",
+                "以前は",
+                "現在は"
+              ],
+              "meaning_and_handling": "Giúp tách bạch các luận điểm hoặc so sánh sự thay đổi giữa quá khứ và hiện tại."
+            },
+            {
+              "group": "Nhân quả (Lý do – Kết quả)",
+              "signals": [
+                "だから",
+                "したがって",
+                "ゆえに",
+                "よって",
+                "そのため",
+                "ので",
+                "〜わけだ",
+                "〜せいで",
+                "〜おかげで",
+                "〜ために"
+              ],
+              "meaning_and_handling": "Giúp trả lời nhanh các câu hỏi 'Tại sao?' (なぜか / どうしてか)."
+            },
+            {
+              "group": "Chủ kiến / Khẳng định của tác giả",
+              "signals": [
+                "〜のだ",
+                "〜べきだ",
+                "〜はずがない",
+                "〜てはいけない",
+                "〜ではないか",
+                "〜ほうがいい",
+                "〜に違いない",
+                "〜と思われる"
+              ],
+              "meaning_and_handling": "'Chìa khóa vàng' để chọn đáp án cho câu hỏi về tư tưởng, quan điểm tác giả."
+            }
+          ]
+        },
+        {
+          "step": "3-2",
+          "title": "Phân biệt ý chính và ví dụ minh họa (大事か大事でないかを見極める)",
+          "modes": [
+            "練習",
+            "本番"
+          ],
+          "details": [
+            "Các đoạn ví dụ (thường mở đầu bằng たとえば) chỉ nhằm giải thích rõ hơn cho ý chính.",
+            "Mẹo thực chiến: Nếu đọc câu chủ đề mà bạn đã hiểu ý rồi, hãy dùng ngoặc [] khoanh vùng đoạn ví dụ và đọc lướt qua. Khi làm câu hỏi, nếu đề hỏi chi tiết nào thì quay lại đúng phần trong ngoặc để đối chiếu."
+          ]
+        },
+        {
+          "step": "3-3",
+          "title": "Tóm tắt bằng bảng hoặc sơ đồ tư duy (表・マップ・フローチャートにまとめる)",
+          "modes": [
+            "練習"
+          ],
+          "details": [
+            "Khi luyện tập ở nhà với bài dài, hãy thử vẽ sơ đồ nhánh hoặc chia cột (ví dụ: Sự thật khách quan vs Suy đoán/Chủ trương của tác giả) để nhìn rõ cấu trúc bài. (Chỉ áp dụng khi luyện tập, không vẽ trong phòng thi)."
+          ]
+        }
+      ]
+    },
+    {
+      "stage_id": "Stage_2B",
+      "name": "Giai đoạn 2B: Trong khi đọc – Đọc nhanh (速く読む)",
+      "steps": [
+        {
+          "step": "4-1",
+          "title": "Đoán nghĩa từ mới qua ngữ cảnh (わからない表現の意味を推測する)",
+          "modes": [
+            "練習",
+            "本番"
+          ],
+          "clues": [
+            "Sắc thái của từ (語のイメージ): Xem từ đó mang màu sắc tích cực (như 勝利, 活躍) hay tiêu cực (như 害, 低下).",
+            "Cấu tạo chữ Hán / Tiền tố – Hậu tố: Nhìn các thành phần quen thuộc như 無〜・反〜・非〜・不〜 (phủ định/không), 〜化 (hóa), 〜っぽい (có vẻ/hay)...",
+            "Ngữ cảnh xung quanh: Tìm từ đồng nghĩa, trái nghĩa hoặc lời giải thích ngay câu trước/sau."
+          ]
+        },
+        {
+          "step": "4-2",
+          "title": "Dự đoán diễn biến đoạn tiếp theo (次に読む部分の展開を予測する)",
+          "modes": [
+            "練習",
+            "本番"
+          ],
+          "details": [
+            "Dựa vào các cụm mở đầu vấn đề như 〜について・〜に関して・〜といえば・いったい・はたして hoặc các liên từ nối để đoán trước xem đoạn tiếp theo tác giả sẽ giải thích, phản biện hay đưa ra giải pháp, sau đó đọc tiếp để kiểm chứng."
+          ]
+        }
+      ]
+    },
+    {
+      "stage_id": "Stage_3",
+      "name": "Giai đoạn 3: Sau khi đọc – Chọn đáp án chuẩn xác (答えを選ぶとき)",
+      "steps": [
+        {
+          "step": "5-1",
+          "title": "Đối chiếu biểu hiện (選択肢と文章を見比べる)",
+          "details": [
+            "Đáp án đúng thường không chép y nguyên từng chữ trong bài mà được diễn đạt lại (paraphrase) bằng từ đồng nghĩa hoặc cấu trúc tương đương."
+          ]
+        },
+        {
+          "step": "5-2",
+          "title": "Tuyệt đối không chọn bằng trực giác (勘 - かん)",
+          "details": [
+            "Với các câu hỏi suy luận/diễn giải (推論・解釈), luôn quay lại bài tìm bằng chứng (証拠 - しょうこ) trực tiếp ở đoạn liên quan để loại trừ từng đáp án sai."
+          ]
+        }
+      ]
+    }
+  ],
+  "exam_checklist": [
+    "Bước 1 (15 giây): Đọc tiêu đề + lướt tìm từ lặp lại để nắm chủ đề chính.",
+    "Bước 2 (15 giây): Đọc câu hỏi để biết cần tìm thông tin gì.",
+    "Bước 3: Đọc bài theo mạch từ nối (しかし、つまり、だから...), khoanh ngoặc [ ] phần ví dụ たとえば để đọc lướt.",
+    "Bước 4: Gặp từ lạ thì đoán sắc thái tích cực/tiêu cực và ghép Hán tự, không dừng lại quá lâu.",
+    "Bước 5: So sánh từng đáp án với bằng chứng trong bài, loại trừ đáp án sai trước khi chốt."
+  ],
+  "topic_vocabulary": [
+    {
+      "topic_id": 1,
+      "topic_name": "Khoa học xã hội – Kinh tế, Quản trị, Chính trị, Pháp luật (社会科学: 経済・経営・政治・法律)",
+      "words": [
+        {
+          "word": "清算/決算",
+          "reading": "せいさん/けっさん",
+          "meaning": "Thanh toán, tất toán / Quyết toán"
+        },
+        {
+          "word": "相場",
+          "reading": "そうば",
+          "meaning": "Giá thị trường, tỷ giá, thời giá"
+        },
+        {
+          "word": "為替",
+          "reading": "かわせ",
+          "meaning": "Ngoại hối, hối đoái"
+        },
+        {
+          "word": "投資家",
+          "reading": "とうしか",
+          "meaning": "Nhà đầu tư"
+        },
+        {
+          "word": "リストラ",
+          "reading": "リストラ",
+          "meaning": "Cắt giảm nhân sự, tái cơ cấu"
+        },
+        {
+          "word": "戦略",
+          "reading": "せんりゃく",
+          "meaning": "Chiến lược"
+        },
+        {
+          "word": "上場(する)",
+          "reading": "じょうじょう(する)",
+          "meaning": "Lên sàn chứng khoán, niêm yết"
+        },
+        {
+          "word": "流通(する)",
+          "reading": "りゅうつう(する)",
+          "meaning": "Lưu thông, phân phối"
+        },
+        {
+          "word": "解雇(する)",
+          "reading": "かいこ(する)",
+          "meaning": "Sa thải"
+        },
+        {
+          "word": "高齢化社会",
+          "reading": "こうれいかしゃかい",
+          "meaning": "Xã hội già hóa"
+        },
+        {
+          "word": "少子化",
+          "reading": "しょうしか",
+          "meaning": "Tỷ lệ sinh giảm"
+        },
+        {
+          "word": "晩婚化",
+          "reading": "ばんこんか",
+          "meaning": "Xu hướng kết hôn muộn"
+        },
+        {
+          "word": "所得格差",
+          "reading": "しょとくかくさ",
+          "meaning": "Chênh lệch thu nhập"
+        },
+        {
+          "word": "団塊の世代",
+          "reading": "だんかいのせだい",
+          "meaning": "Thế hệ bùng nổ dân số (thế hệ Dankai)"
+        },
+        {
+          "word": "派遣労働者",
+          "reading": "はけんろうどうしゃ",
+          "meaning": "Lao động phái cử"
+        },
+        {
+          "word": "年金",
+          "reading": "ねんきん",
+          "meaning": "Lương hưu, tiền trợ cấp hưu trí"
+        },
+        {
+          "word": "社会保障",
+          "reading": "しゃかいほしょう",
+          "meaning": "An sinh xã hội"
+        },
+        {
+          "word": "過労死(する)",
+          "reading": "かろうし(する)",
+          "meaning": "Chết do làm việc quá sức"
+        },
+        {
+          "word": "内閣",
+          "reading": "ないかく",
+          "meaning": "Nội các"
+        },
+        {
+          "word": "党",
+          "reading": "とう",
+          "meaning": "Đảng (chính trị)"
+        },
+        {
+          "word": "政策",
+          "reading": "せいさく",
+          "meaning": "Chính sách"
+        },
+        {
+          "word": "参政権",
+          "reading": "さんせいけん",
+          "meaning": "Quyền tham chính, quyền bầu cử/ứng cử"
+        },
+        {
+          "word": "納税",
+          "reading": "のうぜい",
+          "meaning": "Nộp thuế"
+        },
+        {
+          "word": "有権者",
+          "reading": "ゆうけんしゃ",
+          "meaning": "Cử tri, người có quyền bầu cử"
+        },
+        {
+          "word": "官僚",
+          "reading": "かんりょう",
+          "meaning": "Quan chức, công chức cao cấp"
+        },
+        {
+          "word": "予算",
+          "reading": "よさん",
+          "meaning": "Ngân sách, dự toán"
+        },
+        {
+          "word": "歳出/歳入",
+          "reading": "さいしゅつ/さいにゅう",
+          "meaning": "Chi ngân sách / Thu ngân sách"
+        },
+        {
+          "word": "地方自治体",
+          "reading": "ちほうじちたい",
+          "meaning": "Chính quyền địa phương"
+        },
+        {
+          "word": "先進国/新興国",
+          "reading": "せんしんこく/しんこうこく",
+          "meaning": "Nước phát triển / Nước mới nổi"
+        },
+        {
+          "word": "条約",
+          "reading": "じょうやく",
+          "meaning": "Hiệp ước, điều ước"
+        },
+        {
+          "word": "憲法",
+          "reading": "けんぽう",
+          "meaning": "Hiến pháp"
+        },
+        {
+          "word": "人権",
+          "reading": "じんけん",
+          "meaning": "Nhân quyền"
+        },
+        {
+          "word": "裁判員制度",
+          "reading": "さいばんいんせいど",
+          "meaning": "Chế độ bồi thẩm đoàn / hội thẩm nhân dân"
+        },
+        {
+          "word": "訴訟",
+          "reading": "そしょう",
+          "meaning": "Kiện tụng, tố tụng"
+        },
+        {
+          "word": "冤罪",
+          "reading": "えんざい",
+          "meaning": "Án oan, tội oan"
+        },
+        {
+          "word": "時効",
+          "reading": "じこう",
+          "meaning": "Thời hiệu (pháp luật)"
+        },
+        {
+          "word": "非行",
+          "reading": "ひこう",
+          "meaning": "Hành vi sai trái, phạm pháp (ở thanh thiếu niên)"
+        },
+        {
+          "word": "補導",
+          "reading": "ほどう",
+          "meaning": "Giáo dục, uốn nắn (thanh thiếu niên hư)"
+        },
+        {
+          "word": "更生",
+          "reading": "こうせい",
+          "meaning": "Cải tạo, hoàn lương"
+        }
+      ]
+    },
+    {
+      "topic_id": 2,
+      "topic_name": "Khoa học tự nhiên – Sinh vật, Địa chất (自然科学: 生物・地学)",
+      "words": [
+        {
+          "word": "生態系",
+          "reading": "せいたいけい",
+          "meaning": "Hệ sinh thái"
+        },
+        {
+          "word": "外来種/在来種",
+          "reading": "がいらいしゅ/ざいらいしゅ",
+          "meaning": "Loài ngoại lai / Loài bản địa"
+        },
+        {
+          "word": "標本",
+          "reading": "ひょうほん",
+          "meaning": "Mẫu vật, tiêu bản"
+        },
+        {
+          "word": "体内時計",
+          "reading": "たいないどけい",
+          "meaning": "Đồng hồ sinh học"
+        },
+        {
+          "word": "食物連鎖",
+          "reading": "しょくもつれんさ",
+          "meaning": "Chuỗi thức ăn"
+        },
+        {
+          "word": "天敵",
+          "reading": "てんてき",
+          "meaning": "Thiên địch"
+        },
+        {
+          "word": "天然記念物",
+          "reading": "てんねんきねんぶつ",
+          "meaning": "Di sản thiên nhiên, vật kỷ niệm thiên nhiên"
+        },
+        {
+          "word": "(生物)多様性",
+          "reading": "(せいぶつ)たようせい",
+          "meaning": "Đa dạng (sinh học)"
+        },
+        {
+          "word": "希少",
+          "reading": "きしょう",
+          "meaning": "Quý hiếm"
+        },
+        {
+          "word": "絶滅危惧種",
+          "reading": "ぜつめつきぐしゅ",
+          "meaning": "Loài có nguy cơ tuyệt chủng"
+        },
+        {
+          "word": "孵化(する)",
+          "reading": "ふか(する)",
+          "meaning": "Ấp nở, nở trứng"
+        },
+        {
+          "word": "遺伝(する)",
+          "reading": "いでん(する)",
+          "meaning": "Di truyền"
+        },
+        {
+          "word": "繁殖(する)",
+          "reading": "はんしょく(する)",
+          "meaning": "Sinh sôi, sinh sản, nhân giống"
+        },
+        {
+          "word": "捕食(する)",
+          "reading": "ほしょく(する)",
+          "meaning": "Săn mồi, ăn thịt (con mồi)"
+        },
+        {
+          "word": "検出する",
+          "reading": "けんしゅつする",
+          "meaning": "Phát hiện, tìm thấy (qua kiểm tra)"
+        },
+        {
+          "word": "駆除する",
+          "reading": "くじょする",
+          "meaning": "Tiêu diệt, trừ khử (sâu bệnh, sinh vật gây hại)"
+        },
+        {
+          "word": "(危機に)瀕する",
+          "reading": "(ききに)ひんする",
+          "meaning": "Đối mặt với, đứng bên bờ vực (nguy cơ)"
+        },
+        {
+          "word": "土壌",
+          "reading": "どじょう",
+          "meaning": "Thổ nhưỡng, đất đai"
+        },
+        {
+          "word": "惑星",
+          "reading": "わくせい",
+          "meaning": "Hành tinh"
+        },
+        {
+          "word": "衛星",
+          "reading": "えいせい",
+          "meaning": "Vệ tinh"
+        },
+        {
+          "word": "化石",
+          "reading": "かせき",
+          "meaning": "Hóa thạch"
+        },
+        {
+          "word": "微生物",
+          "reading": "びせいぶつ",
+          "meaning": "Vi sinh vật"
+        },
+        {
+          "word": "警報/注意報",
+          "reading": "けいほう/ちゅういほう",
+          "meaning": "Cảnh báo / Lưu ý (thời tiết, thiên tai)"
+        },
+        {
+          "word": "猛暑",
+          "reading": "もうしょ",
+          "meaning": "Nắng nóng gay gắt"
+        },
+        {
+          "word": "異常気象",
+          "reading": "いじょうきしょう",
+          "meaning": "Thời tiết bất thường, cực đoan"
+        },
+        {
+          "word": "耐震",
+          "reading": "たいしん",
+          "meaning": "Chống động đất, chịu chấn"
+        },
+        {
+          "word": "避難",
+          "reading": "ひなん",
+          "meaning": "Lánh nạn, sơ tán"
+        },
+        {
+          "word": "被災(地)",
+          "reading": "ひさい(ち)",
+          "meaning": "(Vùng) bị thiên tai tàn phá"
+        },
+        {
+          "word": "人災",
+          "reading": "じんさい",
+          "meaning": "Thảm họa do con người gây ra"
+        },
+        {
+          "word": "浸水(する)",
+          "reading": "しんすい(する)",
+          "meaning": "Ngập lụt, ngập nước"
+        },
+        {
+          "word": "噴火(する)",
+          "reading": "ふんか(する)",
+          "meaning": "Phun trào (núi lửa)"
+        }
+      ]
+    },
+    {
+      "topic_id": 3,
+      "topic_name": "Môi trường (環境)",
+      "words": [
+        {
+          "word": "二酸化炭素",
+          "reading": "にさんかたんそ",
+          "meaning": "Khí cacbonic (CO2)"
+        },
+        {
+          "word": "地球温暖化",
+          "reading": "ちきゅうおんだんか",
+          "meaning": "Sự nóng lên toàn cầu"
+        },
+        {
+          "word": "酸性雨",
+          "reading": "さんせいう",
+          "meaning": "Mưa axit"
+        },
+        {
+          "word": "循環型社会",
+          "reading": "じゅんかんがたしゃかい",
+          "meaning": "Xã hội tuần hoàn (tái chế)"
+        },
+        {
+          "word": "砂漠化",
+          "reading": "さばくか",
+          "meaning": "Sa mạc hóa"
+        },
+        {
+          "word": "エコ(エコロジー)",
+          "reading": "エコ(エコロジー)",
+          "meaning": "Sinh thái, thân thiện môi trường"
+        },
+        {
+          "word": "省エネ",
+          "reading": "しょうエネ",
+          "meaning": "Tiết kiệm năng lượng"
+        },
+        {
+          "word": "気候変動",
+          "reading": "きこうへんどう",
+          "meaning": "Biến đổi khí hậu"
+        },
+        {
+          "word": "スローフード",
+          "reading": "スローフード",
+          "meaning": "Ẩm thực chậm (thực phẩm truyền thống, tự nhiên)"
+        },
+        {
+          "word": "環境ホルモン",
+          "reading": "かんきょうホルモン",
+          "meaning": "Chất gây rối loạn nội tiết trong môi trường"
+        },
+        {
+          "word": "大気汚染",
+          "reading": "たいきおせん",
+          "meaning": "Ô nhiễm không khí"
+        },
+        {
+          "word": "グリーンハウスガス/温室効果ガス",
+          "reading": "グリーンハウスガス/おんしつこうかガス",
+          "meaning": "Khí nhà kính"
+        },
+        {
+          "word": "保護(する)",
+          "reading": "ほご(する)",
+          "meaning": "Bảo vệ, bảo tồn"
+        },
+        {
+          "word": "共生する",
+          "reading": "きょうせいする",
+          "meaning": "Cộng sinh, chung sống hài hòa"
+        },
+        {
+          "word": "撲滅する",
+          "reading": "ぼくめつする",
+          "meaning": "Xóa sổ, tiêu diệt tận gốc"
+        },
+        {
+          "word": "(対策を)講じる/推進する",
+          "reading": "(たいさくを)こうじる/すいしんする",
+          "meaning": "Áp dụng, đề ra / Thúc đẩy (biện pháp)"
+        }
+      ]
+    },
+    {
+      "topic_id": 4,
+      "topic_name": "Công nghiệp – Kỹ thuật – Công nghệ (産業・技術・工学)",
+      "words": [
+        {
+          "word": "第一次/第二次/第三次産業",
+          "reading": "だいいちじ/だいにじ/だいさんじさんぎょう",
+          "meaning": "Ngành công nghiệp cấp 1 (nông-lâm-ngư) / cấp 2 (chế biến-xây dựng) / cấp 3 (dịch vụ)"
+        },
+        {
+          "word": "自給率",
+          "reading": "じきゅうりつ",
+          "meaning": "Tỷ lệ tự cung tự cấp"
+        },
+        {
+          "word": "酪農",
+          "reading": "らくのう",
+          "meaning": "Chăn nuôi bò sữa"
+        },
+        {
+          "word": "畜産",
+          "reading": "ちくさん",
+          "meaning": "Chăn nuôi gia súc"
+        },
+        {
+          "word": "天然",
+          "reading": "てんねん",
+          "meaning": "Thiên nhiên, tự nhiên"
+        },
+        {
+          "word": "無農薬",
+          "reading": "むのうやく",
+          "meaning": "Không thuốc trừ sâu"
+        },
+        {
+          "word": "特産",
+          "reading": "とくさん",
+          "meaning": "Đặc sản"
+        },
+        {
+          "word": "密漁/密猟",
+          "reading": "みつりょう/みつりょう",
+          "meaning": "Đánh bắt trộm (thủy sản) / Săn bắn trộm (thú rừng)"
+        },
+        {
+          "word": "地産地消",
+          "reading": "ちさんちしょう",
+          "meaning": "Sản xuất và tiêu thụ tại địa phương"
+        },
+        {
+          "word": "養殖(する)",
+          "reading": "ようしょく(する)",
+          "meaning": "Nuôi trồng (thủy hải sản)"
+        },
+        {
+          "word": "遺伝子組み換え",
+          "reading": "いでんしくみかえ",
+          "meaning": "Biến đổi gen"
+        },
+        {
+          "word": "ものづくり",
+          "reading": "ものづくり",
+          "meaning": "Chế tạo, sản xuất thủ công/công nghiệp"
+        },
+        {
+          "word": "最先端",
+          "reading": "さいせんたん",
+          "meaning": "Tiên tiến nhất, mũi nhọn"
+        },
+        {
+          "word": "人工知能",
+          "reading": "じんこうちのう",
+          "meaning": "Trí tuệ nhân tạo (AI)"
+        },
+        {
+          "word": "電磁波",
+          "reading": "でんじは",
+          "meaning": "Sóng điện từ"
+        },
+        {
+          "word": "特許",
+          "reading": "とっきょ",
+          "meaning": "Bằng sáng chế"
+        },
+        {
+          "word": "著作",
+          "reading": "ちょさく",
+          "meaning": "Tác phẩm, trước tác (bản quyền)"
+        }
+      ]
+    },
+    {
+      "topic_id": 5,
+      "topic_name": "Sinh lý - Y tế - Sức khỏe (生理・医療・健康)",
+      "words": [
+        {
+          "word": "赤血球/白血球",
+          "reading": "せっけっきゅう/はっけっきゅう",
+          "meaning": "Hồng cầu / Bạch cầu"
+        },
+        {
+          "word": "遺伝子",
+          "reading": "いでんし",
+          "meaning": "Gen, yếu tố di truyền"
+        },
+        {
+          "word": "症状",
+          "reading": "しょうじょう",
+          "meaning": "Triệu chứng"
+        },
+        {
+          "word": "免疫",
+          "reading": "めんえき",
+          "meaning": "Miễn dịch"
+        },
+        {
+          "word": "ワクチン",
+          "reading": "ワクチン",
+          "meaning": "Vắc-xin"
+        },
+        {
+          "word": "症候群",
+          "reading": "しょうこうぐん",
+          "meaning": "Hội chứng"
+        },
+        {
+          "word": "依存症",
+          "reading": "いぞんしょう",
+          "meaning": "Chứng nghiện, lệ thuộc"
+        },
+        {
+          "word": "移植(する)",
+          "reading": "いしょく(する)",
+          "meaning": "Cấy ghép (nội tạng, mô)"
+        },
+        {
+          "word": "分泌(する)",
+          "reading": "ぶんぴ(する)/ぶんぴつ(する)",
+          "meaning": "Tiết ra, bài tiết"
+        },
+        {
+          "word": "代謝(する)",
+          "reading": "たいしゃ(する)",
+          "meaning": "Trao đổi chất"
+        },
+        {
+          "word": "生活習慣病",
+          "reading": "せいかつしゅうかんびょう",
+          "meaning": "Bệnh do thói quen sinh hoạt"
+        },
+        {
+          "word": "バリアフリー",
+          "reading": "バリアフリー",
+          "meaning": "Thiết kế không rào cản (cho người khuyết tật/cao tuổi)"
+        },
+        {
+          "word": "尊厳死",
+          "reading": "そんげんし",
+          "meaning": "Cái chết êm ái, quyền được chết có nhân phẩm"
+        },
+        {
+          "word": "ホスピス",
+          "reading": "ホスピス",
+          "meaning": "Cơ sở chăm sóc giảm nhẹ (cho bệnh nhân giai đoạn cuối)"
+        },
+        {
+          "word": "AED",
+          "reading": "エーイーディー",
+          "meaning": "Máy khử rung tim tự động"
+        },
+        {
+          "word": "ドナー",
+          "reading": "ドナー",
+          "meaning": "Người hiến tặng (máu, nội tạng)"
+        },
+        {
+          "word": "老人ホーム",
+          "reading": "ろうじんホーム",
+          "meaning": "Viện dưỡng lão"
+        },
+        {
+          "word": "リハビリ",
+          "reading": "リハビリ",
+          "meaning": "Phục hồi chức năng"
+        },
+        {
+          "word": "寿命",
+          "reading": "じゅみょう",
+          "meaning": "Tuổi thọ"
+        },
+        {
+          "word": "長寿",
+          "reading": "ちょうじゅ",
+          "meaning": "Trường thọ, sống lâu"
+        }
+      ]
+    },
+    {
+      "topic_id": 6,
+      "topic_name": "Giáo dục – Tư tưởng – Tôn giáo (教育・思想・宗教)",
+      "words": [
+        {
+          "word": "イデオロギー",
+          "reading": "イデオロギー",
+          "meaning": "Hệ tư tưởng, ý thức hệ"
+        },
+        {
+          "word": "ナショナリズム",
+          "reading": "ナショナリズム",
+          "meaning": "Chủ nghĩa dân tộc"
+        },
+        {
+          "word": "ポストモダン",
+          "reading": "ポストモダン",
+          "meaning": "Hậu hiện đại"
+        },
+        {
+          "word": "宗派",
+          "reading": "しゅうは",
+          "meaning": "Giáo phái, tông phái"
+        },
+        {
+          "word": "礼拝",
+          "reading": "れいはい",
+          "meaning": "Lễ bái, cầu nguyện, thờ phượng"
+        },
+        {
+          "word": "AO入試",
+          "reading": "エーオーにゅうし",
+          "meaning": "Tuyển sinh đại học theo hình thức xét tuyển hồ sơ/phỏng vấn (AO)"
+        },
+        {
+          "word": "Eラーニング",
+          "reading": "イーラーニング",
+          "meaning": "Học trực tuyến (E-learning)"
+        },
+        {
+          "word": "遠隔授業",
+          "reading": "えんかくじゅぎょう",
+          "meaning": "Giờ học từ xa"
+        },
+        {
+          "word": "不登校",
+          "reading": "ふとうこう",
+          "meaning": "Bỏ học, không đến trường"
+        },
+        {
+          "word": "生涯学習",
+          "reading": "しょうがいがくしゅう",
+          "meaning": "Học tập suốt đời"
+        }
+      ]
+    },
+    {
+      "topic_id": 7,
+      "topic_name": "Văn hóa – Nghệ thuật (文化・芸術)",
+      "words": [
+        {
+          "word": "展覧会",
+          "reading": "てんらんかい",
+          "meaning": "Triển lãm"
+        },
+        {
+          "word": "鑑賞(する)",
+          "reading": "かんしょう(する)",
+          "meaning": "Thưởng thức, chiêm ngưỡng (nghệ thuật)"
+        },
+        {
+          "word": "絵画",
+          "reading": "かいが",
+          "meaning": "Hội họa, tranh vẽ"
+        },
+        {
+          "word": "陶器/磁器",
+          "reading": "とうき/じき",
+          "meaning": "Đồ gốm / Đồ sứ"
+        },
+        {
+          "word": "彫刻",
+          "reading": "ちょうこく",
+          "meaning": "Điêu khắc"
+        },
+        {
+          "word": "仏像",
+          "reading": "ぶつぞう",
+          "meaning": "Tượng Phật"
+        },
+        {
+          "word": "民芸品",
+          "reading": "みんげいひん",
+          "meaning": "Đồ thủ công mỹ nghệ dân gian"
+        },
+        {
+          "word": "染色",
+          "reading": "せんしょく",
+          "meaning": "Nhuộm màu"
+        },
+        {
+          "word": "色彩",
+          "reading": "しきさい",
+          "meaning": "Màu sắc, sắc thái"
+        },
+        {
+          "word": "タッチ",
+          "reading": "タッチ",
+          "meaning": "Nét vẽ, bút pháp"
+        },
+        {
+          "word": "前衛的",
+          "reading": "ぜんえいてき",
+          "meaning": "Tiền phong, phá cách (avant-garde)"
+        },
+        {
+          "word": "一点物",
+          "reading": "いってんもの",
+          "meaning": "Đồ độc bản (chỉ có một chiếc duy nhất)"
+        },
+        {
+          "word": "本邦初公開",
+          "reading": "ほんぽうはつこうかい",
+          "meaning": "Lần đầu tiên công bố công chiếu tại Nhật Bản"
+        },
+        {
+          "word": "風俗",
+          "reading": "ふうぞく",
+          "meaning": "Phong tục, tập quán"
+        },
+        {
+          "word": "慣習",
+          "reading": "かんしゅう",
+          "meaning": "Tập quán, thói quen truyền thống"
+        },
+        {
+          "word": "カルチャーセンター",
+          "reading": "カルチャーセンター",
+          "meaning": "Trung tâm văn hóa (nơi dạy các lớp kỹ năng/sở thích)"
+        }
+      ]
+    },
+    {
+      "topic_id": 8,
+      "topic_name": "Ngôn ngữ - Văn học (言語・文学)",
+      "words": [
+        {
+          "word": "バイリンガル",
+          "reading": "バイリンガル",
+          "meaning": "Song ngữ (người nói thành thạo 2 thứ tiếng)"
+        },
+        {
+          "word": "語感",
+          "reading": "ごかん",
+          "meaning": "Cảm thức ngôn ngữ, sắc thái từ ngữ"
+        },
+        {
+          "word": "論理",
+          "reading": "ろんり",
+          "meaning": "Logic, lập luận"
+        },
+        {
+          "word": "解釈する",
+          "reading": "かいしゃくする",
+          "meaning": "Diễn giải, giải thích"
+        },
+        {
+          "word": "伝達する",
+          "reading": "でんたつする",
+          "meaning": "Truyền đạt"
+        },
+        {
+          "word": "ニュアンス",
+          "reading": "ニュアンス",
+          "meaning": "Sắc thái biểu cảm"
+        },
+        {
+          "word": "行間を読む",
+          "reading": "ぎょうかんをよむ",
+          "meaning": "Đọc hiểu ẩn ý giữa các dòng chữ"
+        },
+        {
+          "word": "批評",
+          "reading": "ひひょう",
+          "meaning": "Phê bình, bình luận"
+        },
+        {
+          "word": "名文",
+          "reading": "めいぶん",
+          "meaning": "Áng văn hay, danh văn"
+        },
+        {
+          "word": "格言",
+          "reading": "かくげん",
+          "meaning": "Cách ngôn, châm ngôn"
+        },
+        {
+          "word": "筋",
+          "reading": "すじ",
+          "meaning": "Cốt truyện, mạch truyện"
+        }
+      ]
+    },
+    {
+      "topic_id": 9,
+      "topic_name": "Lịch sử (歴史)",
+      "words": [
+        {
+          "word": "年号",
+          "reading": "ねんごう",
+          "meaning": "Niên hiệu"
+        },
+        {
+          "word": "遺跡",
+          "reading": "いせき",
+          "meaning": "Di tích"
+        },
+        {
+          "word": "文献",
+          "reading": "ぶんけん",
+          "meaning": "Văn hiến, tài liệu cổ"
+        },
+        {
+          "word": "出土する",
+          "reading": "しゅつどする",
+          "meaning": "Khai quật được, tìm thấy dưới lòng đất"
+        },
+        {
+          "word": "氷河期",
+          "reading": "ひょうがき",
+          "meaning": "Kỷ băng hà"
+        },
+        {
+          "word": "植民地",
+          "reading": "しょくみんち",
+          "meaning": "Thuộc địa"
+        },
+        {
+          "word": "暴動",
+          "reading": "ぼうどう",
+          "meaning": "Bạo động"
+        },
+        {
+          "word": "紛争",
+          "reading": "ふんそう",
+          "meaning": "Xung đột, tranh chấp"
+        },
+        {
+          "word": "革命",
+          "reading": "かくめい",
+          "meaning": "Cách mạng"
+        },
+        {
+          "word": "独裁",
+          "reading": "どくさい",
+          "meaning": "Độc tài"
+        },
+        {
+          "word": "民主化",
+          "reading": "みんしゅか",
+          "meaning": "Dân chủ hóa"
+        },
+        {
+          "word": "改革",
+          "reading": "かいかく",
+          "meaning": "Cải cách"
+        },
+        {
+          "word": "幕府",
+          "reading": "ばくふ",
+          "meaning": "Mạc phủ"
+        },
+        {
+          "word": "条約",
+          "reading": "じょうやく",
+          "meaning": "Hiệp ước, điều ước"
+        },
+        {
+          "word": "宣言(する)",
+          "reading": "せんげん(する)",
+          "meaning": "Tuyên ngôn, tuyên bố"
+        },
+        {
+          "word": "ファシズム",
+          "reading": "ファシズム",
+          "meaning": "Chủ nghĩa phát xít"
+        },
+        {
+          "word": "高度経済成長",
+          "reading": "こうどけいざいせいちょう",
+          "meaning": "Thời kỳ tăng trưởng kinh tế thần kỳ"
+        },
+        {
+          "word": "冷戦",
+          "reading": "れいせん",
+          "meaning": "Chiến tranh Lạnh"
+        },
+        {
+          "word": "締結/調印する",
+          "reading": "ていけつ/ちょういんする",
+          "meaning": "Ký kết (hiệp ước, thỏa thuận)"
+        }
+      ]
+    }
+  ],
+  "predicted_themes": [
+    {
+      "theme_id": 1,
+      "theme_name": "Trí tuệ nhân tạo (AI) & Công nghệ số",
+      "common_argument_angles": "Tác động của AI và tự động hóa đến việc làm của con người; ranh giới giữa sự tiện lợi của công nghệ với nguy cơ giảm tư duy độc lập, kỹ năng giao tiếp trực tiếp và tính sáng tạo.",
+      "keywords": [
+        {
+          "word": "人工知能",
+          "reading": "じんこうちのう",
+          "meaning": "Trí tuệ nhân tạo (AI)"
+        },
+        {
+          "word": "自動化",
+          "reading": "じどうか",
+          "meaning": "Tự động hóa"
+        },
+        {
+          "word": "デジタル化",
+          "reading": "デジタルか",
+          "meaning": "Số hóa"
+        },
+        {
+          "word": "効率化する",
+          "reading": "こうりつかする",
+          "meaning": "Tối ưu hóa, nâng cao hiệu suất"
+        },
+        {
+          "word": "代替する",
+          "reading": "だいたいする",
+          "meaning": "Thay thế"
+        },
+        {
+          "word": "依存する",
+          "reading": "いぞんする",
+          "meaning": "Lệ thuộc, phụ thuộc"
+        },
+        {
+          "word": "利便性",
+          "reading": "りべんせい",
+          "meaning": "Tính tiện lợi"
+        },
+        {
+          "word": "情報リテラシー",
+          "reading": "じょうほうリテラシー",
+          "meaning": "Năng lực tiếp nhận và xử lý thông tin"
+        }
+      ]
+    },
+    {
+      "theme_id": 2,
+      "theme_name": "Biến đổi khí hậu & Phát triển bền vững",
+      "common_argument_angles": "Mâu thuẫn giữa tăng trưởng kinh tế và bảo vệ môi trường; chuyển dịch sang năng lượng tái tạo, kinh tế tuần hoàn và trách nhiệm tiêu dùng xanh của từng cá nhân lẫn doanh nghiệp.",
+      "keywords": [
+        {
+          "word": "気候変動",
+          "reading": "きこうへんどう",
+          "meaning": "Biến đổi khí hậu"
+        },
+        {
+          "word": "地球温暖化",
+          "reading": "ちきゅうおんだんか",
+          "meaning": "Sự nóng lên toàn cầu"
+        },
+        {
+          "word": "再生可能エネルギー",
+          "reading": "さいせいかのうエネルギー",
+          "meaning": "Năng lượng tái tạo"
+        },
+        {
+          "word": "脱炭素",
+          "reading": "だったんそ",
+          "meaning": "Khử cacbon (giảm phát thải khí nhà kính)"
+        },
+        {
+          "word": "循環型社会",
+          "reading": "じゅんかんがたしゃかい",
+          "meaning": "Xã hội tuần hoàn (kinh tế tuần hoàn)"
+        },
+        {
+          "word": "持続可能性",
+          "reading": "じぞくかのうせい",
+          "meaning": "Tính bền vững"
+        },
+        {
+          "word": "廃棄物",
+          "reading": "はいきぶつ",
+          "meaning": "Chất thải, rác thải"
+        },
+        {
+          "word": "生態系",
+          "reading": "せいたいけい",
+          "meaning": "Hệ sinh thái"
+        }
+      ]
+    },
+    {
+      "theme_id": 3,
+      "theme_name": "Xã hội già hóa & Thiếu hụt nguồn nhân lực",
+      "common_argument_angles": "Hệ lụy của tỷ lệ sinh giảm và dân số già hóa tại Nhật Bản; giải pháp kéo dài tuổi lao động, cải thiện chế độ an sinh xã hội và tiếp nhận nhân lực nước ngoài.",
+      "keywords": [
+        {
+          "word": "少子高齢化",
+          "reading": "しょうしこうれいか",
+          "meaning": "Già hóa dân số và giảm tỷ lệ sinh"
+        },
+        {
+          "word": "労働力不足",
+          "reading": "ろうどうりょくぶそく",
+          "meaning": "Thiếu hụt lực lượng lao động"
+        },
+        {
+          "word": "生産年齢人口",
+          "reading": "せいさんねんれいじんこう",
+          "meaning": "Dân số trong độ tuổi lao động"
+        },
+        {
+          "word": "定年延長",
+          "reading": "ていねんえんちょう",
+          "meaning": "Kéo dài tuổi nghỉ hưu"
+        },
+        {
+          "word": "社会保障",
+          "reading": "しゃかいほしょう",
+          "meaning": "An sinh xã hội"
+        },
+        {
+          "word": "介護",
+          "reading": "かいご",
+          "meaning": "Chăm sóc điều dưỡng (người cao tuổi)"
+        },
+        {
+          "word": "外国人労働者",
+          "reading": "がいこくじんろうどうしゃ",
+          "meaning": "Lao động người nước ngoài"
+        },
+        {
+          "word": "多文化共生",
+          "reading": "たぶんかきょうせい",
+          "meaning": "Chung sống đa văn hóa"
+        }
+      ]
+    },
+    {
+      "theme_id": 4,
+      "theme_name": "Xu hướng làm việc mới & Cân bằng cuộc sống",
+      "common_argument_angles": "Sự thay đổi từ văn hóa làm việc trọn đời, làm thêm giờ sang linh hoạt thời gian/địa điểm; mặt tích cực và thách thức của làm việc từ xa (khó tách bạch công việc – đời tư, giảm gắn kết đội nhóm).",
+      "keywords": [
+        {
+          "word": "働き方改革",
+          "reading": "はたらきかたかいかく",
+          "meaning": "Cải cách phương thức làm việc"
+        },
+        {
+          "word": "テレワーク/在宅勤務",
+          "reading": "テレワーク/ざいたくきんむ",
+          "meaning": "Làm việc từ xa / Làm việc tại nhà"
+        },
+        {
+          "word": "ワークライフバランス",
+          "reading": "ワークライフバランス",
+          "meaning": "Cân bằng giữa công việc và cuộc sống"
+        },
+        {
+          "word": "終身雇用",
+          "reading": "しゅうしんこよう",
+          "meaning": "Chế độ tuyển dụng trọn đời"
+        },
+        {
+          "word": "年功序列",
+          "reading": "ねんこうじょれつ",
+          "meaning": "Chế độ thâm niên (lương/chức vụ theo tuổi tác)"
+        },
+        {
+          "word": "生産性",
+          "reading": "せいさんせい",
+          "meaning": "Năng suất lao động"
+        },
+        {
+          "word": "多様性",
+          "reading": "たようせい",
+          "meaning": "Tính đa dạng"
+        },
+        {
+          "word": "副業",
+          "reading": "ふくぎょう",
+          "meaning": "Nghề tay trái, công việc phụ"
+        }
+      ]
+    },
+    {
+      "theme_id": 5,
+      "theme_name": "Tâm lý học hiện đại & Sự cô đơn trong thời đại số",
+      "common_argument_angles": "Nghịch lý kết nối (càng dùng mạng xã hội nhiều càng dễ cảm thấy cô độc); áp lực so sánh bản thân với người khác; tầm quan trọng của việc chấp nhận cảm xúc tiêu cực và xây dựng kết nối thực chất.",
+      "keywords": [
+        {
+          "word": "孤立感/孤独感",
+          "reading": "こりつかん/こどくかん",
+          "meaning": "Cảm giác bị cô lập / Cảm giác cô đơn"
+        },
+        {
+          "word": "承認欲求",
+          "reading": "しょうにんよっきゅう",
+          "meaning": "Nhu cầu được công nhận"
+        },
+        {
+          "word": "同調圧力",
+          "reading": "どうちょうあつりょく",
+          "meaning": "Áp lực đồng điệu (áp lực phải giống số đông)"
+        },
+        {
+          "word": "自己肯定感",
+          "reading": "じここうていかん",
+          "meaning": "Cảm giác tự khẳng định bản thân, sự tự tin vào giá trị bản thân"
+        },
+        {
+          "word": "ストレス耐性",
+          "reading": "ストレスたいせい",
+          "meaning": "Khả năng chịu đựng căng thẳng"
+        },
+        {
+          "word": "メンタルヘルス",
+          "reading": "メンタルヘルス",
+          "meaning": "Sức khỏe tinh thần"
+        },
+        {
+          "word": "共感する",
+          "reading": "きょうかんする",
+          "meaning": "Đồng cảm, thấu cảm"
+        },
+        {
+          "word": "対面コミュニケーション",
+          "reading": "たいめんコミュニケーション",
+          "meaning": "Giao tiếp trực tiếp (mặt đối mặt)"
+        }
+      ]
+    }
+  ]
+}

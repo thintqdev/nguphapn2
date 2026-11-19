@@ -12,6 +12,7 @@ import {
   ClipboardList,
   Layers,
   FileText,
+  GitBranch,
 } from "lucide-react";
 import { useFavorites } from "./FavoritesContext";
 import BrandLogo from "./BrandLogo";
@@ -42,6 +43,7 @@ export default function Sidebar() {
   const isAffixes = pathname.startsWith("/affixes");
   const isExam = pathname.startsWith("/exam");
   const isDocs = pathname.startsWith("/docs");
+  const isReading = pathname.startsWith("/reading");
   const isFav = pathname.startsWith("/favorites");
   const isSettings = pathname.startsWith("/settings");
 
@@ -114,6 +116,12 @@ export default function Sidebar() {
                 <span className="flex items-center gap-2.5">
                   <FileText size={15} strokeWidth={isDocs ? 2.2 : 1.9} />
                   資料
+                </span>
+              </Link>
+              <Link href="/reading" className={linkClass(isReading)}>
+                <span className="flex items-center gap-2.5">
+                  <GitBranch size={15} strokeWidth={isReading ? 2.2 : 1.9} />
+                  読解
                 </span>
               </Link>
             </div>
